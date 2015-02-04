@@ -16,14 +16,14 @@ Začátečníci jsou vítáni! Pokud ještě neumíš udělat pull request, ozvi
 
 ### Paul Graham: [Hackers and Painters: Big Ideas from the Computer Age][hackers_painters]
 Sbírka esejí člověka, který později založil Y Combinator.
-Majitel: @encukou
-Aktuálně u @encukou
+* Majitel: @encukou
+* Aktuálně u @encukou
 
 [hackers_painters]: http://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554
 
 ### Dusty Phillips: [Creating Apps in Kivy][kivy]
-Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné 
-Majitel: @encukou
-Aktuálně u @encukou
+Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začátečníky.
+* Majitel: @encukou
+* Aktuálně u @encukou
 
 [kivy]: http://shop.oreilly.com/product/0636920032595.do
