@@ -9,8 +9,20 @@
 * Pokud máš knihu, kterou chceš zařadit do knihovny, pošli pull request, který ji tam zařazuje.
   * Knihu můžeš buď nechat u sebe, nebo ji na některém Pyvu předat Petrovi (@encukou), který ji pak bude vozit na Pyva.
   * Hledáme knihy, které se týkají Pythonu a přidružených neutrálních technologií (např. databází), nebo programování či open-source obecně
+  * Půjčování je dobrovolná činnost založená na důvěře. Pokud se knížka ztratí, bude nám to líto a budeme se snažit ji získat zpátky, ale zaručit nemůžeme nic.
 
 Začátečníci jsou vítáni! Pokud ještě neumíš udělat pull request, ozvi se na encukou@gmail.com.
+
+## How does this work?
+
+* If you want to borrow a book, send a pull request, changing the entry to say you have the book ("Aktuálně u").
+  * Mention the name of the book in the pull request name
+  * In the pull request comment, say where you'll pick the book up. Standard locations are the Pyvo meetups – see viz http://python.cz
+  * The usual lease time is one month (until the next meetup).
+* If you have a book you'd like to add, send a pull request adding it!
+  * You can either keep the book, or give it to Petr (@encukou) who can bring it to any other Pyvo meetup in the country.
+  * We're looking for books about either Python and related language-neutral technologies (like databases), or programming and open-source in general.
+  * Lending is a volunteer effort based on trust. We have no legal responsibility for books you donate.
 
 ## Knihy
 
