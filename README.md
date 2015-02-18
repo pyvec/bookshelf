@@ -27,3 +27,24 @@ Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začá
 * Aktuálně u @encukou
 
 [kivy]: http://shop.oreilly.com/product/0636920032595.do
+
+### Daniel Greenfeld & Audrey Roy: [Two Scoops of Django][two-scoops-1-5]
+
+* Majitel: @honzakral
+* Aktuálně u: @encukou
+ 
+[two-scoops-1-5]: http://twoscoopspress.org/products/two-scoops-of-django-1-5
+
+### Lennart Regebro: [Porting to Python 3][py3porting]
+Praktický návod na portování na Python 3
+* 1. kopie
+  * Majitel: @honzakral
+  * Aktuálně u: @encukou
+* 2. kopie
+  * Majitel: @honzakral
+  * Aktuálně u: @encukou
+* 3. kopie
+  * Majitel: @encukou
+  * Aktuálně u: @encukou
+
+[py3porting]: http://python3porting.com/
