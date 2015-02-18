@@ -60,3 +60,24 @@ Praktický návod na portování na Python 3
   * Aktuálně u: @encukou
 
 [py3porting]: http://python3porting.com/
+
+### Marty Alchin: [Pro Django][pro-django]
+Knížka o Djangu. Je o verzi 1.0, takže trošku zastaralá.
+* Majitel: @starenka
+* Aktuálně u: @encukou
+
+[pro-django]: http://prodjango.com/
+
+### James Bennett: [Practical Django Projects][practical-django-projects]
+Knížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
+* Majitel: @starenka
+* Aktuálně u: @encukou
+
+[practical-django-projects]: http://www.amazon.com/Practical-Django-Projects-Experts-Development/dp/1590599969
+
+### A. Holovaty & J. Kaplan-Moss: [The Definitive Guide to Django][django-definitive-guide]
+Knížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
+* Majitel: @starenka
+* Aktuálně u: @encukou
+
+[django-definitive-guide]: http://www.apress.com/9781430219361
