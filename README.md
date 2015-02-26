@@ -36,7 +36,7 @@ Sbírka esejí člověka, který později založil Y Combinator.
 ### Dusty Phillips: [Creating Apps in Kivy][kivy]
 Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začátečníky.
 * Majitel: @encukou
-* Aktuálně u @encukou
+* Aktuálně u @blablabla
 
 [kivy]: http://shop.oreilly.com/product/0636920032595.do
 
@@ -64,7 +64,7 @@ Praktický návod na portování na Python 3
 ### Marty Alchin: [Pro Django][pro-django]
 Knížka o Djangu. Je o verzi 1.0, takže trošku zastaralá.
 * Majitel: @starenka
-* Aktuálně u: @encukou
+* Aktuálně u: @flaiming (od února 2015)
 
 [pro-django]: http://prodjango.com/
 
