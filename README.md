@@ -81,3 +81,21 @@ Knížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
 * Aktuálně u: @encukou
 
 [django-definitive-guide]: http://www.apress.com/9781430219361
+
+### Fred Hebert: [Learn You Some Erlang for Great Good! A Beginner's Guide][erlang-learn]
+* Majitel: @starenka
+* Aktuálně u: @starenka
+
+[erlang-learn]: http://www.bookdepository.com/Learn-You-Some-Erlang-for-Great-Good-Beginners-Guide-Fred-Hebert/9781593274351
+
+### Conrad Barski: [Land of Lisp: Learn to Program in Lisp, One Game at a Time!][land-of-lisp]
+* Majitel: @starenka
+* Aktuálně u: @starenka
+
+[land-of-lisp]: http://www.bookdepository.com/Land-Lisp-Learn-Program-Lisp-One-Game-at-Time-Conrad-Barski/978159327281
+
+### Steven Bird, Ewan Klein, Edward Loper: [Natural Language Processing with Python][nlpp]
+* Majitel: @starenka
+* Aktuálně u: @starenka
+
+[nlpp]: http://shop.oreilly.com/product/9780596516499.do
