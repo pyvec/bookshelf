@@ -99,3 +99,16 @@ Knížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
 * Aktuálně u: @starenka
 
 [nlpp]: http://shop.oreilly.com/product/9780596516499.do
+
+### Kent Beck: [Extrémní programování][xp]
+* Majitel: @whiteck
+* Aktuálně u: @whiteck
+
+[xp]: http://www.databazeknih.cz/knihy/extremni-programovani-163700
+
+### Dan Saffer: [Microinteractions][microia]
+* Majitel: @whiteck
+* Aktuálně u: @whiteck
+
+[microia]: http://microinteractions.com
+
