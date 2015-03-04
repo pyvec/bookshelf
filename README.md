@@ -112,3 +112,9 @@ Knížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
 
 [microia]: http://microinteractions.com
 
+### Dafydd Stuttard, Marcus Pinto: [The Web Application Hacker's Handbook (první vydání)][wah]
+Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho najde
+* Majitel: @starenka
+* Aktuálně u: @starenka
+
+[wah]: http://books.google.cz/books/about/The_Web_Application_Hacker_s_Handbook.html?id=_EhvBGsWi6AC&redir_esc=y
