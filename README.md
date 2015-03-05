@@ -34,7 +34,7 @@ Names such as "@encukou" represent Github usernames.
 ### Paul Graham: [Hackers and Painters: Big Ideas from the Computer Age][hackers_painters]
 Sbírka esejí člověka, který později založil Y Combinator.
 * Majitel: @encukou
-* Aktuálně u @encukou
+* Aktuálně u @tricoder42 (od března 2015)
 
 [hackers_painters]: http://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554
 
