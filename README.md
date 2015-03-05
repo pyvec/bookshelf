@@ -27,6 +27,7 @@ Jména jako "@encukou" jsou účty na Githubu.
   * Lending is a volunteer effort based on trust. We have no legal responsibility for books you donate.
 
 Names such as "@encukou" represent Github usernames.
+"Majitel" means "Owner". "Aktuálně u" means "Currently at".
 
 ## Knihy
 
