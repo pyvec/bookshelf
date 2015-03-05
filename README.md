@@ -13,6 +13,8 @@
 
 Začátečníci jsou vítáni! Pokud ještě neumíš udělat pull request, ozvi se na encukou@gmail.com.
 
+Jména jako "@encukou" jsou účty na Githubu.
+
 ## How does this work?
 
 * If you want to borrow a book, send a pull request, changing the entry to say you have the book ("Aktuálně u").
@@ -23,6 +25,8 @@ Začátečníci jsou vítáni! Pokud ještě neumíš udělat pull request, ozvi
   * You can either keep the book, or give it to Petr (@encukou) who can bring it to any other Pyvo meetup in the country.
   * We're looking for books about either Python and related language-neutral technologies (like databases), or programming and open-source in general.
   * Lending is a volunteer effort based on trust. We have no legal responsibility for books you donate.
+
+Names such as "@encukou" represent Github usernames.
 
 ## Knihy
 
@@ -101,14 +105,14 @@ Knížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
 [nlpp]: http://shop.oreilly.com/product/9780596516499.do
 
 ### Kent Beck: [Extrémní programování][xp]
-* Majitel: @whiteck
-* Aktuálně u: @whiteck
+* Majitel: @whit
+* Aktuálně u: @whit
 
 [xp]: http://www.databazeknih.cz/knihy/extremni-programovani-163700
 
 ### Dan Saffer: [Microinteractions][microia]
-* Majitel: @whiteck
-* Aktuálně u: @whiteck
+* Majitel: @whit
+* Aktuálně u: @whit
 
 [microia]: http://microinteractions.com
 
