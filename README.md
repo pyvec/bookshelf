@@ -41,7 +41,7 @@ Sbírka esejí člověka, který později založil Y Combinator.
 ### Dusty Phillips: [Creating Apps in Kivy][kivy]
 Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začátečníky.
 * Majitel: @encukou
-* Aktuálně u @blablabla
+* Aktuálně u @encukou
 
 [kivy]: http://shop.oreilly.com/product/0636920032595.do
 
