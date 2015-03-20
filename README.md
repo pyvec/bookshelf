@@ -123,3 +123,17 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 * Aktuálně u: @starenka
 
 [wah]: http://books.google.cz/books/about/The_Web_Application_Hacker_s_Handbook.html?id=_EhvBGsWi6AC&redir_esc=y
+
+### Kurt W. Smith: [Cython - A guide for Python programmers][cython]
+Vydání Leden 2015
+* Majitel: @tjanovsky
+* Aktuálně u: @tjanovsky
+
+[cython]: http://shop.oreilly.com/product/0636920033431.do
+
+### Mark Summerfield: [Python 3 - Výukový kurz][py3]
+Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
+* Majitel: @tjanovsky
+* Aktuálně u: @tjanovsky
+
+[py3]: http://knihy.cpress.cz/python-3.html
