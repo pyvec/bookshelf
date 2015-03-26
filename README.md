@@ -83,7 +83,7 @@ Praktický návod na portování na Python 3
 ### Marty Alchin: [Pro Django][pro-django]
 Knížka o Djangu. Je o verzi 1.0, takže trošku zastaralá.
 * Majitel: @starenka
-* Aktuálně u: @flaiming (od února 2015)
+* Aktuálně u: @encukou
 
 [pro-django]: http://prodjango.com/
 
