@@ -80,6 +80,12 @@ Praktický návod na portování na Python 3
 
 [py3porting]: http://python3porting.com/
 
+### Steven Pousty & Katie J. Miller: [Getting Started with OpenShift][getting-started-openshift]: A Guide for Impatient Beginners
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[getting-started-openshift]: http://shop.oreilly.com/product/0636920033226.do
+
 ### Marty Alchin: [Pro Django][pro-django]
 Knížka o Djangu. Je o verzi 1.0, takže trošku zastaralá.
 * Majitel: @starenka
