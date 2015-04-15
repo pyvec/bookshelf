@@ -48,7 +48,7 @@ Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začá
 ### Daniel Greenfeld & Audrey Roy: [Two Scoops of Django][two-scoops-1-5]
 
 * Majitel: @honzakral
-* Aktuálně u: @anastazie (od března 2015, Praha)
+* Aktuálně u: @baldman (od dubna 2015, Praha)
  
 [two-scoops-1-5]: http://twoscoopspress.org/products/two-scoops-of-django-1-5
 
