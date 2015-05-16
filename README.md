@@ -107,6 +107,13 @@ Knížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
 
 [django-definitive-guide]: http://www.apress.com/9781430219361
 
+### S. A. Ambrose, M. W. Bridges, M. DiPietro, M. C. Lovett, M. K. Norman: [How Learning Works: Seven Research-Based Principles for Smart Teaching][how-learning-works]
+O tom, jak učit.
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[how-learning-works]: http://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101
+
 ### Fred Hebert: [Learn You Some Erlang for Great Good! A Beginner's Guide][erlang-learn]
 * Majitel: @starenka
 * Aktuálně u: @starenka
