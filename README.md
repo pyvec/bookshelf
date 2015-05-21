@@ -31,6 +31,13 @@ Names such as "@encukou" represent Github usernames.
 
 ## Knihy
 
+### Daniel Greenfeld & Audrey Roy: [Two Scoops of Django][two-scoops-1-5]
+
+* Majitel: @honzakral
+* Aktuálně u: @encukou
+
+[two-scoops-1-5]: http://twoscoopspress.org/products/two-scoops-of-django-1-5
+
 ### Paul Graham: [Hackers and Painters: Big Ideas from the Computer Age][hackers_painters]
 Sbírka esejí člověka, který později založil Y Combinator.
 * Majitel: @encukou
@@ -44,13 +51,6 @@ Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začá
 * Aktuálně u @encukou
 
 [kivy]: http://shop.oreilly.com/product/0636920032595.do
-
-### Daniel Greenfeld & Audrey Roy: [Two Scoops of Django][two-scoops-1-5]
-
-* Majitel: @honzakral
-* Aktuálně u: @baldman (od dubna 2015, Praha)
- 
-[two-scoops-1-5]: http://twoscoopspress.org/products/two-scoops-of-django-1-5
 
 ### Kurt W. Smith: [Cython - A guide for Python programmers][cython]
 Vydání Leden 2015
