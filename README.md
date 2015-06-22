@@ -150,3 +150,9 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 * Aktuálně u: @starenka
 
 [wah]: http://books.google.cz/books/about/The_Web_Application_Hacker_s_Handbook.html?id=_EhvBGsWi6AC&redir_esc=y
+
+### 	Markus Winand: [SQL Performance explained][sqlperf]
+* Majitel: @honzakral
+* Aktuálně u: @jsuchal
+
+[sqlperf]: http://sql-performance-explained.com/
