@@ -38,6 +38,47 @@ Names such as "@encukou" represent Github usernames.
 
 [two-scoops-1-5]: http://twoscoopspress.org/products/two-scoops-of-django-1-5
 
+### D. Beazley & B. K. Jones: [Python Cookbook][python-cookbook], 3rd ed.
+Recipes for mastering Python 3
+
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[python-cookbook]: http://shop.oreilly.com/product/0636920027072.do
+
+### Harry J. W. Percival: [Test-Driven Development with Python][testing-goat]
+Obey he Testing Goat: Using Django, Selenium, and Javascript.
+
+Podepsaná od autora, tak na ni dávejte pozor :)
+
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[testing-goat]: http://www.obeythetestinggoat.com/
+
+### Wes McKinney: [Python for Data Analysis][data-analysis]
+Data Wrangling with Pandas, NumPy, and IPython
+
+* Majitel: @encukou
+* Aktuálně u @encukou
+
+[data-analysis]: http://shop.oreilly.com/product/0636920023784.do
+
+### Miguel Grinberg: [Flask Web Development][flask-web-dev]
+Developing Web Applications with Python
+
+* Majitel: @encukou
+* Aktuálně u @encukou
+
+[flask-web-dev]: http://flaskbook.com/
+
+### Simon Monk: [Raspberry Pi Cookbook][raspi-cookbook]
+
+* Majitel: @encukou
+* Aktuálně u @encukou
+
+[raspi-cookbook]: http://shop.oreilly.com/product/0636920029595.do
+
 ### Paul Graham: [Hackers and Painters: Big Ideas from the Computer Age][hackers_painters]
 Sbírka esejí člověka, který později založil Y Combinator.
 * Majitel: @encukou
@@ -58,6 +99,24 @@ Vydání Leden 2015
 * Aktuálně u: @encukou
 
 [cython]: http://shop.oreilly.com/product/0636920033431.do
+
+### Allen B. Downey: [Think Python][think-python]
+How to Think Like a Computer Scientist
+
+(pozor, používá Python 2.x)
+
+* Majitel: @encukou
+* Aktuálně u @encukou
+
+[think-python]: http://www.greenteapress.com/thinkpython/
+
+### Jan Erik Solen: [Programming Computer Vision with Python][computer-vision]
+(pozor, používá Python 2.x)
+
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[computer-vision]: http://programmingcomputervision.com/
 
 ### Mark Summerfield: [Python 3 - Výukový kurz][py3]
 Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
