@@ -205,8 +205,12 @@ O tom, jak učit.
 
 ### Dafydd Stuttard, Marcus Pinto: [The Web Application Hacker's Handbook (první vydání)][wah]
 Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho najde
-* Majitel: @starenka
-* Aktuálně u: @starenka
+* 1. kopie
+  * Majitel: @starenka
+  * Aktuálně u: @starenka
+* 2. kopie
+  * Majitel: @JirkaV
+  * Aktuálně u: @JirkaV
 
 [wah]: http://books.google.cz/books/about/The_Web_Application_Hacker_s_Handbook.html?id=_EhvBGsWi6AC&redir_esc=y
 
@@ -215,3 +219,99 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 * Aktuálně u: @jsuchal
 
 [sqlperf]: http://sql-performance-explained.com/
+
+### Justin Seitz: [Gray Hat Python][grayhat]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[grayhat]: https://www.nostarch.com/ghpython.htm
+
+### TJ O'Connor: [Violent Python][violent]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[violent]: http://shop.oreilly.com/product/9781597499576.do
+
+### Robert C. Martin: [Clean Code][cleancode]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[cleancode]: http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
+
+### John Goerzen, Tim Bower, Brandon Rhodes: [Foundations of Python Network Programming][networkfoundations]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[networkfoundations]: http://www.amazon.com/Foundations-Python-Network-Programming-comprehensive/dp/1430230037
+
+### Scott Rosenberg: [Dreaming in Code][dreaming]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[dreaming]: http://www.dreamingincode.com/
+
+### Andy Oram, Greg Wilson: [Beautiful Code][beautiful]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[beautiful]: http://shop.oreilly.com/product/9780596510046.do
+
+### Grant Allen, Mike Owens: [The Definitive Guide to SQLite][sqliteguide] 1st ed.
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[sqliteguide]: http://www.apress.com/9781430232254
+
+### Michael Kofler: [The Definitive Guide to MySQL 5][mysqlguide] 3rd ed.
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[mysqlguide]: http://www.apress.com/9781590595350
+
+### Jay Pipes , Michael Kruckenberg: [Pro MySQL][promysql]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[promysql]: http://www.apress.com/9781590595053
+
+### Andy McKay: [The Definitive Guide to Plone][ploneguide] 1st ed.
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[ploneguide]: http://www.apress.com/9781430218937
+
+### Christian Heilmann: [Beginning JavaScript with DOM Scripting and Ajax][beginningjavascript]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[beginningjavascript]: http://www.apress.com/9781590596807
+
+### Russell J.T. Dyer: [MySQL in a Nutshell][mysqlnutshell] 1st ed.
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[mysqslnutshell]: http://shop.oreilly.com/product/9780596007898.do
+
+### Joe Armstrong: [Programming Erlang: Software for a Concurrent World][pragmaticerlang] 1st ed.
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[pragmaticerlang]: http://shop.oreilly.com/product/9780596007898.do
+
+### Kent Beck: [Test Driven Development: By Example][kentbecktdd]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[kentbecktdd]: http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530
+
+### Al Sweigart: [Hacking Secret Ciphers with Python][hackingsecretciphers]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[hackingsecretciphers]: http://inventwithpython.com/hacking/
+
+### Dan Rubin, Ian Lloyd, Jeff Croft: [Mistrovství v CSS][cssmistrovstvi]
+* Majitel: @JirkaV
+* Aktuálně u: @JirkaV
+
+[cssmistrovstvi]: http://knihy.cpress.cz/mistrovstvi-v-css.html
