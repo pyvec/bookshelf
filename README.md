@@ -290,7 +290,7 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 * Majitel: @JirkaV
 * Aktuálně u: @JirkaV
 
-[mysqslnutshell]: http://shop.oreilly.com/product/9780596007898.do
+[mysqlnutshell]: http://shop.oreilly.com/product/9780596007898.do
 
 ### Joe Armstrong: [Programming Erlang: Software for a Concurrent World][pragmaticerlang] 1st ed.
 * Majitel: @JirkaV
