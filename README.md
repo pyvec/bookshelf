@@ -315,3 +315,9 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 * Aktuálně u: @JirkaV
 
 [cssmistrovstvi]: http://knihy.cpress.cz/mistrovstvi-v-css.html
+
+### Mark Pilgrim: [Ponořme se do Python(u) 3][ponormese]
+* Majitel: @hroncok
+* Aktuálně u: @hroncok
+
+[ponormese]: http://diveintopython3.py.cz/index.html
