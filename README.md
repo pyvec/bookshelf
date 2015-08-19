@@ -68,7 +68,7 @@ Data Wrangling with Pandas, NumPy, and IPython
 Developing Web Applications with Python
 
 * Majitel: @encukou
-* Aktuálně u @encukou
+* Aktuálně u @tomasbedrich (do 2015-09, Praha)
 
 [flask-web-dev]: http://flaskbook.com/
 
