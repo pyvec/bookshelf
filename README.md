@@ -321,3 +321,13 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 * Aktuálně u: @JirkaV
 
 [cssmistrovstvi]: http://knihy.cpress.cz/mistrovstvi-v-css.html
+
+
+### Daryl Harms, Kenneth McDonald: [Začínáme programovat v jazyce Python][zaciname-programovat], 2. opravené vydání
+
+*Zastaralá* kniha o Pythonu 1.5.
+
+* Majitel: @encukou
+* Aktuálně u: David R.
+
+[zaciname-programovat]: http://knihy.cpress.cz/zaciname-programovat-v-jazyce-python-d2.html
