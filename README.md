@@ -332,9 +332,16 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 
 [zaciname-programovat]: http://knihy.cpress.cz/zaciname-programovat-v-jazyce-python-d2.html
 
-### Peter Baumgarten and Yann Malet: [High Performance Django][high-performance-django]
+### Peter Baumgarten and Yann Malet: [High Performance Django][high-performance-django] (signed)
 
 * Majite: @honzakral
 * Aktuálně u: @honzakral
 
 [high-performance-django]: https://highperformancedjango.com/
+
+### Julia Elman, Mark Lavin: [Lightweight Django][lightweight-django] (signed)
+
+* Majite: @honzakral
+* Aktuálně u: @honzakral
+
+[lightweight-django]: http://shop.oreilly.com/product/0636920032502.do
