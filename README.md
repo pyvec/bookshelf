@@ -331,3 +331,10 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 * Aktuálně u: David R.
 
 [zaciname-programovat]: http://knihy.cpress.cz/zaciname-programovat-v-jazyce-python-d2.html
+
+### Peter Baumgarten and Yann Malet: [High Performance Django][high-performance-django]
+
+* Majite: @honzakral
+* Aktuálně u: @honzakral
+
+[high-performance-django]: https://highperformancedjango.com/
