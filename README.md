@@ -342,6 +342,6 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 ### Julia Elman, Mark Lavin: [Lightweight Django][lightweight-django] (signed)
 
 * Majite: @honzakral
-* Aktuálně u: @encukou
+* Aktuálně u: @jerryfox (do října 2015, Praha)
 
 [lightweight-django]: http://shop.oreilly.com/product/0636920032502.do
