@@ -335,13 +335,13 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 ### Peter Baumgarten and Yann Malet: [High Performance Django][high-performance-django] (signed)
 
 * Majite: @honzakral
-* Aktuálně u: @honzakral
+* Aktuálně u: @encukou
 
 [high-performance-django]: https://highperformancedjango.com/
 
 ### Julia Elman, Mark Lavin: [Lightweight Django][lightweight-django] (signed)
 
 * Majite: @honzakral
-* Aktuálně u: @honzakral
+* Aktuálně u: @encukou
 
 [lightweight-django]: http://shop.oreilly.com/product/0636920032502.do
