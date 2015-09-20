@@ -124,6 +124,13 @@ How to Think Like a Computer Scientist
 
 [computer-vision]: http://programmingcomputervision.com/
 
+### Brian W. Fitzpatrick, Ben Collins-Sussman: [Team Geek][team-geek]: A Software Developer's Guide to Working Well with Others
+
+* Majitel: @yedpodtrzitko
+* Aktuálně u @encukou
+
+[team-geek]: http://shop.oreilly.com/product/0636920018025.do
+
 ### Mark Summerfield: [Python 3 - Výukový kurz][py3]
 Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
 * Majitel: @tjanovsky
@@ -142,6 +149,9 @@ Praktický návod na portování na Python 3
 * 3. kopie
   * Majitel: @encukou
   * Aktuálně u: @encukou
+* 4. kopie
+  * Majitel: @yedpodtrzitko
+  * Aktuálně u: @encukou
 
 [py3porting]: http://python3porting.com/
 
@@ -150,6 +160,13 @@ Praktický návod na portování na Python 3
 * Aktuálně u: @encukou
 
 [getting-started-openshift]: http://shop.oreilly.com/product/0636920033226.do
+
+### Justin Seitz: [Python pro hackery a reverzní inženýrství][pro-hackery]
+
+* Majitel: @yedpodtrzitko
+* Aktuálně u: @encukou
+
+[pro-hackery]: https://www.zonerpress.cz/python-pro-hackery-a-reverzni-inzenyrstvi
 
 ### Marty Alchin: [Pro Django][pro-django]
 Knížka o Djangu. Je o verzi 1.0, takže trošku zastaralá.
@@ -327,8 +344,12 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 
 *Zastaralá* kniha o Pythonu 1.5.
 
-* Majitel: @encukou
-* Aktuálně u: David R.
+* 1. kopie
+  * Majitel: @encukou
+  * Aktuálně u: David R.
+* 2. kopie
+  * Majitel: @yedpodtrzitko
+  * Aktuálně u: @encukou
 
 [zaciname-programovat]: http://knihy.cpress.cz/zaciname-programovat-v-jazyce-python-d2.html
 
