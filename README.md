@@ -279,6 +279,14 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 
 [beautiful]: http://shop.oreilly.com/product/9780596510046.do
 
+### Lukáš Kotek a kol.: [Fedora][fedora-guide-cz]: Příručka začínajícího uživatele
+Seznámení a první kroky v linuxovém operačním systému Fedora
+
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[fedora-guide-cz]: http://blog.eischmann.cz/2015/10/09/vydali-jsme-prirucku-zacinajiciho-uzivatele-fedory/
+
 ### Grant Allen, Mike Owens: [The Definitive Guide to SQLite][sqliteguide] 1st ed.
 * Majitel: @JirkaV
 * Aktuálně u: @JirkaV
