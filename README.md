@@ -192,7 +192,7 @@ Knížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
 ### S. A. Ambrose, M. W. Bridges, M. DiPietro, M. C. Lovett, M. K. Norman: [How Learning Works: Seven Research-Based Principles for Smart Teaching][how-learning-works]
 O tom, jak učit.
 * Majitel: @encukou
-* Aktuálně u: @encukou
+* Aktuálně u: @sYnfo
 
 [how-learning-works]: http://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101
 
