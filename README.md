@@ -66,7 +66,7 @@ Podepsaná od autora, tak na ni dávejte pozor :)
 Data Wrangling with Pandas, NumPy, and IPython
 
 * Majitel: @encukou
-* Aktuálně u @encukou
+* Aktuálně u @rkuska
 
 [data-analysis]: http://shop.oreilly.com/product/0636920023784.do
 
