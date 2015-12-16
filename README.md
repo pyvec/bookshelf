@@ -58,7 +58,7 @@ Obey he Testing Goat: Using Django, Selenium, and Javascript.
 Podepsaná od autora, tak na ni dávejte pozor :)
 
 * Majitel: @encukou
-* Aktuálně u: @don-mums (do listopadu 2015, Praha)
+* Aktuálně u: @encukou
 
 [testing-goat]: http://www.obeythetestinggoat.com/
 
