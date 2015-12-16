@@ -134,7 +134,7 @@ How to Think Like a Computer Scientist
 ### Mark Summerfield: [Python 3 - Výukový kurz][py3]
 Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
 * Majitel: @tjanovsky
-* Aktuálně u: @waikeri
+* Aktuálně u: @tjanovsky
 
 [py3]: http://knihy.cpress.cz/python-3.html
 
