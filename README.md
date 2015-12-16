@@ -331,7 +331,7 @@ Seznámení a první kroky v linuxovém operačním systému Fedora
 
 ### Kent Beck: [Test Driven Development: By Example][kentbecktdd]
 * Majitel: @JirkaV
-* Aktuálně u: @JirkaV
+* Aktuálně u: @waikeri
 
 [kentbecktdd]: http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530
 
