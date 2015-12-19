@@ -38,20 +38,18 @@ Names such as "@encukou" represent Github usernames.
 [ponormese]: http://diveintopython3.py.cz/index.html
 
 
-### Daniel Greenfeld & Audrey Roy: [Two Scoops of Django 1.6][two-scoops-1-6]
+### Daniel Greenfeld & Audrey Roy: [Two Scoops of Django][two-scoops]
 
-* Majitel: @encukou
-* Aktuálně u: @SvetlanaM
+Best Practices for Django
 
-[two-scoops-1-6]: https://www.twoscoopspress.com/products/two-scoops-of-django-1-6
+* [Django 1.6](https://www.twoscoopspress.com/products/two-scoops-of-django-1-6)
+  * Majitel: @encukou
+  * Aktuálně u: @SvetlanaM
+* [Django 1.5](https://www.twoscoopspress.org/products/two-scoops-of-django-1-5)
+  * Majitel: @honzakral
+  * Aktuálně u: @encukou
 
-
-### Daniel Greenfeld & Audrey Roy: [Two Scoops of Django 1.5][two-scoops-1-5]
-
-* Majitel: @honzakral
-* Aktuálně u: @encukou
-
-[two-scoops-1-5]: http://twoscoopspress.org/products/two-scoops-of-django-1-5
+[two-scoops]: https://www.twoscoopspress.com/products/two-scoops-of-django-1-6
 
 ### D. Beazley & B. K. Jones: [Python Cookbook][python-cookbook], 3rd ed.
 Recipes for mastering Python 3
