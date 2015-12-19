@@ -37,7 +37,16 @@ Names such as "@encukou" represent Github usernames.
 
 [ponormese]: http://diveintopython3.py.cz/index.html
 
-### Daniel Greenfeld & Audrey Roy: [Two Scoops of Django][two-scoops-1-5]
+
+### Daniel Greenfeld & Audrey Roy: [Two Scoops of Django 1.6][two-scoops-1-6]
+
+* Majitel: @encukou
+* Aktuálně u: @SvetlanaM
+
+[two-scoops-1-6]: https://www.twoscoopspress.com/products/two-scoops-of-django-1-6
+
+
+### Daniel Greenfeld & Audrey Roy: [Two Scoops of Django 1.5][two-scoops-1-5]
 
 * Majitel: @honzakral
 * Aktuálně u: @encukou
