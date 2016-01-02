@@ -264,7 +264,7 @@ Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho
 
 ### Robert C. Martin: [Clean Code][cleancode]
 * Majitel: @JirkaV
-* Aktuálně u: @JirkaV
+* Aktuálně u: @KeNaCo
 
 [cleancode]: http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
 
