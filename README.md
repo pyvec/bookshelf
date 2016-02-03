@@ -95,7 +95,7 @@ Developing Web Applications with Python
 ### Paul Graham: [Hackers and Painters: Big Ideas from the Computer Age][hackers_painters]
 Sbírka esejí člověka, který později založil Y Combinator.
 * Majitel: @encukou
-* Aktuálně u @flaiming
+* Aktuálně u @encukou
 
 [hackers_painters]: http://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554
 
