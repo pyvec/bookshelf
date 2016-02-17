@@ -371,7 +371,7 @@ Seznámení a první kroky v linuxovém operačním systému Fedora
 ### Peter Baumgarten and Yann Malet: [High Performance Django][high-performance-django] (signed)
 
 * Majite: @honzakral
-* Aktuálně u: @encukou
+* Aktuálně u: https://bitbucket.org/geron007/ (do Pražského Pyva 2016-03)
 
 [high-performance-django]: https://highperformancedjango.com/
 
