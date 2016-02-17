@@ -109,7 +109,7 @@ Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začá
 ### Kurt W. Smith: [Cython - A guide for Python programmers][cython]
 Vydání Leden 2015
 * Majitel: @tjanovsky
-* Aktuálně u: @hroncok
+* Aktuálně u: @encukou
 
 [cython]: http://shop.oreilly.com/product/0636920033431.do
 
