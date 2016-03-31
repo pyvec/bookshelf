@@ -127,7 +127,7 @@ How to Think Like a Computer Scientist
 (pozor, používá Python 2.x)
 
 * Majitel: @encukou
-* Aktuálně u: @encukou
+* Aktuálně u: @gr4viton (do dubna 2016)
 
 [computer-vision]: http://programmingcomputervision.com/
 
