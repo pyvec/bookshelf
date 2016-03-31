@@ -119,7 +119,7 @@ How to Think Like a Computer Scientist
 (pozor, používá Python 2.x)
 
 * Majitel: @encukou
-* Aktuálně u @encukou
+* Aktuálně u Lucie Lenertová (Brno, do května 2016)
 
 [think-python]: http://www.greenteapress.com/thinkpython/
 
