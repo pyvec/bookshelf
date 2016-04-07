@@ -55,7 +55,7 @@ Best Practices for Django
 Recipes for mastering Python 3
 
 * Majitel: @encukou
-* Aktuálně u: @encukou
+* Aktuálně u: @stratakis
 
 [python-cookbook]: http://shop.oreilly.com/product/0636920027072.do
 
@@ -88,7 +88,7 @@ Developing Web Applications with Python
 ### Simon Monk: [Raspberry Pi Cookbook][raspi-cookbook]
 
 * Majitel: @encukou
-* Aktuálně u @encukou
+* Aktuálně u @stratakis
 
 [raspi-cookbook]: http://shop.oreilly.com/product/0636920029595.do
 
