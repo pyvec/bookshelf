@@ -88,7 +88,7 @@ Developing Web Applications with Python
 ### Simon Monk: [Raspberry Pi Cookbook][raspi-cookbook]
 
 * Majitel: @encukou
-* Aktuálně u @encukou
+* Aktuálně u @SvetlanaM
 
 [raspi-cookbook]: http://shop.oreilly.com/product/0636920029595.do
 
