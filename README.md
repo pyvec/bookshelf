@@ -44,7 +44,7 @@ Best Practices for Django
 
 * [Django 1.6](https://www.twoscoopspress.com/products/two-scoops-of-django-1-6)
   * Majitel: @encukou
-  * Aktuálně u: @SvetlanaM
+  * Aktuálně u: @encukou
 * [Django 1.5](https://www.twoscoopspress.org/products/two-scoops-of-django-1-5)
   * Majitel: @honzakral
   * Aktuálně u: @encukou
@@ -88,7 +88,7 @@ Developing Web Applications with Python
 ### Simon Monk: [Raspberry Pi Cookbook][raspi-cookbook]
 
 * Majitel: @encukou
-* Aktuálně u @stratakis
+* Aktuálně u @encukou
 
 [raspi-cookbook]: http://shop.oreilly.com/product/0636920029595.do
 
