@@ -382,6 +382,6 @@ Seznámení a první kroky v linuxovém operačním systému Fedora
 ### Julia Elman, Mark Lavin: [Lightweight Django][lightweight-django] (signed)
 
 * Majite: @honzakral
-* Aktuálně u: @jerryfox (do října 2015, Praha)
+* Aktuálně u: @encukou
 
 [lightweight-django]: http://shop.oreilly.com/product/0636920032502.do
