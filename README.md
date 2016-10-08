@@ -138,6 +138,13 @@ How to Think Like a Computer Scientist
 
 [team-geek]: http://shop.oreilly.com/product/0636920018025.do
 
+### Scott Chacon: [Pro Git][pro-git] (česky)
+
+* Majitel: @encukou
+* Aktuálně u @lspdv
+
+[pro-git]: https://knihy.nic.cz/#ProGit
+
 ### Mark Summerfield: [Python 3 - Výukový kurz][py3]
 Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
 * 1. kopie
