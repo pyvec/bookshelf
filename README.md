@@ -228,7 +228,7 @@ O tom, jak učit.
 
 ### Steven Bird, Ewan Klein, Edward Loper: [Natural Language Processing with Python][nlpp]
 * Majitel: @starenka
-* Aktuálně u: @don-mums
+* Aktuálně u: @encukou
 
 [nlpp]: http://shop.oreilly.com/product/9780596516499.do
 
