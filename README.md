@@ -109,7 +109,7 @@ Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začá
 ### Kurt W. Smith: [Cython - A guide for Python programmers][cython]
 Vydání Leden 2015
 * Majitel: @tjanovsky
-* Aktuálně u: @encukou
+* Aktuálně u: @tjanovsky
 
 [cython]: http://shop.oreilly.com/product/0636920033431.do
 
@@ -134,7 +134,7 @@ How to Think Like a Computer Scientist
 ### Brian W. Fitzpatrick, Ben Collins-Sussman: [Team Geek][team-geek]: A Software Developer's Guide to Working Well with Others
 
 * Majitel: @yedpodtrzitko
-* Aktuálně u @encukou
+* Aktuálně u @wrborigin
 
 [team-geek]: http://shop.oreilly.com/product/0636920018025.do
 
