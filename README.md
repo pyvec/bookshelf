@@ -141,7 +141,7 @@ How to Think Like a Computer Scientist
 ### Scott Chacon: [Pro Git][pro-git] (česky)
 
 * Majitel: @encukou
-* Aktuálně u @lspdv
+* Aktuálně u @encukou
 
 [pro-git]: https://knihy.nic.cz/#ProGit
 
