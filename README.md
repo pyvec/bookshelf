@@ -392,3 +392,15 @@ Seznámení a první kroky v linuxovém operačním systému Fedora
 * Aktuálně u: @radeksvarz
 
 [lightweight-django]: http://shop.oreilly.com/product/0636920032502.do
+
+### Jessica Ingrassellino: [Python Projects for Kids][python-projects-for-kids]
+* Majitel: @Paffilda
+* Aktuálně u: @Paffilda
+
+[python-projects-for-kids]: https://books.google.cz/books/about/Python_Projects_for_Kids.html?id=KPnJDAAAQBAJ&source=kp_cover&redir_esc=y&hl=cs
+
+### Jason R. Briggs: [Python for Kids][python-for-kids]
+* Majitel: @Paffilda
+* Aktuálně u: @Paffilda
+
+[python-for-kids]: https://www.nostarch.com/pythonforkids
