@@ -44,7 +44,7 @@ Best Practices for Django
 
 * [Django 1.6](https://www.twoscoopspress.com/products/two-scoops-of-django-1-6)
   * Majitel: @encukou
-  * Aktuálně u: Peter Smatana, petersmatana@gmail.com
+  * Aktuálně u: @encukou
 * [Django 1.5](https://www.twoscoopspress.org/products/two-scoops-of-django-1-5)
   * Majitel: @honzakral
   * Aktuálně u: @encukou
