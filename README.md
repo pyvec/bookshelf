@@ -173,6 +173,38 @@ Praktický návod na portování na Python 3
 
 [py3porting]: http://python3porting.com/
 
+### Jacqualine Kazil & Katharine Jarmul [Data Wrangling with Python][data-wrangling]: Tips and Tools to Make Your Life Easier
+Podepsaná od autorek, tak na ni dávejte pozor :)
+
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[data-wrangling]: http://shop.oreilly.com/product/0636920032861.do
+
+### Jake VanderPlas: [Python Data Science Handbook][data-science-handbook]: Essential Tools for Working with Data
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[data-science-handbook]: http://shop.oreilly.com/product/0636920034919.do
+
+### Sean Smith: [The Interner of Risky Things][risky-iot]: Trusting the Devices that Surround Us
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[risky-iot]: http://shop.oreilly.com/product/0636920052784.do
+
+### Matthew Kirk: [Thoughtful Machine Learning with Python][thoughtful-ml]: a Test-Driven Approach
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[thoughtful-ml]: http://shop.oreilly.com/product/0636920039082.do
+
+### Joel Grus: [Data Science from Scratch][data-science-from-scratch]: First Principles with Python
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[data-science-from-scratch]: http://shop.oreilly.com/product/0636920033400.do
+
 ### Steven Pousty & Katie J. Miller: [Getting Started with OpenShift][getting-started-openshift]: A Guide for Impatient Beginners
 * Majitel: @encukou
 * Aktuálně u: @encukou
