@@ -113,24 +113,6 @@ Vydání Leden 2015
 
 [cython]: http://shop.oreilly.com/product/0636920033431.do
 
-### Allen B. Downey: [Think Python][think-python]
-How to Think Like a Computer Scientist
-
-(pozor, používá Python 2.x)
-
-* Majitel: @encukou
-* Aktuálně u @encukou
-
-[think-python]: http://www.greenteapress.com/thinkpython/
-
-### Jan Erik Solen: [Programming Computer Vision with Python][computer-vision]
-(pozor, používá Python 2.x)
-
-* Majitel: @encukou
-* Aktuálně u: @gr4viton (do dubna 2016)
-
-[computer-vision]: http://programmingcomputervision.com/
-
 ### Brian W. Fitzpatrick, Ben Collins-Sussman: [Team Geek][team-geek]: A Software Developer's Guide to Working Well with Others
 
 * Majitel: @yedpodtrzitko
@@ -217,6 +199,24 @@ Podepsaná od autorek, tak na ni dávejte pozor :)
 * Aktuálně u: @encukou
 
 [pro-hackery]: https://www.zonerpress.cz/python-pro-hackery-a-reverzni-inzenyrstvi
+
+### Allen B. Downey: [Think Python][think-python]
+How to Think Like a Computer Scientist
+
+(pozor, používá Python 2.x)
+
+* Majitel: @encukou
+* Aktuálně u @encukou
+
+[think-python]: http://www.greenteapress.com/thinkpython/
+
+### Jan Erik Solen: [Programming Computer Vision with Python][computer-vision]
+(pozor, používá Python 2.x)
+
+* Majitel: @encukou
+* Aktuálně u: @gr4viton (do dubna 2016)
+
+[computer-vision]: http://programmingcomputervision.com/
 
 ### Marty Alchin: [Pro Django][pro-django]
 Knížka o Djangu. Je o verzi 1.0, takže trošku zastaralá.
