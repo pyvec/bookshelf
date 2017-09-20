@@ -116,7 +116,7 @@ Vydání Leden 2015
 ### Brian W. Fitzpatrick, Ben Collins-Sussman: [Team Geek][team-geek]: A Software Developer's Guide to Working Well with Others
 
 * Majitel: @yedpodtrzitko
-* Aktuálně u @wrborigin
+* Aktuálně u @encukou
 
 [team-geek]: http://shop.oreilly.com/product/0636920018025.do
 
@@ -421,7 +421,7 @@ Seznámení a první kroky v linuxovém operačním systému Fedora
 ### Julia Elman, Mark Lavin: [Lightweight Django][lightweight-django] (signed)
 
 * Majite: @honzakral
-* Aktuálně u: @radeksvarz
+* Aktuálně u: @encukou
 
 [lightweight-django]: http://shop.oreilly.com/product/0636920032502.do
 
