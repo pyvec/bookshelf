@@ -77,6 +77,13 @@ Data Wrangling with Pandas, NumPy, and IPython
 
 [data-analysis]: http://shop.oreilly.com/product/0636920023784.do
 
+### Tracy Osborn: [Hello Web App][hello-web-app]
+
+* Majitel: @encukou
+* Aktuálně u @Ajuska
+
+[hello-web-app]: https://hellowebbooks.com/learn-django/
+
 ### Miguel Grinberg: [Flask Web Development][flask-web-dev]
 Developing Web Applications with Python
 
