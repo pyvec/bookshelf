@@ -476,4 +476,4 @@ Seznámení a první kroky v linuxovém operačním systému Fedora
 * Majitel: @encukou
 * Aktuálně u: @encukou
 
-[processing-py]: http://shop.oreilly.com/product/0636920000570.do
+[processing-py]: https://www.amazon.com/Processing-py/dp/B01FIR0RY8/
