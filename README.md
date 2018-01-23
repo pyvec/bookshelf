@@ -32,8 +32,12 @@ Names such as "@encukou" represent Github usernames.
 ## Knihy
 
 ### Mark Pilgrim: [Ponořme se do Python(u) 3][ponormese]
-* Majitel: @hroncok
-* Aktuálně u: @hroncok
+* 1. kopie
+  * Majitel: @hroncok
+  * Aktuálně u: @hroncok
+* 2. kopie
+  * Majitel: @encukou
+  * Aktuálně u: @encukou
 
 [ponormese]: http://diveintopython3.py.cz/index.html
 
@@ -77,12 +81,19 @@ Data Wrangling with Pandas, NumPy, and IPython
 
 [data-analysis]: http://shop.oreilly.com/product/0636920023784.do
 
-### Tracy Osborn: [Hello Web App][hello-web-app]
+### Tracy Osborn: [Hello Web App][hello-web-app]: Learn How to Build a Web App
 
 * Majitel: @encukou
 * Aktuálně u @Ajuska
 
 [hello-web-app]: https://hellowebbooks.com/learn-django/
+
+### Tracy Osborn: [Hello Web App][hello-web-app-intermediate]: Intermediate Concepts
+
+* Majitel: @encukou
+* Aktuálně u @encukou
+
+[hello-web-app-intermediate]: https://hellowebbooks.com/django-intermediate-concepts/
 
 ### Miguel Grinberg: [Flask Web Development][flask-web-dev]
 Developing Web Applications with Python
@@ -120,6 +131,20 @@ Vydání Leden 2015
 
 [cython]: http://shop.oreilly.com/product/0636920033431.do
 
+### Scott Chacon: [Pro Git][pro-git] (česky)
+
+* Majitel: @encukou
+* Aktuálně u @encukou
+
+[pro-git]: https://knihy.nic.cz/#ProGit
+
+### Martin Mareš, Tomáš Valla: [Průvodce labyrintem algoritmů][pruvodce-labyrintem-algoritmu]
+
+* Majitel: @encukou
+* Aktuálně u @encukou
+
+[pruvodce-labyrintem-algoritmu]: https://knihy.nic.cz/#pruvodce
+
 ### Brian W. Fitzpatrick, Ben Collins-Sussman: [Team Geek][team-geek]: A Software Developer's Guide to Working Well with Others
 
 * Majitel: @yedpodtrzitko
@@ -127,12 +152,12 @@ Vydání Leden 2015
 
 [team-geek]: http://shop.oreilly.com/product/0636920018025.do
 
-### Scott Chacon: [Pro Git][pro-git] (česky)
+### Jim Whitehurst: [The Open Organization][open-organization]
 
 * Majitel: @encukou
 * Aktuálně u @encukou
 
-[pro-git]: https://knihy.nic.cz/#ProGit
+[team-geek]: https://www.redhat.com/en/explore/the-open-organization-book?intcmp=70160000000x2U0AAI
 
 ### Mark Summerfield: [Python 3 - Výukový kurz][py3]
 Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
@@ -176,7 +201,7 @@ Podepsaná od autorek, tak na ni dávejte pozor :)
 
 [data-science-handbook]: http://shop.oreilly.com/product/0636920034919.do
 
-### Sean Smith: [The Interner of Risky Things][risky-iot]: Trusting the Devices that Surround Us
+### Sean Smith: [The Internet of Risky Things][risky-iot]: Trusting the Devices that Surround Us
 * Majitel: @encukou
 * Aktuálně u: @encukou
 
@@ -433,13 +458,22 @@ Seznámení a první kroky v linuxovém operačním systému Fedora
 [lightweight-django]: http://shop.oreilly.com/product/0636920032502.do
 
 ### Jessica Ingrassellino: [Python Projects for Kids][python-projects-for-kids]
+
 * Majitel: @Paffilda
 * Aktuálně u: @Paffilda
 
 [python-projects-for-kids]: https://books.google.cz/books/about/Python_Projects_for_Kids.html?id=KPnJDAAAQBAJ&source=kp_cover&redir_esc=y&hl=cs
 
 ### Jason R. Briggs: [Python for Kids][python-for-kids]
+
 * Majitel: @Paffilda
 * Aktuálně u: @Paffilda
 
 [python-for-kids]: https://www.nostarch.com/pythonforkids
+
+### Allison Parrish, Ben Fry, Casey Reas: [Make: Getting Started with Processing.py][processing-py]
+
+* Majitel: @encukou
+* Aktuálně u: @encukou
+
+[processing-py]: http://shop.oreilly.com/product/0636920000570.do
