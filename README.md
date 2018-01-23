@@ -32,10 +32,10 @@ Names such as "@encukou" represent Github usernames.
 ## Knihy
 
 ### Mark Pilgrim: [Ponořme se do Python(u) 3][ponormese]
-* 1. kopie
+* kopie 1
   * Majitel: @hroncok
   * Aktuálně u: @hroncok
-* 2. kopie
+* kopie 2
   * Majitel: @encukou
   * Aktuálně u: @encukou
 
@@ -161,10 +161,10 @@ Vydání Leden 2015
 
 ### Mark Summerfield: [Python 3 - Výukový kurz][py3]
 Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
-* 1. kopie
+* kopie 1
   * Majitel: @tjanovsky
   * Aktuálně u: @tjanovsky
-* 2. kopie
+* kopie 2
   * Majitel: @KeNaCo
   * Aktuálně u: @KeNaCo
 
@@ -172,16 +172,16 @@ Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
 
 ### Lennart Regebro: [Porting to Python 3][py3porting]
 Praktický návod na portování na Python 3
-* 1. kopie
+* kopie 1
   * Majitel: @honzakral
   * Aktuálně u: @encukou
-* 2. kopie
+* kopie 2
   * Majitel: @honzakral
   * Aktuálně u: @encukou
-* 3. kopie
+* kopie 3
   * Majitel: @encukou
   * Aktuálně u: @encukou
-* 4. kopie
+* kopie 4
   * Majitel: @yedpodtrzitko
   * Aktuálně u: @encukou
 
@@ -310,10 +310,10 @@ O tom, jak učit.
 
 ### Dafydd Stuttard, Marcus Pinto: [The Web Application Hacker's Handbook (první vydání)][wah]
 Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho najde
-* 1. kopie
+* kopie 1
   * Majitel: @starenka
   * Aktuálně u: @starenka
-* 2. kopie
+* kopie 2
   * Majitel: @JirkaV
   * Aktuálně u: @JirkaV
 
@@ -434,10 +434,10 @@ Seznámení a první kroky v linuxovém operačním systému Fedora
 
 *Zastaralá* kniha o Pythonu 1.5.
 
-* 1. kopie
+* kopie 1
   * Majitel: @encukou
   * Aktuálně u: David R.
-* 2. kopie
+* kopie 2
   * Majitel: @yedpodtrzitko
   * Aktuálně u: @encukou
 
