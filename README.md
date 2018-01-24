@@ -191,7 +191,7 @@ Praktický návod na portování na Python 3
 Podepsaná od autorek, tak na ni dávejte pozor :)
 
 * Majitel: @encukou
-* Aktuálně u: @encukou
+* Aktuálně u: @vahalova
 
 [data-wrangling]: http://shop.oreilly.com/product/0636920032861.do
 
