@@ -157,7 +157,7 @@ Vydání Leden 2015
 * Majitel: @encukou
 * Aktuálně u @encukou
 
-[team-geek]: https://www.redhat.com/en/explore/the-open-organization-book?intcmp=70160000000x2U0AAI
+[open-organization]: https://www.redhat.com/en/explore/the-open-organization-book?intcmp=70160000000x2U0AAI
 
 ### Mark Summerfield: [Python 3 - Výukový kurz][py3]
 Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
