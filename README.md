@@ -73,6 +73,13 @@ Podepsaná od autora, tak na ni dávejte pozor :)
 
 [testing-goat]: http://www.obeythetestinggoat.com/
 
+### Jacqueline Kazil & Katharine Jarmul: [Data Wrangling with Python][data-wrangling]
+
+* Majitel: @encukou
+* Aktuálně u @encukou
+
+[data-wrangling]: http://shop.oreilly.com/product/0636920032861.do
+
 ### Wes McKinney: [Python for Data Analysis][data-analysis]
 Data Wrangling with Pandas, NumPy, and IPython
 
