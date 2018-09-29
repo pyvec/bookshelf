@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<a href="{{ url_for("index") }}">Home</a>
+<h2>{{ book.name }}</h2>
+<p>{{ book.author }}</p>
+
+<p>{{ book.signed }}</p>
+<p>{{ book.description }}</p>
+<p>{{ book.language }}</p>
+{% for copy in book.copies %}
+<p>Owner: {{ copy.get('owner') }}</p>
+<p>Currently at: {{ copy.get('current') }}</p>
+{% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+    {% for slug, book in books.items() %}
+    <a href="{{ url_for('book', book_slug=slug) }}">
+        <h2>{{ book.name }}</h2>
+        <p>{{ book.author }}</p>
+        <img src="{{ url_for('image', book_slug=slug) }}" alt="">
+    </a>
+    {% endfor %}
+{% endblock content %}

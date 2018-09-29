@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- ADD META TAGS -->
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+      <meta name="keywords" content="Python, Pyvec, IT, Django, Flask, books"></meta>
+      <meta name="description" content="Podpůrná stránka pro Pyvec knihovničku"></meta>
+      <meta property="og:title" content="Knihovnicka"></meta>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:url" content=""></meta>
+      <meta property="og:description" content=""></meta>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:title" content=""></meta>
+      <meta name="twitter:site" content="@"></meta>
+      <meta name="twitter:description" content=""></meta>
+
+      <title>{% block title %}Knihovnicka{% endblock title %}</title>
+
+      {% block extra_head %}
+      {% endblock extra_head %}
+
+      {% block css %}
+        <!-- Bootstrap CSS -->
+        <link href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="{{ pathto('_static/css/style.css', 1) }}" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+      {% endblock css %}
+      <!-- Favicon -->
+      <!-- <link rel="icon" type="image/x-icon" href="{{ pathto('_static/img/favicon.ico', 1) }}" /> -->
+
+
+
+    </head>
+
+    <body class="">
+      <!-- Navigation -->
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+
+            </div>
+
+
+
+    </nav>
+    {% block content %} {% endblock %}
+    {% block footer %}
+    <footer>
+        <div class="container"></div>
+
+        <div class="clear"></div>
+    </footer>
+    <script src="{{ pathto('_static/js/script.js', 1) }}"></script>
+    {% endblock footer %}
+    {% block javascript %}
+    {% endblock javascript %}
+</body>
+</html>

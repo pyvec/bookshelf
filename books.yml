@@ -1,0 +1,751 @@
+ponormese:
+  name: Ponořme se do Python(u) 3
+  author: Mark Pilgrim
+  copies:
+      - owner: hroncok
+        current: hroncok
+      - owner: encukou
+        current: encukou
+  url: http://diveintopython3.py.cz/index.html
+  language: cs
+  tags:
+      - Python 3
+
+two-scoops-1-5:
+  name: Two Scoops of Django (1.5)
+  author: Daniel Greenfeld & Audrey Roy
+  description: Best Practices for Django
+  copies:
+      - owner: honzakral
+        keeper: encukou
+  url: https://www.twoscoopspress.com/products/two-scoops-of-django-1-5
+  language: en
+  tags:
+      - Django
+
+two-scoops-1-6:
+  name: Two Scoops of Django (1.6)
+  author: Daniel Greenfeld & Audrey Roy
+  description: Best Practices for Django
+  copies:
+      - owner: encukou
+        current: encukou
+  url: https://www.twoscoopspress.com/products/two-scoops-of-django-1-6
+  language: en
+  tags:
+      - Django
+
+python-cookbook:
+  name: Python Cookbook
+  author: D. Beazley & B. K. Jones
+  description: Recipes for mastering Python 3
+  copies:
+      - owner: encukou
+        current: stratakis
+  url: http://shop.oreilly.com/product/0636920027072.do
+  language: en
+  tags:
+      - Python 3
+
+testing-goat:
+  name: Test-Driven Development with Python
+  author: Harry J. W. Percival
+  description: "Obey the Testing Goat: Using Django, Selenium, and Javascript."
+  signed: True
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://www.obeythetestinggoat.com/
+  language: en
+  tags:
+      - Django
+      - JS
+      - Selenium
+      - Testing
+
+data-wrangling:
+  name: Data Wrangling with Python
+  author: Jacqueline Kazil & Katharine Jarmul
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://shop.oreilly.com/product/0636920032861.do
+  language: en
+  tags:
+      - Data
+
+data-analysis:
+  name: Python for Data Analysis
+  author: Wes McKinney
+  description: Data Wrangling with Pandas, NumPy, and IPython
+  copies:
+      - owner: encukou
+        current: rkuska
+  url: http://shop.oreilly.com/product/0636920023784.do
+  language: en
+  tags:
+      - Data
+      - Pandas
+      - NumPy
+      - IPython
+
+hello-web-app:
+  name: Hello Web App
+  author: Tracy Osborn
+  description: Learn How to Build a Web App
+  copies:
+      - owner: encukou
+        current: Ajuska
+  url: https://hellowebbooks.com/learn-django/
+  language: en
+  tags:
+      - Django
+
+hello-web-app-intermediate:
+  name: Hello Web App
+  author: Tracy Osborn
+  description: Intermediate Concepts
+  copies:
+      - owner: encukou
+        current: encukou
+  url: https://hellowebbooks.com/django-intermediate-concepts/
+  language: en
+  tags:
+      - Django
+
+flask-web-dev:
+  name: Flask Web Development
+  author: Miguel Grinberg
+  description: Developing Web Applications with Python
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://flaskbook.com/
+  language: en
+  tags:
+      - Flask
+
+raspi-cookbook:
+  name: Raspberry Pi Cookbook
+  author: Simon Monk
+  # description:
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://shop.oreilly.com/product/0636920029595.do
+  language: en
+  tags:
+      - Raspberry
+
+hackers_painters:
+  name: "Hackers and Painters: Big Ideas from the Computer Age"
+  author: Paul Graham
+  description: Sbírka esejí člověka, který později založil Y Combinator.
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554
+  language: en
+
+kivy:
+  name: Creating Apps in Kivy
+  author: Dusty Phillips
+  description: Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začátečníky.
+  copies:
+      - owner: encukou
+        current: Laca (do prosince 2015, Ostrava)
+  url: http://shop.oreilly.com/product/0636920032595.do
+  language: en
+  tags:
+      - Kivy
+
+cython:
+  name: Cython - A guide for Python programmers
+  author: Kurt W. Smith
+  description: Vydání Leden 2015
+  copies:
+      - owner: tjanovsky
+        current: tjanovsky
+  url: http://shop.oreilly.com/product/0636920033431.do
+  language: en
+  tags:
+      - Cython
+pro-git:
+  name: Pro Git
+  author: Scott Chacon
+  copies:
+      - owner: encukou
+        current: encukou
+  url: https://knihy.nic.cz/#ProGit
+  language: en
+  tags:
+      - Git
+
+pruvodce-labyrintem-algoritmu:
+  name: Průvodce labyrintem algoritmů
+  author: Martin Mareš, Tomáš Valla
+  copies:
+      - owner: encukou
+        current: encukou
+  url: https://knihy.nic.cz/#pruvodce
+  language: cs
+  tags:
+      - Algoritmy
+
+team-geek:
+  name: Team Geek
+  author: Brian W. Fitzpatrick, Ben Collins-Sussman
+  description: A Software Developer's Guide to Working Well with Others
+  copies:
+      - owner: yedpodtrzitko
+        current: hroncok
+  url: http://shop.oreilly.com/product/0636920018025.do
+  language: en
+  tags:
+      - Team
+
+open-organization:
+  name: The Open Organization
+  author: Jim Whitehurst
+  # description:
+  copies:
+      - owner: encukou
+        current: encukou
+  url: https://www.redhat.com/en/explore/the-open-organization-book?intcmp=70160000000x2U0AAI
+  language: en
+  tags:
+      - Open
+py3:
+  name: Python 3 - Výukový kurz
+  author: Mark Summerfield
+  description: Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
+  copies:
+      - owner: tjanovsky
+        current: tjanovsky
+      - owner: KeNaCo
+        current: KeNaCo
+  url: http://knihy.cpress.cz/python-3.html
+  language: cs
+  tags:
+      - Python 3
+
+py3porting:
+  name: Porting to Python 3
+  author: Lennart Regebro
+  description: Praktický návod na portování na Python 3
+  copies:
+      - owner: honzakral
+        keeper: encukou
+      - owner: honzakral
+        keeper: encukou
+      - owner: encukou
+        current: encukou
+      - owner: yedpodtrzitko
+        keeper: encukou
+  url: http://python3porting.com/
+  language: en
+  tags:
+      - Python 3
+
+data-wrangling:
+  name: Data Wrangling with Python
+  author: Jacqualine Kazil & Katharine Jarmul
+  description: Tips and Tools to Make Your Life Easier
+  signed: True
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://shop.oreilly.com/product/0636920032861.do
+  language: en
+  tags:
+      - Data
+
+data-science-handbook:
+  name: Python Data Science Handbook
+  author: Jake VanderPlas
+  description: Essential Tools for Working with Data
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://shop.oreilly.com/product/0636920034919.do
+  language: en
+  tags:
+      - Data
+
+risky-iot:
+  name: The Internet of Risky Things
+  author: Sean Smith
+  description: Trusting the Devices that Surround Us
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://shop.oreilly.com/product/0636920052784.do
+  language: en
+  # tags:
+  #     -
+
+data-science-from-scratch:
+  name: Data Science from Scratch
+  author: Joel Grus
+  description: First Principles with Python
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://shop.oreilly.com/product/0636920033400.do
+  language: en
+  tags:
+      - Data
+
+pro-hackery:
+  name: Python pro hackery a reverzní inženýrství
+  author: Justin Seitz
+  # description:
+  copies:
+      - owner: yedpodtrzitko
+        keeper: encukou
+  url: https://www.zonerpress.cz/python-pro-hackery-a-reverzni-inzenyrstvi
+  language: cs
+  # tags:
+  #     -
+
+think-python:
+  name: Think Python
+  author: Allen B. Downey
+  description: How to Think Like a Computer Scientist (pozor, používá Python 2.x)
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://www.greenteapress.com/thinkpython/
+  language: en
+  # tags:
+  #     -
+
+computer-vision:
+  name: Programming Computer Vision with Python
+  author: Jan Erik Solen
+  description: (pozor, používá Python 2.x)
+  copies:
+      - owner: encukou
+        current: gr4viton (do dubna 2016)
+  url:  http://programmingcomputervision.com/
+  language: en
+  # tags:
+  #     -
+
+pro-django:
+  name: Pro Django
+  author: Marty Alchin
+  description: Knížka o Djangu. Je o verzi 1.0, takže trošku zastaralá.
+  copies:
+      - owner: starenka
+        keeper: encukou
+  url: http://prodjango.com/
+  language: en
+  tags:
+      - Django
+
+practical-django-projects:
+  name: Practical Django Projects
+  author: James Bennett
+  description: Knížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
+  copies:
+      - owner: starenka
+        keeper: encukou
+  url: http://www.amazon.com/Practical-Django-Projects-Experts-Development/dp/1590599969
+  language: en
+  tags:
+      - Django
+
+django-definitive-guide:
+  name: The Definitive Guide to Django
+  author: A. Holovaty & J. Kaplan-Moss
+  description: nížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
+  copies:
+      - owner: starenka
+        keeper: encukou
+  url: http://www.apress.com/9781430219361
+  language: en
+  tags:
+      - Django
+
+how-learning-works:
+  name: "How Learning Works: Seven Research-Based Principles for Smart Teaching"
+  author: S. A. Ambrose, M. W. Bridges, M. DiPietro, M. C. Lovett, M. K. Norman
+  description: O tom, jak učit.
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101
+  language: en
+  tags:
+      - Learning
+
+erlang-learn:
+  name: Learn You Some Erlang for Great Good! A Beginner's Guide
+  author: Fred Hebert
+  # description:
+  copies:
+      - owner: starenka
+        current: starenka
+  url: http://www.bookdepository.com/Learn-You-Some-Erlang-for-Great-Good-Beginners-Guide-Fred-Hebert/9781593274351
+  language: en
+  tags:
+      - Learning
+
+land-of-lisp:
+  name: "Land of Lisp: Learn to Program in Lisp, One Game at a Time!"
+  author: Conrad Barski
+  # description:
+  copies:
+      - owner: starenka
+        current: starenka
+  url: http://www.bookdepository.com/Land-Lisp-Learn-Program-Lisp-One-Game-at-Time-Conrad-Barski/978159327281
+  language: en
+  tags:
+      - Lisp
+
+nlpp:
+  name: Natural Language Processing with Python
+  author: Steven Bird, Ewan Klein, Edward Loper
+  # description:
+  copies:
+      - owner: starenka
+        keeper: encukou
+  url: http://shop.oreilly.com/product/9780596516499.do
+  language: en
+  tags:
+      - Python
+
+xp:
+  name: Extrémní programování
+  author: Kent Beck
+  # description:
+  copies:
+      - owner: whit
+        current: whit
+  url: http://www.databazeknih.cz/knihy/extremni-programovani-163700
+  language: cs
+  # tags:
+  #     -
+
+microia:
+  name: Microinteractions
+  author: Dan Saffer
+  # description:
+  copies:
+      - owner: whit
+        current: whit
+  url: http://microinteractions.com
+  language: en
+  # tags:
+  #     -
+
+wah:
+  name: The Web Application Hacker's Handbook (první vydání)
+  author: Dafydd Stuttard, Marcus Pinto
+  description: bstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho najde
+  copies:
+      - owner: starenka
+        current: starenka
+      - owner: JirkaV
+        current: JirkaV
+  url: http://books.google.cz/books/about/The_Web_Application_Hacker_s_Handbook.html?id=_EhvBGsWi6AC&redir_esc=y
+  language: en
+  tags:
+      - Web
+
+sqlperf:
+  name: SQL Performance explained
+  author: Markus Winand
+  # description:
+  copies:
+      - owner: honzakral
+        current: jsuchal
+      - owner: honzakral
+        current: jsuchal
+  url: http://sql-performance-explained.com/
+  language: en
+  tags:
+      - SQL
+
+grayhat:
+  name: Gray Hat Python
+  author: Justin Seitz
+  # description:
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: https://www.nostarch.com/ghpython.htm
+  language: en
+  # tags:
+  #     -
+
+violent:
+  name: Violent Python
+  author: TJ O'Connor
+  # description:
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://shop.oreilly.com/product/9781597499576.do
+  language: en
+  # tags:
+  #     -
+
+cleancode:
+  name: Clean Code
+  author: Robert C. Martin
+  # description:
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url:  http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
+  language: en
+  # tags:
+  #     -
+
+networkfoundations:
+  name: Foundations of Python Network Programming
+  author: John Goerzen, Tim Bower, Brandon Rhodes
+  # description:
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://www.amazon.com/Foundations-Python-Network-Programming-comprehensive/dp/1430230037
+  language: en
+  # tags:
+  #     -
+
+dreaming:
+  name: Dreaming in Code
+  author: Scott Rosenberg
+  # description:
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://www.dreamingincode.com/
+  language: en
+  # tags:
+  #     -
+
+beautiful:
+  name: Beautiful Code
+  author: Andy Oram, Greg Wilson
+  # description:
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://shop.oreilly.com/product/9780596510046.do
+  language: en
+  # tags:
+  #     -
+
+fedora-guide-cz:
+  name: Fedora
+  author: Lukáš Kotek a kol.
+  description: Příručka začínajícího uživatele
+  copies:
+      - owner: encukou
+        current: encukou
+  url: http://blog.eischmann.cz/2015/10/09/vydali-jsme-prirucku-zacinajiciho-uzivatele-fedory/
+  language: en
+  tags:
+      - Fedora
+
+sqliteguide:
+  name: The Definitive Guide to SQLite
+  author: Grant Allen, Mike Owens
+  description: 1st ed.
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://www.apress.com/9781430232254
+  language: en
+  tags:
+      - SQLite
+
+mysqlguide:
+  name: The Definitive Guide to MySQL 5
+  author: Michael Kofler
+  description: 3rd ed.
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://www.apress.com/9781590595350
+  language: en
+  tags:
+      - MySQL
+
+promysql:
+  name: Pro MySQL
+  author: Jay Pipes , Michael Kruckenberg
+  # description:
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://www.apress.com/9781590595053
+  language: en
+  tags:
+      - MySQL
+
+ploneguide:
+  name: The Definitive Guide to Plone
+  author: Andy McKay
+  description:  1st ed.
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://www.apress.com/9781430218937
+  language: en
+  tags:
+      - Plone
+
+beginningjavascript:
+  name: Beginning JavaScript with DOM Scripting and Ajax
+  author: Christian Heilmann
+  # description:
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://www.apress.com/9781590596807
+  language: en
+  tags:
+      - JS
+      - Ajax
+
+mysqlnutshell:
+  name: MySQL in a Nutshell
+  author: Russell J.T. Dyer
+  description: 1st ed.
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://shop.oreilly.com/product/9780596007898.do
+  language: en
+  tags:
+      - MySQL
+
+pragmaticerlang:
+  name: "Programming Erlang: Software for a Concurrent World"
+  author: Joe Armstrong
+  description: 1st ed.
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url:  http://shop.oreilly.com/product/9780596007898.do
+  language: en
+  # tags:
+  #     -
+
+kentbecktdd:
+  name: "Test Driven Development: By Example"
+  author: Kent Beck
+  # description:
+  copies:
+      - owner: JirkaV
+        current: waikeri
+  url: http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530
+  language: en
+  tags:
+      - Testing
+
+hackingsecretciphers:
+  name: Hacking Secret Ciphers with Python
+  author: Al Sweigart
+  # description:
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://inventwithpython.com/hacking/
+  language: en
+  # tags:
+  #     -
+
+cssmistrovstvi:
+  name: Mistrovství v CSS
+  author: Dan Rubin, Ian Lloyd, Jeff Croft
+  # description:
+  copies:
+      - owner: JirkaV
+        current: JirkaV
+  url: http://knihy.cpress.cz/mistrovstvi-v-css.html
+  language: en
+  tags:
+      - Web
+      - CSS
+
+zaciname-programovat:
+  name: Začínáme programovat v jazyce Python
+  author: Daryl Harms, Kenneth McDonald
+  description:  2. opravené vydání *Zastaralá* kniha o Pythonu 1.5.
+  copies:
+      - owner: encukou
+        current: David R.
+      - owner: yedpodtrzitko
+        keeper: encukou
+  url: http://knihy.cpress.cz/zaciname-programovat-v-jazyce-python-d2.html
+  language: en
+  tags:
+      - Python 1
+
+high-performance-django:
+  name: High Performance Django
+  author: Peter Baumgarten and Yann Malet
+  # description:
+  signed: True
+  copies:
+      - owner: honzakral
+        keeper: encukou
+  url: https://highperformancedjango.com/
+  language: en
+  tags:
+      - Django
+
+lightweight-django:
+  name: Lightweight Django
+  author: Julia Elman, Mark Lavin
+  # description:
+  signed: True
+  copies:
+      - owner: honzakral
+        keeper: encukou
+  url: http://shop.oreilly.com/product/0636920032502.do
+  language: en
+  tags:
+      - Django
+
+python-projects-for-kids:
+  name: Python Projects for Kids
+  author: Jessica Ingrassellino
+  # description:
+  copies:
+      - owner: Paffilda
+        current: Paffilda
+  url: https://books.google.cz/books/about/Python_Projects_for_Kids.html?id=KPnJDAAAQBAJ&source=kp_cover&redir_esc=y&hl=cs
+  language: en
+  tags:
+      - Kids
+
+python-for-kids:
+  name: Python for Kids
+  author: Jason R. Briggs
+  # description:
+  copies:
+      - owner: Paffilda
+        current: Paffilda
+  url: https://www.nostarch.com/pythonforkids
+  language: en
+  tags:
+      - Kids
+
+processing-py:
+  name: "Make: Getting Started with Processing.py"
+  author: Allison Parrish, Ben Fry, Casey Reas
+  # description:
+  copies:
+      - owner: encukou
+        current: encukou
+  url: https://www.amazon.com/Processing-py/dp/B01FIR0RY8/
+  language: en
+  tags:
+      - Processing.py
