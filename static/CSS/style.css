@@ -28,20 +28,37 @@ p a:hover {
 	text-decoration: underline;
 }
 
-
-
+.h-c {
+    color: #343a40;
+}
+.a-c {
+    color: #818182;
+}
 /* __Head__ */
 
+.main-navbar {
+    background-color: #818182;
+    padding: 10px;
+}
+.navbar-logo a {
+    color: #f8f9fa;
+font-size: 40px;
+font-weight: 700;
+}
+.info {
+    color: #ffffff;
+font-size: 1.6em;
+}
 /* __Home Content__  */
 .book-box {
-    height: 410px;
+    height: 415px;
     border: 1px solid #eee;
     margin: 10px;
-    padding: 10px 20px 0;
+    padding: 15px 20px 0;
     background-color: white;
     border-radius: 5px;
 }
-.img-thumbnail {
+.img-preview {
     max-width: 100%;
     height: auto;
     max-height: 200px;
@@ -59,7 +76,7 @@ p a:hover {
     font-size: 1.4em;
     margin: 0;
     padding: 0;
-    color: #343a40;
+    
 }
 
 .book-author {
@@ -72,7 +89,7 @@ p a:hover {
 .book-author p {
     margin: 0;
     font-style: italic;
-    color: #818182;
+
     margin-top: 10px;
 }
 .book-about {
@@ -84,4 +101,27 @@ p a:hover {
     text-align: center;
 }
 /* __Book  Deatail__ */
+.content {
+    width: 100%;
+    min-height: 100%;
+    padding: 20px 0;
+}
+.book-detail {
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px;
+}
+.book-detail-img {
+    max-height: 400px;
+}
+.book
 /* __Footer__ */
+
+footer {
+    background-color: white;
+height: 200px;
+margin-top: 100px;
+}
+.footer-logo {
+    padding: 30px 0;
+}

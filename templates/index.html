@@ -9,15 +9,15 @@
             <div class="book-box">
                 <a href="{{ url_for('book', book_slug=slug) }}">
                 <div class="book-about">
-                    <div class="book-name">
-                        <h2 >{{ book.name }}</h2>
+                    <div class="book-name ">
+                        <h2 class="h-c">{{ book.name }}</h2>
                     </div>
                     <div class="book-author">
-                        <p>{{ book.author }}</p>
+                        <p class="a-c">{{ book.author }}</p>
                     </div>
                 </div>
-                <div class="book-img">
-                    <img src="{{ url_for('image', book_slug=slug) }}" class="img-thumbnail" alt="">
+                <div class="book-img ">
+                    <img src="{{ url_for('image', book_slug=slug) }}" class="img-thumbnail img-preview" alt="">
                 </div>
                 </a>
             </div>

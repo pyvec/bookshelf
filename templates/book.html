@@ -1,9 +1,24 @@
 {% extends "layout.html" %}
 {% block content %}
-<a href="{{ url_for("index") }}">Home</a>
-<h2>{{ book.name }}</h2>
-<p>{{ book.author }}</p>
+<div class="container">
+    <div class="row book-detail">
 
+<div class="col-12 col-md-4">
+
+
+<img src="{{ url_for('image', book_slug=book_slug) }}" class="img-thumbnail book-detail-img" alt="">
+</div>
+<div class="col">
+
+<div class="book-detail-name">
+
+
+<h2 class="h-c" >{{ book.name }}</h2>
+</div>
+<div class="book-author">
+
+<p class="a-c">{{ book.author }}</p>
+</div>
 <p>{{ book.signed }}</p>
 <p>{{ book.description }}</p>
 <p>{{ book.language }}</p>
@@ -12,4 +27,7 @@
     <p>Currently at: {{ copy.get('current') }}</p>
 {% endfor %}
 <a href="{{ book.url }}">odkaz</a>
+</div>
+</div>
+</div>
 {% endblock content %}

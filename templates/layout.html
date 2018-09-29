@@ -36,26 +36,34 @@
 
 
     </head>
-
     <body class="">
       <!-- Navigation -->
-      <nav class="main-navbar" role="navigation">
-            <div class="container navbar-logo">
-                <a href="{{ url_for("index") }}"> <img src="{{ pathto('_static/pyvec.svg', 1) }}" alt=""></a>
+      <nav class="main-navbar container-fluid d-flex justify-content-between align-items-center" role="navigation">
+            <div class="   navbar-logo">
+                <a href="{{ url_for("index") }} ">Knihovnička</a>
             </div>
-
-
-
+            <div class="">
+                <a href="#" class="info"> Jak to funguje?</a>
+            </div>
     </nav>
-    {% block content %} {% endblock %}
-    {% block footer %}
-    <footer>
-        <div class="container"></div>
 
+    <article class="content">
+    {% block content %} {% endblock %}
+    </article>
+
+    <footer>
+        <div class="container">
+        <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 p-2">
+    <a href="http://pyvec.org/"> <img src="{{ pathto('_static/pyvec.svg', 1) }}" class="footer-logo" alt=""></a>
         <div class="clear"></div>
+        </div>
+        </div>
+        </div>
     </footer>
     <script src="{{ pathto('_static/js/script.js', 1) }}"></script>
-    {% endblock footer %}
+
+
     {% block javascript %}
     {% endblock javascript %}
 </body>
