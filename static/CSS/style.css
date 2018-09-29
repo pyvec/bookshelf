@@ -1,3 +1,7 @@
+*, :after, :before {
+	-webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -9,12 +13,12 @@ body {
     height: 100%;
     font-size: 16px;
     color: #333;
-    background-color: #fff;
+    background-color: #f8f9fa;
     font-family: 'Open Sans', sans-serif;
 }
 a {
 	text-decoration: none;
-	color: #e51f40;
+
 }
 a:hover {
 	text-decoration: none;
@@ -23,3 +27,61 @@ a:hover {
 p a:hover {
 	text-decoration: underline;
 }
+
+
+
+/* __Head__ */
+
+/* __Home Content__  */
+.book-box {
+    height: 410px;
+    border: 1px solid #eee;
+    margin: 10px;
+    padding: 10px 20px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+.img-thumbnail {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    width: auto;
+}
+.book-name {
+    overflow: hidden;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    height: auto;
+
+}
+.book-name h2 {
+    font-size: 1.4em;
+    margin: 0;
+    padding: 0;
+    color: #343a40;
+}
+
+.book-author {
+    overflow: hidden;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: auto;
+}
+.book-author p {
+    margin: 0;
+    font-style: italic;
+    color: #818182;
+    margin-top: 10px;
+}
+.book-about {
+    height: 180px;
+    display: flex;
+    flex-flow: column;
+}
+.book-img {
+    text-align: center;
+}
+/* __Book  Deatail__ */
+/* __Footer__ */

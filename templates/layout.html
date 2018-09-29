@@ -23,9 +23,10 @@
 
       {% block css %}
         <!-- Bootstrap CSS -->
-        <link href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
         <!-- Custom CSS -->
-        <link href="{{ pathto('_static/css/style.css', 1) }}" rel="stylesheet">
+        <link href="{{ pathto('_static/CSS/style.css', 1) }}" rel="stylesheet">
         <!-- Custom Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
       {% endblock css %}
@@ -40,7 +41,7 @@
       <!-- Navigation -->
       <nav class="main-navbar" role="navigation">
             <div class="container navbar-logo">
-
+                <a href="{{ url_for("index") }}"> <img src="{{ pathto('_static/pyvec.svg', 1) }}" alt=""></a>
             </div>
 
 

@@ -339,7 +339,7 @@ pro-django:
   copies:
       - owner: starenka
         keeper: encukou
-  url: http://prodjango.com/
+  url:
   language: en
   tags:
       - Django
@@ -578,7 +578,7 @@ mysqlguide:
 
 promysql:
   name: Pro MySQL
-  author: Jay Pipes , Michael Kruckenberg
+  author: Jay Pipes, Michael Kruckenberg
   # description:
   copies:
       - owner: JirkaV
@@ -632,7 +632,7 @@ pragmaticerlang:
   copies:
       - owner: JirkaV
         current: JirkaV
-  url:  http://shop.oreilly.com/product/9780596007898.do
+  url:  https://pragprog.com/book/jaerlang2/programming-erlang
   language: en
   # tags:
   #     -

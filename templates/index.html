@@ -2,11 +2,29 @@
 
 
 {% block content %}
+<div class="container">
+    <div class="row">
     {% for slug, book in books.items() %}
-    <a href="{{ url_for('book', book_slug=slug) }}">
-        <h2>{{ book.name }}</h2>
-        <p>{{ book.author }}</p>
-        <img src="{{ url_for('image', book_slug=slug) }}" alt="">
-    </a>
+        <div class="col-sm-6 col-md-4 col-lg-3 p-0">
+            <div class="book-box">
+                <a href="{{ url_for('book', book_slug=slug) }}">
+                <div class="book-about">
+                    <div class="book-name">
+                        <h2 >{{ book.name }}</h2>
+                    </div>
+                    <div class="book-author">
+                        <p>{{ book.author }}</p>
+                    </div>
+                </div>
+                <div class="book-img">
+                    <img src="{{ url_for('image', book_slug=slug) }}" class="img-thumbnail" alt="">
+                </div>
+                </a>
+            </div>
+        </div>
     {% endfor %}
+
+
+    </div>
+</div>
 {% endblock content %}

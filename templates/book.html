@@ -8,8 +8,8 @@
 <p>{{ book.description }}</p>
 <p>{{ book.language }}</p>
 {% for copy in book.copies %}
-<p>Owner: {{ copy.get('owner') }}</p>
-<p>Currently at: {{ copy.get('current') }}</p>
+    <p>Owner: {{ copy.get('owner') }}</p>
+    <p>Currently at: {{ copy.get('current') }}</p>
 {% endfor %}
-
+<a href="{{ book.url }}">odkaz</a>
 {% endblock content %}
