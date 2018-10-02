@@ -1,33 +1,44 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
-    <div class="row book-detail">
+    <div class="row bg-white mx-0 my-2 ">
+        <div class="col-12 col-md-4 p-0 p-3">
+            <img src="{{ url_for('image', book_slug=book_slug) }}" class="img-thumbnail book-detail-img" alt="">
+        </div>
+        <div class="col p-3">
+            <div class="book-detail-name d-flex justify-content-between">
+                <h2 class="h-c" >{{ book.name }}</h2>
+                <a href="{{ book.url }}">
+                    <i class="fas fa-external-link-alt hd-c"></i>
+                </a>
+            </div>
+            <div class="book-author">
+                <p class="a-c font-italic">{{ book.author }}</p>
+            </div>
+            <p>{{ book.description }}</p>
+            <p class="mt-2">Jazyková verze: {{ book.language }}</p>
+            {% for copy in book.copies %}
+                <div class="owner-box b-bg p-2 m-0 mt-3">
+                    <div class="d-flex justify-content-between">
+                        <p  class="m-0">Majitel: {{ copy['owner'] }}</p>
+                        {% if 'signed' in copy %}
+                            <i class="fas fa-pen-fancy hd-c" title="Kniha je podepsaná autorem, dávej na ni pozor."></i>
+                        {% endif %}
+                    </div>
+                    {% if 'current' in copy %}
+                        <p class="m-0">Aktuálně u: {{ copy['current'] }}
+                        {% if 'borrowed-at' in copy %}
+                            od {{ copy['borrowed-at'].month }}. {{ copy['borrowed-at'].year }}
+                        {% endif %}
+                        </p>
+                    {% endif %}
+                    {% if copy.get('keeper') %}
+                        <p class="m-0">Opatrovník: {{ copy.get('keeper')}}</p>
+                    {% endif %}
 
-<div class="col-12 col-md-4">
-
-
-<img src="{{ url_for('image', book_slug=book_slug) }}" class="img-thumbnail book-detail-img" alt="">
-</div>
-<div class="col">
-
-<div class="book-detail-name">
-
-
-<h2 class="h-c" >{{ book.name }}</h2>
-</div>
-<div class="book-author">
-
-<p class="a-c">{{ book.author }}</p>
-</div>
-<p>{{ book.signed }}</p>
-<p>{{ book.description }}</p>
-<p>{{ book.language }}</p>
-{% for copy in book.copies %}
-    <p>Owner: {{ copy.get('owner') }}</p>
-    <p>Currently at: {{ copy.get('current') }}</p>
-{% endfor %}
-<a href="{{ book.url }}">odkaz</a>
-</div>
-</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 {% endblock content %}

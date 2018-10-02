@@ -37,6 +37,11 @@ def book(book_slug):
         book_slug=book_slug,
         book=book,
     )
+@app.route('/info/')
+def info():
+    return render_template('info.html')
+
+
 
 @app.route('/img/<book_slug>')
 def image(book_slug):
@@ -51,7 +56,6 @@ def najdi_fotku(book_slug):
         path = base/name
         if path.exists():
             return name
-
     return "python.png"
 
 

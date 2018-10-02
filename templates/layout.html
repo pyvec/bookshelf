@@ -29,6 +29,9 @@
         <link href="{{ pathto('_static/CSS/style.css', 1) }}" rel="stylesheet">
         <!-- Custom Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
       {% endblock css %}
       <!-- Favicon -->
       <!-- <link rel="icon" type="image/x-icon" href="{{ pathto('_static/img/favicon.ico', 1) }}" /> -->
@@ -36,14 +39,14 @@
 
 
     </head>
-    <body class="">
+    <body class="b-bg">
       <!-- Navigation -->
-      <nav class="main-navbar container-fluid d-flex justify-content-between align-items-center" role="navigation">
+      <nav class="main-navbar container-fluid d-flex justify-content-between align-items-center p-2 hd-bg" role="navigation">
             <div class="   navbar-logo">
                 <a href="{{ url_for("index") }} ">Knihovnička</a>
             </div>
             <div class="">
-                <a href="#" class="info"> Jak to funguje?</a>
+                <a href="{{ url_for("info") }}" class="info"> Jak to funguje?</a>
             </div>
     </nav>
 
@@ -51,7 +54,7 @@
     {% block content %} {% endblock %}
     </article>
 
-    <footer>
+    <footer class="bg-white">
         <div class="container">
         <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3 p-2">

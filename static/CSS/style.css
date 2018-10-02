@@ -13,7 +13,7 @@ body {
     height: 100%;
     font-size: 16px;
     color: #333;
-    background-color: #f8f9fa;
+
     font-family: 'Open Sans', sans-serif;
 }
 a {
@@ -27,23 +27,32 @@ a:hover {
 p a:hover {
 	text-decoration: underline;
 }
-
+/* h text color */
 .h-c {
     color: #343a40;
 }
+/* author and secondary text */
 .a-c {
     color: #818182;
 }
+/* main and header background color */
+.hd-bg {
+	background-color: #818182;
+}
+/* body and secondary background color */
+.b-bg {
+    background-color: #f8f9fa;
+}
+/* main color for icon atc */
+.hd-c {
+	color: #818182;
+}
 /* __Head__ */
 
-.main-navbar {
-    background-color: #818182;
-    padding: 10px;
-}
 .navbar-logo a {
     color: #f8f9fa;
 font-size: 40px;
-font-weight: 700;
+
 }
 .info {
     color: #ffffff;
@@ -53,7 +62,7 @@ font-size: 1.6em;
 .book-box {
     height: 415px;
     border: 1px solid #eee;
-    margin: 10px;
+
     padding: 15px 20px 0;
     background-color: white;
     border-radius: 5px;
@@ -74,9 +83,6 @@ font-size: 1.6em;
 }
 .book-name h2 {
     font-size: 1.4em;
-    margin: 0;
-    padding: 0;
-    
 }
 
 .book-author {
@@ -86,41 +92,34 @@ font-size: 1.6em;
     -webkit-box-orient: vertical;
     height: auto;
 }
-.book-author p {
-    margin: 0;
-    font-style: italic;
-
-    margin-top: 10px;
-}
 .book-about {
     height: 180px;
-    display: flex;
-    flex-flow: column;
 }
-.book-img {
-    text-align: center;
-}
+
 /* __Book  Deatail__ */
 .content {
     width: 100%;
     min-height: 100%;
     padding: 20px 0;
 }
-.book-detail {
-    background-color: white;
-    margin: 10px 0;
-    padding: 20px;
-}
+
 .book-detail-img {
     max-height: 400px;
 }
-.book
+.owner-box {
+	border-top: 3px solid #818182;
+    padding: 10px;
+    margin: 10px 0;
+}
+.fa-external-link-alt {
+	font-size: 20px;
+}
+}
 /* __Footer__ */
 
 footer {
-    background-color: white;
-height: 200px;
-margin-top: 100px;
+	height: 200px;
+	margin-top: 100px;
 }
 .footer-logo {
     padding: 30px 0;
