@@ -37,7 +37,7 @@ Names such as "@encukou" represent Github usernames.
   * Aktuálně u: @hroncok
 * kopie 2
   * Majitel: @encukou
-  * Aktuálně u: @encukou
+  * Aktuálně u: Dita S. z PyLadies Brno, od října 2018
 
 [ponormese]: http://diveintopython3.py.cz/index.html
 
@@ -76,7 +76,7 @@ Podepsaná od autora, tak na ni dávejte pozor :)
 ### Jacqueline Kazil & Katharine Jarmul: [Data Wrangling with Python][data-wrangling]
 
 * Majitel: @encukou
-* Aktuálně u @encukou
+* Aktuálně u: Katka L z Pyladies Brno, od října 2018
 
 [data-wrangling]: http://shop.oreilly.com/product/0636920032861.do
 
@@ -222,7 +222,7 @@ Podepsaná od autorek, tak na ni dávejte pozor :)
 
 ### Joel Grus: [Data Science from Scratch][data-science-from-scratch]: First Principles with Python
 * Majitel: @encukou
-* Aktuálně u: @encukou
+* Aktuálně u: Petra P. z PyLadies Brno, od října 2018
 
 [data-science-from-scratch]: http://shop.oreilly.com/product/0636920033400.do
 
@@ -446,7 +446,7 @@ Seznámení a první kroky v linuxovém operačním systému Fedora
   * Aktuálně u: David R.
 * kopie 2
   * Majitel: @yedpodtrzitko
-  * Aktuálně u: @encukou
+  * Aktuálně u: Zuzka K. z PyLadies Brno, od říja 2018
 
 [zaciname-programovat]: http://knihy.cpress.cz/zaciname-programovat-v-jazyce-python-d2.html
 
