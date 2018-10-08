@@ -2,8 +2,8 @@
 
 
 {% block content %}
-<div class="container">
-    <div class="row">
+<div class="container" id='root'>
+    <div class="row" v-bind:is='"products-list"' v-bind:products="products">
     {% for slug, book in books.items() %}
         <div class="col-sm-6 col-md-4 col-lg-3 p-0">
             <div class="book-box m-2">
@@ -27,4 +27,9 @@
 
     </div>
 </div>
+
 {% endblock content %}
+
+{% block scripts %}
+
+{% endblock %}

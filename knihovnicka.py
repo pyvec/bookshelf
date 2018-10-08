@@ -4,7 +4,7 @@ import datetime
 import collections
 from pathlib import Path
 
-from flask import Flask, render_template, url_for, send_from_directory, abort, send_from_directory
+from flask import Flask, render_template, url_for, send_from_directory, abort, send_from_directory, jsonify
 from flask_frozen import Freezer
 import yaml
 import json
@@ -25,6 +25,12 @@ def index():
     if book is None:
         abort(404)
     return render_template('index.html', books=books,)
+
+@app.route('/data/')
+def data():
+    yml_data = read_yaml('books.yml')
+
+    return jsonify(yml_data)
 
 @app.route('/<book_slug>/')
 def book(book_slug):
@@ -66,6 +72,9 @@ def pathto(name, static=False):
             return url_for('static', filename=name[len(prefix):])
         return name
     return url_for(name)
+
+
+
 
 def read_yaml(filename, default=MISSING):
     try:

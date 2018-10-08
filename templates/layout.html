@@ -30,12 +30,11 @@
         <!-- Custom Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
       {% endblock css %}
       <!-- Favicon -->
       <!-- <link rel="icon" type="image/x-icon" href="{{ pathto('_static/img/favicon.ico', 1) }}" /> -->
-
 
 
     </head>
@@ -45,12 +44,14 @@
             <div class="   navbar-logo">
                 <a href="{{ url_for("index") }} ">Knihovnička</a>
             </div>
+
             <div class="">
                 <a href="{{ url_for("info") }}" class="info"> Jak to funguje?</a>
             </div>
     </nav>
-
+    {% block filter %}{% endblock %}
     <article class="content">
+
     {% block content %} {% endblock %}
     </article>
 
@@ -63,11 +64,15 @@
         </div>
         </div>
         </div>
+
+
+
     </footer>
-    <script src="{{ pathto('_static/js/script.js', 1) }}"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-    {% block javascript %}
-    {% endblock javascript %}
+    <script type=text/javascript src="{{ url_for('static', filename='vuescript.js') }}"></script>
+{% block scripts %}
+{% endblock %}
 </body>
 </html>
