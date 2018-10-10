@@ -1,6 +1,10 @@
 {% extends "layout.html" %}
 {% block filter %}
-<div id="app">
-            [[ d ]]
+<div class='container' id='root'>
+    <div class='row' v-bind:is='"products-filter"' v-bind:filters="filters">
+
+    </div>
 </div>
-{% endblock %}
+
+
+{% endblock filter %}

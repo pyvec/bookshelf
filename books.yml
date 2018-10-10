@@ -9,7 +9,7 @@ ponormese:
   url: http://diveintopython3.py.cz/index.html
   language: cs
   tags:
-      - Python 3
+      - Python3
 
 two-scoops-1-5:
   name: Two Scoops of Django (1.5)
@@ -46,7 +46,7 @@ python-cookbook:
   url: http://shop.oreilly.com/product/0636920027072.do
   language: en
   tags:
-      - Python 3
+      - Python3
 
 testing-goat:
   name: Test-Driven Development with Python
@@ -155,6 +155,8 @@ hackers_painters:
 
   url: http://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554
   language: en
+  tags:
+      - Other
 
 kivy:
   name: Creating Apps in Kivy
@@ -180,6 +182,7 @@ cython:
   language: en
   tags:
       - Cython
+
 pro-git:
   name: Pro Git
   author: Scott Chacon
@@ -196,7 +199,6 @@ pruvodce-labyrintem-algoritmu:
   author: Martin Mareš, Tomáš Valla
   copies:
       - owner: "@encukou"
-
   url: https://knihy.nic.cz/#pruvodce
   language: cs
   tags:
@@ -221,24 +223,22 @@ open-organization:
   # description:
   copies:
       - owner: "@encukou"
-
   url: https://www.redhat.com/en/explore/the-open-organization-book?intcmp=70160000000x2U0AAI
   language: en
   tags:
-      - Open
+      - Other
+
 py3:
   name: Python 3 - Výukový kurz
   author: Mark Summerfield
   description: Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
   copies:
       - owner: "@tjanovsky"
-
       - owner: "@KeNaCo"
-
   url: http://knihy.cpress.cz/python-3.html
   language: cs
   tags:
-      - Python 3
+      - Python3
 
 py3porting:
   name: Porting to Python 3
@@ -250,23 +250,20 @@ py3porting:
       - owner: "@honzakral"
         keeper: "@encukou"
       - owner: "@encukou"
-
       - owner: "@yedpodtrzitko"
         keeper: "@encukou"
   url: http://python3porting.com/
   language: en
   tags:
-      - Python 3
+      - Python3
 
 data-wrangling:
   name: Data Wrangling with Python
   author: Jacqualine Kazil & Katharine Jarmul
   description: Tips and Tools to Make Your Life Easier
-
   copies:
       - owner: "@encukou"
         signed: True
-
   url: http://shop.oreilly.com/product/0636920032861.do
   language: en
   tags:
@@ -278,7 +275,6 @@ data-science-handbook:
   description: Essential Tools for Working with Data
   copies:
       - owner: "@encukou"
-
   url: http://shop.oreilly.com/product/0636920034919.do
   language: en
   tags:
@@ -290,11 +286,10 @@ risky-iot:
   description: Trusting the Devices that Surround Us
   copies:
       - owner: "@encukou"
-
   url: http://shop.oreilly.com/product/0636920052784.do
   language: en
-  # tags:
-  #     -
+  tags:
+      - Internet
 
 data-science-from-scratch:
   name: Data Science from Scratch
@@ -302,7 +297,6 @@ data-science-from-scratch:
   description: First Principles with Python
   copies:
       - owner: "@encukou"
-
   url: http://shop.oreilly.com/product/0636920033400.do
   language: en
   tags:
@@ -317,8 +311,8 @@ pro-hackery:
         keeper: "@encukou"
   url: https://www.zonerpress.cz/python-pro-hackery-a-reverzni-inzenyrstvi
   language: cs
-  # tags:
-  #     -
+  tags:
+      - Hacker
 
 think-python:
   name: Think Python
@@ -326,11 +320,10 @@ think-python:
   description: How to Think Like a Computer Scientist (pozor, používá Python 2.x)
   copies:
       - owner: "@encukou"
-
   url: http://www.greenteapress.com/thinkpython/
   language: en
-  # tags:
-  #     -
+  tags:
+      - Python2
 
 computer-vision:
   name: Programming Computer Vision with Python
@@ -342,8 +335,8 @@ computer-vision:
         borrowed-at: 2017-08-26
   url:  http://programmingcomputervision.com/
   language: en
-  # tags:
-  #     -
+  tags:
+      - Python2
 
 pro-django:
   name: Pro Django
@@ -399,7 +392,6 @@ erlang-learn:
   # description:
   copies:
       - owner: "@starenka"
-
   url: http://www.bookdepository.com/Learn-You-Some-Erlang-for-Great-Good-Beginners-Guide-Fred-Hebert/9781593274351
   language: en
   tags:
@@ -411,7 +403,6 @@ land-of-lisp:
   # description:
   copies:
       - owner: "@starenka"
-
   url: http://www.bookdepository.com/Land-Lisp-Learn-Program-Lisp-One-Game-at-Time-Conrad-Barski/978159327281
   language: en
   tags:
@@ -435,11 +426,10 @@ xp:
   # description:
   copies:
       - owner: "@whit"
-
   url: http://www.databazeknih.cz/knihy/extremni-programovani-163700
   language: cs
-  # tags:
-  #     -
+  tags:
+      - Hacker
 
 microia:
   name: Microinteractions
@@ -447,11 +437,10 @@ microia:
   # description:
   copies:
       - owner: "@whit"
-
   url: http://microinteractions.com
   language: en
-  # tags:
-  #     -
+  tags:
+      - Other
 
 wah:
   name: The Web Application Hacker's Handbook (první vydání)
@@ -459,9 +448,7 @@ wah:
   description: bstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho najde
   copies:
       - owner: "@starenka"
-
       - owner: "@JirkaV"
-
   url: http://books.google.cz/books/about/The_Web_Application_Hacker_s_Handbook.html?id=_EhvBGsWi6AC&redir_esc=y
   language: en
   tags:
@@ -489,8 +476,8 @@ grayhat:
 
   url: https://www.nostarch.com/ghpython.htm
   language: en
-  # tags:
-  #     -
+  tags:
+      - GHPython
 
 violent:
   name: Violent Python
@@ -498,11 +485,10 @@ violent:
   # description:
   copies:
       - owner: "@JirkaV"
-
   url: http://shop.oreilly.com/product/9781597499576.do
   language: en
-  # tags:
-  #     -
+  tags:
+      - Python
 
 cleancode:
   name: Clean Code
@@ -510,11 +496,10 @@ cleancode:
   # description:
   copies:
       - owner: "@JirkaV"
-
   url:  http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
   language: en
-  # tags:
-  #     -
+  tags:
+      - Other
 
 networkfoundations:
   name: Foundations of Python Network Programming
@@ -522,11 +507,10 @@ networkfoundations:
   # description:
   copies:
       - owner: "@JirkaV"
-
   url: http://www.amazon.com/Foundations-Python-Network-Programming-comprehensive/dp/1430230037
   language: en
-  # tags:
-  #     -
+  tags:
+      - Python
 
 dreaming:
   name: Dreaming in Code
@@ -534,11 +518,10 @@ dreaming:
   # description:
   copies:
       - owner: "@JirkaV"
-
   url: http://www.dreamingincode.com/
   language: en
-  # tags:
-  #     -
+  tags:
+      - Other
 
 beautiful:
   name: Beautiful Code
@@ -546,11 +529,10 @@ beautiful:
   # description:
   copies:
       - owner: "@JirkaV"
-
   url: http://shop.oreilly.com/product/9780596510046.do
   language: en
-  # tags:
-  #     -
+  tags:
+      - Other
 
 fedora-guide-cz:
   name: Fedora - Příručka začínajícího uživatele.
@@ -558,7 +540,6 @@ fedora-guide-cz:
   description: Seznámení a první kroky v linuxovém operačním systému Fedora
   copies:
       - owner: "@encukou"
-
   url: http://blog.eischmann.cz/2015/10/09/vydali-jsme-prirucku-zacinajiciho-uzivatele-fedory/
   language: en
   tags:
@@ -570,7 +551,6 @@ sqliteguide:
   description: 1st ed.
   copies:
       - owner: "@JirkaV"
-
   url: http://www.apress.com/9781430232254
   language: en
   tags:
@@ -582,7 +562,6 @@ mysqlguide:
   description: 3rd ed.
   copies:
       - owner: "@JirkaV"
-
   url: http://www.apress.com/9781590595350
   language: en
   tags:
@@ -594,7 +573,6 @@ promysql:
   # description:
   copies:
       - owner: "@JirkaV"
-
   url: http://www.apress.com/9781590595053
   language: en
   tags:
@@ -606,7 +584,6 @@ ploneguide:
   description:  1st ed.
   copies:
       - owner: "@JirkaV"
-
   url: http://www.apress.com/9781430218937
   language: en
   tags:
@@ -618,7 +595,6 @@ beginningjavascript:
   # description:
   copies:
       - owner: "@JirkaV"
-
   url: http://www.apress.com/9781590596807
   language: en
   tags:
@@ -631,7 +607,6 @@ mysqlnutshell:
   description: 1st ed.
   copies:
       - owner: "@JirkaV"
-
   url: http://shop.oreilly.com/product/9780596007898.do
   language: en
   tags:
@@ -643,11 +618,10 @@ pragmaticerlang:
   description: 1st ed.
   copies:
       - owner: "@JirkaV"
-
   url:  https://pragprog.com/book/jaerlang2/programming-erlang
   language: en
-  # tags:
-  #     -
+  tags:
+        - Other
 
 kentbecktdd:
   name: "Test Driven Development: By Example"
@@ -668,11 +642,10 @@ hackingsecretciphers:
   # description:
   copies:
       - owner: "@JirkaV"
-
   url: http://inventwithpython.com/hacking/
   language: en
-  # tags:
-  #     -
+  tags:
+      - Hacker
 
 cssmistrovstvi:
   name: Mistrovství v CSS
@@ -680,7 +653,6 @@ cssmistrovstvi:
   # description:
   copies:
       - owner: "@JirkaV"
-
   url: http://knihy.cpress.cz/mistrovstvi-v-css.html
   language: en
   tags:
@@ -700,13 +672,12 @@ zaciname-programovat:
   url: http://knihy.cpress.cz/zaciname-programovat-v-jazyce-python-d2.html
   language: en
   tags:
-      - Python 1
+      - Python1
 
 high-performance-django:
   name: High Performance Django
   author: Peter Baumgarten and Yann Malet
   # description:
-
   copies:
       - owner: "@honzakral"
         keeper: "@encukou"
@@ -720,7 +691,6 @@ lightweight-django:
   name: Lightweight Django
   author: Julia Elman, Mark Lavin
   # description:
-
   copies:
       - owner: "@honzakral"
         keeper: "@encukou"
@@ -736,7 +706,6 @@ python-projects-for-kids:
   # description:
   copies:
       - owner: "@Paffilda"
-
   url: https://books.google.cz/books/about/Python_Projects_for_Kids.html?id=KPnJDAAAQBAJ&source=kp_cover&redir_esc=y&hl=cs
   language: en
   tags:
@@ -748,7 +717,6 @@ python-for-kids:
   # description:
   copies:
       - owner: "@Paffilda"
-
   url: https://www.nostarch.com/pythonforkids
   language: en
   tags:
@@ -760,7 +728,6 @@ processing-py:
   # description:
   copies:
       - owner: "@encukou"
-
   url: https://www.amazon.com/Processing-py/dp/B01FIR0RY8/
   language: en
   tags:
@@ -772,7 +739,6 @@ processing-py:
   # description:
   copies:
       - owner: "@encukou"
-
   url: https://www.amazon.com/Processing-py/dp/B01FIR0RY8/
   language: en
   tags:
@@ -784,7 +750,6 @@ processing-py:
   # description:
   copies:
       - owner: "@encukou"
-
   url: https://www.amazon.com/Processing-py/dp/B01FIR0RY8/
   language: en
   tags:

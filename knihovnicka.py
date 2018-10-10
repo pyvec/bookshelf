@@ -2,15 +2,14 @@ import os
 import fnmatch
 import datetime
 import collections
-from pathlib import Path
-
-from flask import Flask, render_template, url_for, send_from_directory, abort, send_from_directory, jsonify
-from flask_frozen import Freezer
 import yaml
 import json
 import jinja2
 import markdown
 
+from pathlib import Path
+from flask import Flask, render_template, url_for, abort, send_from_directory, jsonify
+from flask_frozen import Freezer
 from elsa import cli
 
 app = Flask(__name__)
@@ -21,7 +20,6 @@ base = Path(app.root_path) / "covers"
 @app.route('/')
 def index():
     books = read_yaml('books.yml')
-
     if book is None:
         abort(404)
     return render_template('index.html', books=books,)
@@ -29,7 +27,9 @@ def index():
 @app.route('/data/')
 def data():
     yml_data = read_yaml('books.yml')
-
+    tag = []
+    for key, value in yml_data.items():
+        value['img_url'] = '/img/' + str(key)
     return jsonify(yml_data)
 
 @app.route('/<book_slug>/')
@@ -47,23 +47,18 @@ def book(book_slug):
 def info():
     return render_template('info.html')
 
-
-
 @app.route('/img/<book_slug>')
 def image(book_slug):
-    name = najdi_fotku(book_slug)
+    name = find_photo(book_slug)
     return send_from_directory(base, name)
 
-
-def najdi_fotku(book_slug):
-
+def find_photo(book_slug):
     for suffix in '.png', '.jpg':
         name = book_slug+suffix
         path = base/name
         if path.exists():
             return name
     return "python.png"
-
 
 def pathto(name, static=False):
     if static:
@@ -72,9 +67,6 @@ def pathto(name, static=False):
             return url_for('static', filename=name[len(prefix):])
         return name
     return url_for(name)
-
-
-
 
 def read_yaml(filename, default=MISSING):
     try:
@@ -90,10 +82,6 @@ def read_yaml(filename, default=MISSING):
 @app.context_processor
 def inject_context():
     return {'pathto': pathto, 'today': datetime.date.today(),}
-
-# with open("books.yml") as f:
-#     data = yaml.safe_load(f)
-# print(json.dumps(data,indent=2))
 
 if __name__ == '__main__':
     cli(app, base_url='')

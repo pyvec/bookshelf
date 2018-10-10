@@ -1,78 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <!-- ADD META TAGS -->
-      <meta charset="utf-8"></meta>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
-      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
-      <meta name="keywords" content="Python, Pyvec, IT, Django, Flask, books"></meta>
-      <meta name="description" content="Podpůrná stránka pro Pyvec knihovničku"></meta>
-      <meta property="og:title" content="Knihovnicka"></meta>
-      <meta property="og:type" content="article"></meta>
-      <meta property="og:url" content=""></meta>
-      <meta property="og:description" content=""></meta>
-      <meta name="twitter:card" content="summary"></meta>
-      <meta name="twitter:title" content=""></meta>
-      <meta name="twitter:site" content="@"></meta>
-      <meta name="twitter:description" content=""></meta>
+        <!-- ADD META TAGS -->
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+        <meta name="keywords" content="Python, Pyvec, IT, Django, Flask, books"></meta>
+        <meta name="description" content="Podpůrná stránka pro Pyvec knihovničku"></meta>
+        <meta property="og:title" content="Knihovnicka"></meta>
+        <meta property="og:type" content="article"></meta>
+        <meta property="og:url" content=""></meta>
+        <meta property="og:description" content=""></meta>
+        <meta name="twitter:card" content="summary"></meta>
+        <meta name="twitter:title" content=""></meta>
+        <meta name="twitter:site" content="@"></meta>
+        <meta name="twitter:description" content=""></meta>
 
-      <title>{% block title %}Knihovnicka{% endblock title %}</title>
+        <title>{% block title %}Knihovnicka{% endblock title %}</title>
 
-      {% block extra_head %}
-      {% endblock extra_head %}
+        {% block extra_head %}
+        {% endblock extra_head %}
 
-      {% block css %}
+        {% block css %}
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
         <!-- Custom CSS -->
         <link href="{{ pathto('_static/CSS/style.css', 1) }}" rel="stylesheet">
         <!-- Custom Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
-      {% endblock css %}
-      <!-- Favicon -->
-      <!-- <link rel="icon" type="image/x-icon" href="{{ pathto('_static/img/favicon.ico', 1) }}" /> -->
-
-
+        {% endblock css %}
     </head>
+    
     <body class="b-bg">
       <!-- Navigation -->
-      <nav class="main-navbar container-fluid d-flex justify-content-between align-items-center p-2 hd-bg" role="navigation">
-            <div class="   navbar-logo">
-                <a href="{{ url_for("index") }} ">Knihovnička</a>
-            </div>
-
-            <div class="">
-                <a href="{{ url_for("info") }}" class="info"> Jak to funguje?</a>
-            </div>
+    <nav class="main-navbar container-fluid d-flex justify-content-between align-items-center p-2 hd-bg" role="navigation">
+        <div class="   navbar-logo">
+            <a href="{{ url_for("index") }} ">Knihovnička</a>
+        </div>
+        <div class="">
+            <a href="{{ url_for("info") }}" class="info"> Jak to funguje?</a>
+        </div>
     </nav>
-    {% block filter %}{% endblock %}
-    <article class="content">
 
-    {% block content %} {% endblock %}
+    <article class="filter">
+    {% block filter %} {% endblock filter %}
+    </article>
+    <article class="content">
+    {% block content %} {% endblock content%}
     </article>
 
     <footer class="bg-white">
         <div class="container">
-        <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3 p-2">
-    <a href="http://pyvec.org/"> <img src="{{ pathto('_static/pyvec.svg', 1) }}" class="footer-logo" alt=""></a>
-        <div class="clear"></div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 p-2">
+                    <a href="http://pyvec.org/"> <img src="{{ pathto('_static/pyvec.svg', 1) }}" class="footer-logo" alt=""></a>
+                    <div class="clear"></div>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-
-
-
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
+    <!-- Vue script -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script type=text/javascript src="{{ url_for('static', filename='vuescript.js') }}"></script>
+
 {% block scripts %}
-{% endblock %}
+{% endblock scripts %}
+
 </body>
 </html>
