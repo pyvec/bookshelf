@@ -27,9 +27,10 @@ def index():
 @app.route('/data/')
 def data():
     yml_data = read_yaml('books.yml')
-    tag = []
     for key, value in yml_data.items():
         value['img_url'] = '/img/' + str(key)
+        value['book_url'] = '/' + str(key)
+        # value['tags_list'] = ['Python', 'Python2', 'Python3', 'Data']
     return jsonify(yml_data)
 
 @app.route('/<book_slug>/')
