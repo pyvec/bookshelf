@@ -1,46 +1,43 @@
-Vue.component('products-filter', {
+Vue.component('tag-list', {
     template:"\
-<ul>\
+<ul v-on:input=\"$emit('input', $event.target.value)\">\
     <li>\
-        <label><input type='radio' v-model='selectedCategory' value='All'/> All </label>\
+        <label><input type='radio' v-model='selectedtag' value='All'/> All </label>\
     </li>\
-    <li v-for='filter in filters'>\
-        <label><input type='radio' v-model='selectedCategory' value='{{ filter.tags }}'/> {{ filter.tags }} </label>\
-    </li>\
-    <li v-for='book in filters' >\
-    {{ book.name }} \
+    <li v-for='tag in tags'>\
+        <label><input type='radio' v-model='selectedtag' :value='tag' /> {{ tag }} </label>\
     </li>\
 </ul>\
     ",
-    props:['filters', 'selectedCategory'],
+    props:['tags', 'selectedtag'],
 
 })
-Vue.component('products-list', {
+Vue.component('book-list', {
     template:"\
     <ul>\
-        <li v-for='product in products' class='col-sm-6 col-md-4 col-lg-3 p-0'>\
+        <li v-for='book in books' class='col-sm-6 col-md-4 col-lg-3 p-0'>\
             <div class='book-box m-2'>\
-                <a v-bind:href='product.book_url'>\
+                <a v-bind:href='book.book_url'>\
                     <div class='book-about d-flex flex-column'>\
                         <div class='book-name m-0 p-O'>\
-                            <h2 class='h-c m-0'>{{ product.name }}</h2>\
+                            <h2 class='h-c m-0'>{{ book.name }}</h2>\
                         </div>\
                         <div class='book-author m-0'>\
-                            <p class='a-c mt-2 mb-0 font-italic'>{{ product.author}}</p>\
+                            <p class='a-c mt-2 mb-0 font-italic'>{{ book.author}}</p>\
                         </div>\
-                        <div class='book-author m-0'>\
-                            <p class='a-c mt-2 mb-0 font-italic'>{{ product.tags}}</p>\
+                        <div v-for='tag in book.tags' class='book-author m-0'>\
+                            <p class='a-c mt-2 mb-0 font-italic'>{{ tag }}</p>\
                         </div>\
                     </div>\
                     <div  class='book-img text-center'>\
-                        <img v-bind:src='product.img_url' class='img-thumbnail img-preview' alt='obal_knihy'/>\
+                        <img v-bind:src='book.img_url' class='img-thumbnail img-preview' alt='obal_knihy'/>\
                     </div>\
                 </a>\
             </div>\
         </li>\
     </ul>\
 ",
-    props:['products']
+    props:['books', 'selectedtag']
     })
 
 fetch("/data/")
@@ -49,30 +46,20 @@ fetch("/data/")
         console.log(data)
         new Vue({
             el: "#root",
-             // delimiters: ['{{',']]'],
-            data: {
-                active : true,
-                products: data,
-            },
-        });
-        new Vue({
-            el: "#filter",
             data: {
                 active: true,
-                filters: data,
-                selectedCategory: "All"
-
+                tags: data.tags,
+                selectedtag: "All",
             },
             computed: {
-                filteredBook: function() {
-                    var vm = this;
-                    var tags = vm.selectedCategory;
-
-                    if(tags === "All") {
-                        return vm.filters;
+                books: function() {
+                    var tag = this.selectedtag;
+                    console.log(tag)
+                    if(tag === "All") {
+                        return data.books;
                     } else {
-                        return vm.filters.filter(function(book){
-                            return book.tags === tags;
+                        return Object.values(data.books).filter(function(book){
+                            return book.tags.includes(tag);
                         });
                     }
 
