@@ -65,25 +65,20 @@ fetch("/data/")
             computed: {
                 books: function() {
                     var lang = this.selectedlanguage;
-                    console.log(lang)
-                    if(lang === "Alll") {
-                        return data.books;
-                    } else {
-                        return Object.values(data.books).filter(function(book){
+                    var tag = this.selectedtag;
+                    console.log(lang);
+                    var result = Object.values(data.books);
+                    if(lang !== "Alll") {
+                        result = result.filter(function(book){
                             return book.language.includes(lang);
                         });
                     };
-                },
-                 function() {
-                    var tag = this.selectedtag;
-                    console.log(tag)
-                    if(tag === "All") {
-                        return data.books;
-                    } else {
-                        return Object.values(data.books).filter(function(book){
+                    if(tag !== "All") {
+                        result = result.filter(function(book){
                             return book.tags.includes(tag);
                         });
                     };
+                    return result;
                 },
 
 
