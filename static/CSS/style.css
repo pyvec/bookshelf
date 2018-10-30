@@ -28,7 +28,7 @@ ul {
 }
 a:hover {
 	text-decoration: none;
-	color: #333;
+    color: #dddddd;
 }
 p a:hover {
 	text-decoration: underline;
@@ -61,8 +61,16 @@ font-size: 40px;
 
 }
 .info {
-    color: #ffffff;
-font-size: 1.6em;
+	color: #ffffff;
+    font-size: 1.2em;
+    text-align: right;
+    display: block;
+}
+/* Filter */
+.filter {
+
+	height: 100px;
+
 }
 /* __Home Content__  */
 .book-box {

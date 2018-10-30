@@ -28,11 +28,13 @@ def index():
 def data():
     books = read_yaml('books.yml')
     tags = set()
+    language = set()
     for key, value in books.items():
         value['img_url'] = '/img/' + str(key)
         value['book_url'] = '/' + str(key)
         tags.update(value['tags'])
-    return jsonify({'books':books, 'tags':sorted(tags)})
+        language.update(value['language'])
+    return jsonify({'books':books, 'tags':sorted(tags), 'language':sorted(language),})
 
 @app.route('/<book_slug>/')
 def book(book_slug):

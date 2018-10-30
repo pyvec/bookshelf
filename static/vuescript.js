@@ -1,16 +1,28 @@
 Vue.component('tag-list', {
     template:"\
-<ul v-on:input=\"$emit('input', $event.target.value)\">\
-    <li>\
-        <label><input type='radio' v-model='selectedtag' value='All'/> All </label>\
+<ul v-on:input=\"$emit('input', $event.target.value)\" >\
+    <li class='col-6 col-md-4 col-lg-2 cl-xl-2 p-0'>\
+        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedtag' value='All'/> All </label>\
     </li>\
-    <li v-for='tag in tags'>\
-        <label><input type='radio' v-model='selectedtag' :value='tag' /> {{ tag }} </label>\
+    <li v-for='tag in tags' class='col-6 col-md-4 col-lg-2 p-0'>\
+        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedtag' :value='tag' /> {{ tag }} </label>\
     </li>\
 </ul>\
     ",
     props:['tags', 'selectedtag'],
-
+})
+Vue.component('language-list', {
+    template:"\
+<ul v-on:input=\"$emit('input', $event.target.value)\" >\
+    <li class='col-6 col-md-4 col-lg-2 cl-xl-2 p-0'>\
+        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' value='Alll'/> Alll </label>\
+    </li>\
+    <li v-for='lang in language' class='col-6 col-md-4 col-lg-2 p-0'>\
+        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' :value='lang' /> {{ lang }} </label>\
+    </li>\
+</ul>\
+    ",
+    props:['language', 'selectedlanguage'],
 })
 Vue.component('book-list', {
     template:"\
@@ -25,9 +37,6 @@ Vue.component('book-list', {
                         <div class='book-author m-0'>\
                             <p class='a-c mt-2 mb-0 font-italic'>{{ book.author}}</p>\
                         </div>\
-                        <div v-for='tag in book.tags' class='book-author m-0'>\
-                            <p class='a-c mt-2 mb-0 font-italic'>{{ tag }}</p>\
-                        </div>\
                     </div>\
                     <div  class='book-img text-center'>\
                         <img v-bind:src='book.img_url' class='img-thumbnail img-preview' alt='obal_knihy'/>\
@@ -37,7 +46,7 @@ Vue.component('book-list', {
         </li>\
     </ul>\
 ",
-    props:['books', 'selectedtag']
+    props:['books', 'selectedtag', 'selectedlanguage']
     })
 
 fetch("/data/")
@@ -50,9 +59,22 @@ fetch("/data/")
                 active: true,
                 tags: data.tags,
                 selectedtag: "All",
+                language: data.language,
+                selectedlanguage: "Alll",
             },
             computed: {
                 books: function() {
+                    var lang = this.selectedlanguage;
+                    console.log(lang)
+                    if(lang === "Alll") {
+                        return data.books;
+                    } else {
+                        return Object.values(data.books).filter(function(book){
+                            return book.language.includes(lang);
+                        });
+                    };
+                },
+                 function() {
                     var tag = this.selectedtag;
                     console.log(tag)
                     if(tag === "All") {
@@ -61,9 +83,11 @@ fetch("/data/")
                         return Object.values(data.books).filter(function(book){
                             return book.tags.includes(tag);
                         });
-                    }
+                    };
+                },
 
-                }
+
+
             }
         })
     })
