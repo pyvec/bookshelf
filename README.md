@@ -222,7 +222,7 @@ Podepsaná od autorek, tak na ni dávejte pozor :)
 
 ### Joel Grus: [Data Science from Scratch][data-science-from-scratch]: First Principles with Python
 * Majitel: @encukou
-* Aktuálně u: Petra P. z PyLadies Brno, od října 2018
+* Aktuálně u: @encukou
 
 [data-science-from-scratch]: http://shop.oreilly.com/product/0636920033400.do
 
