@@ -76,7 +76,7 @@ Podepsaná od autora, tak na ni dávejte pozor :)
 ### Jacqueline Kazil & Katharine Jarmul: [Data Wrangling with Python][data-wrangling]
 
 * Majitel: @encukou
-* Aktuálně u: Katka L z Pyladies Brno, od října 2018
+* Aktuálně u: Katka L z Pyladies Brno, od listopadu 2018
 
 [data-wrangling]: http://shop.oreilly.com/product/0636920032861.do
 
