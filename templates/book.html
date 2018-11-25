@@ -16,7 +16,7 @@
                 <p class="a-c font-italic">{{ book.author }}</p>
             </div>
             <p>{{ book.description }}</p>
-            <p class="mt-2">Jazyková verze: {{ book.language }}</p>
+            <p class="mt-2">Jazyková verze: {{ book.language[0] }}</p>
             {% for copy in book.copies %}
                 <div class="owner-box b-bg p-2 m-0 mt-3">
                     <div class="d-flex justify-content-between">

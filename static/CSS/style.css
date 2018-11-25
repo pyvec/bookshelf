@@ -67,46 +67,38 @@ font-size: 40px;
     display: block;
 }
 /* Filter */
-.accordion {
-  margin-bottom: 20px;
-  border-radius: 6px;
-}
 
-.accordion .header {
-  height: 40px;
-  line-height: 40px;
-  padding: 0 40px 0 8px;
-  position: relative;
-  color: #fff;
-  cursor: pointer;
+.data {
+	height: 40px;
 }
+.accordion .header {
+	position: relative;
+	cursor: pointer;
+	top: -46px;
+	}
 
 .accordion .header-icon {
-  position: absolute;
-  top: 5px;
-  right: 8px;
-  transform: rotate(0deg);
-  transition-duration: 0.3s;
-  color: #808081;
-}
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	transform: rotate(0deg);
+	transition-duration: 0.3s;
+	color: #808081;
+	}
 
 .accordion .body-inner {
-  padding: 8px;
-  overflow-wrap: break-word;
-/*   white-space: pre-wrap; */
-}
+	padding: 20px 0;
+	overflow-wrap: break-word;
+	/*   white-space: pre-wrap; */
+	}
 
 .accordion .header-icon.rotate {
-  transform: rotate(180deg);
-  transition-duration: 0.3s;
-}
+	transform: rotate(180deg);
+	transition-duration: 0.3s;
+	}
 
-.filter {
-
-	height: 100px;
-
-}
 /* __Home Content__  */
+
 .book-box {
     height: 415px;
     border: 1px solid #eee;

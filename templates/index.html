@@ -9,15 +9,15 @@
         v-model="selectedlanguage"  v-bind:selectedlanguage="selectedlanguage">
         </div>
     </div>
-    <accordion>
+    <div v-bind:is='"accordion"' class=''>
         <div class='row filter' v-bind:is='"tag-list"' v-bind:tags="tags"
         v-model="selectedtags"  v-bind:selectedtags="selectedtags">
         </div>
-    </accordion>
+    </div>
    <div class='row' v-bind:is='"book-list"' v-bind:books="books"
     v-bind:selectedtags="selectedtags" v-bind:selectedlanguage="selectedlanguage">
     {% for slug, book in books.items() | sort %}
-        <div class='col-sm-6 col-md-4 col-lg-3 p-0'>
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
             <div class='book-box m-2'>
                 <a href='{{ url_for('book', book_slug=slug) }}'>
                 <div class='book-about d-flex flex-column'>

@@ -1,9 +1,8 @@
 Vue.component('accordion', {
   props: ['theme'],
-
   template: `<div class="accordion" v-bind:class="theme">
     <div class="header" v-on:click="toggle">
-      <slot name="header">Filter</slot>
+
       <i class="fa fa-2x fa-angle-down header-icon" v-bind:class="{ rotate: show }"></i>
     </div>
     <transition name="accordion"
@@ -44,10 +43,10 @@ Vue.component('accordion', {
 Vue.component('language-list', {
     template:`
 <ul v-on:input="$emit('input', $event.target.value)" >
-    <li class='col-6 col-md-4 col-lg-2 cl-xl-2 p-0'>
+    <li class='col-3 col-md-2 col-xl-1 p-0'>
         <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' value='All'/> All </label>
     </li>
-    <li v-for='lang in language' class='col-6 col-md-4 col-lg-2 p-0'>
+    <li v-for='lang in language' class='col-3 col-md-2 col-xl-1 p-0'>
         <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' :value='lang' /> {{ lang }} </label>
     </li>
 </ul>
@@ -99,7 +98,7 @@ Vue.component('tag-list', {
 Vue.component('book-list', {
     template:`
     <ul>
-        <li v-for='book in books' class='col-sm-6 col-md-4 col-lg-3 p-0'>
+        <li v-for='book in books' class='col-6 col-md-4 col-lg-3 p-0'>
             <div class='book-box m-2'>
                 <a v-bind:href='book.book_url'>
                     <div class='book-about d-flex flex-column'>
