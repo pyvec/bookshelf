@@ -13,16 +13,45 @@ Vue.component('language-list', {
 })
 Vue.component('tag-list', {
     template:"\
-<ul v-on:input=\"$emit('input', $event.target.value)\" >\
+<ul>\
     <li class='col-6 col-md-4 col-lg-2 cl-xl-2 p-0'>\
-        <label class='checkbox-inline mx-3' ><input type='checkbox' v-model='selectedtag' value='All'/> All </label>\
+        <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"handle_all($event);\" :checked='selectedtags.includes(\"All\")' name='All' value='All' :disabled='selectedtags.includes(\"All\")'/> All </label>\
     </li>\
     <li v-for='tag in tags' class='col-6 col-md-4 col-lg-2 p-0'>\
-        <label class='checkbox-inline mx-3' ><input type='checkbox' v-model='selectedtag' :value='tag' /> {{ tag }} </label>\
+        <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"add_or_remove($event);\" :checked='selectedtags.includes(tag)' :name='tag' :value='tag' /> {{ tag }} </label>\
     </li>\
 </ul>\
     ",
-    props:['tags', 'selectedtag'],
+    methods: {
+        handle_all: function (event) {
+            this.$emit('input', ["All"]);
+        },
+        add_or_remove: function (event) {
+            var array = this.selectedtags;
+            var name = event.target.name;
+            var checked = event.target.checked;
+            // If "checked" is true, adds "name" to "array" (if it's not there yet)
+            // If "checked" is false, removes "name" to "array" (if it's there)
+            // Also adds/removes "All" as appropriate
+            if (checked) {
+                if (!array.includes(name)) {
+                    array.push(name);
+                }
+                if (array.includes("All")) {
+                    array.splice(array.indexOf("All"), 1);
+                }
+            } else {
+                if (array.includes(name)) {
+                    array.splice(array.indexOf(name), 1);
+                    if (array.length == 0) {
+                        array = ["All"];
+                    }
+                }
+            }
+            this.$emit('input', array);
+        },
+    },
+    props:['tags', 'selectedtags'],
 })
 Vue.component('book-list', {
     template:"\
@@ -46,7 +75,7 @@ Vue.component('book-list', {
         </li>\
     </ul>\
 ",
-    props:['books', 'selectedtag', 'selectedlanguage']
+    props:['books', 'selectedtags', 'selectedlanguage']
     })
 
 fetch("/data/")
@@ -58,25 +87,27 @@ fetch("/data/")
             data: {
                 active: true,
                 tags: data.tags,
-                selectedtag: "All",
+                selectedtags: ["All"],
                 language: data.language,
                 selectedlanguage: "All",
             },
             computed: {
                 books: function() {
                     var lang = this.selectedlanguage;
-                    var tag = this.selectedtag;
-                    console.log(lang);
+                    var tags = this.selectedtags;
+
                     var result = Object.values(data.books);
                     if(lang !== "All") {
                         result = result.filter(function(book){
                             return book.language.includes(lang);
                         });
                     };
-                    if(tag !== "All") {
-                        result = result.filter(function(book){
-                            return book.tags.includes(tag);
-                        });
+                    for (let tag of tags) {
+                        if(tag !== "All") {
+                            result = result.filter(function(book){
+                                return book.tags.includes(tag);
+                            });
+                        };
                     };
                     return result;
                 },
