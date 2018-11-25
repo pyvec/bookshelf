@@ -1,21 +1,8 @@
-Vue.component('tag-list', {
-    template:"\
-<ul v-on:input=\"$emit('input', $event.target.value)\" >\
-    <li class='col-6 col-md-4 col-lg-2 cl-xl-2 p-0'>\
-        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedtag' value='All'/> All </label>\
-    </li>\
-    <li v-for='tag in tags' class='col-6 col-md-4 col-lg-2 p-0'>\
-        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedtag' :value='tag' /> {{ tag }} </label>\
-    </li>\
-</ul>\
-    ",
-    props:['tags', 'selectedtag'],
-})
 Vue.component('language-list', {
     template:"\
 <ul v-on:input=\"$emit('input', $event.target.value)\" >\
     <li class='col-6 col-md-4 col-lg-2 cl-xl-2 p-0'>\
-        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' value='Alll'/> Alll </label>\
+        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' value='All'/> All </label>\
     </li>\
     <li v-for='lang in language' class='col-6 col-md-4 col-lg-2 p-0'>\
         <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' :value='lang' /> {{ lang }} </label>\
@@ -23,6 +10,19 @@ Vue.component('language-list', {
 </ul>\
     ",
     props:['language', 'selectedlanguage'],
+})
+Vue.component('tag-list', {
+    template:"\
+<ul v-on:input=\"$emit('input', $event.target.value)\" >\
+    <li class='col-6 col-md-4 col-lg-2 cl-xl-2 p-0'>\
+        <label class='checkbox-inline mx-3' ><input type='checkbox' v-model='selectedtag' value='All'/> All </label>\
+    </li>\
+    <li v-for='tag in tags' class='col-6 col-md-4 col-lg-2 p-0'>\
+        <label class='checkbox-inline mx-3' ><input type='checkbox' v-model='selectedtag' :value='tag' /> {{ tag }} </label>\
+    </li>\
+</ul>\
+    ",
+    props:['tags', 'selectedtag'],
 })
 Vue.component('book-list', {
     template:"\
@@ -60,7 +60,7 @@ fetch("/data/")
                 tags: data.tags,
                 selectedtag: "All",
                 language: data.language,
-                selectedlanguage: "Alll",
+                selectedlanguage: "All",
             },
             computed: {
                 books: function() {
@@ -68,7 +68,7 @@ fetch("/data/")
                     var tag = this.selectedtag;
                     console.log(lang);
                     var result = Object.values(data.books);
-                    if(lang !== "Alll") {
+                    if(lang !== "All") {
                         result = result.filter(function(book){
                             return book.language.includes(lang);
                         });

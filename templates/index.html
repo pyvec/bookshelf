@@ -3,14 +3,17 @@
 {% block content %}
 
 <div class='container' id='root'>
-    <div class='row filter' v-bind:is='"language-list"' v-bind:language="language" v-model="selectedlanguage"  v-bind:selectedlanguage="selectedlanguage">
+    <div class='row filter' v-bind:is='"language-list"' v-bind:language="language"
+    v-model="selectedlanguage"  v-bind:selectedlanguage="selectedlanguage">
 
     </div>
-    <div class='row filter' v-bind:is='"tag-list"' v-bind:tags="tags" v-model="selectedtag"  v-bind:selectedtag="selectedtag">
+    <div class='row filter' v-bind:is='"tag-list"' v-bind:tags="tags"
+    v-model="selectedtag"  v-bind:selectedtag="selectedtag">
 
     </div>
 
-    <div class='row' v-bind:is='"book-list"' v-bind:books="books"  v-bind:selectedtag="selectedtag" v-bind:selectedlanguage="selectedlanguage">
+    <div class='row' v-bind:is='"book-list"' v-bind:books="books"
+    v-bind:selectedtag="selectedtag" v-bind:selectedlanguage="selectedlanguage">
     {% for slug, book in books.items() | sort %}
         <div class='col-sm-6 col-md-4 col-lg-3 p-0'>
             <div class='book-box m-2'>
@@ -24,7 +27,8 @@
                     </div>
                 </div>
                 <div class='book-img text-center '>
-                    <img src='{{ url_for('image', book_slug=slug) }}' class='img-thumbnail img-preview' alt=''>
+                    <img src='{{ url_for('image', book_slug=slug) }}'
+                    class='img-thumbnail img-preview' alt=''>
                 </div>
                 </a>
             </div>

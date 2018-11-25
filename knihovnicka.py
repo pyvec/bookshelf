@@ -12,6 +12,10 @@ from flask import Flask, render_template, url_for, abort, send_from_directory, j
 from flask_frozen import Freezer
 from elsa import cli
 
+# $ export FLASK_APP=knihovnicka.py
+# $ export FLASK_DEBUG=1
+# $ flask run
+
 app = Flask(__name__)
 MISSING = object()
 
