@@ -15,17 +15,23 @@
             <div class="book-author">
                 <p class="a-c font-italic">{{ book.author }}</p>
             </div>
+
             <p>{{ book.description }}</p>
             <p class="mt-2">{{ book.language[0][0:-1] }}á verze</p>
             {% for copy in book.copies %}
                 <div class="owner-box b-bg p-2 m-0 mt-3">
                     <div class="d-flex justify-content-between">
-                        
+
                         {% if copy['owner'][0] == '@' %}
-                            <p  class="m-0">Majitel: <a href="https://github.com/{{ copy['owner'][1:] }}">{{ copy['owner'][1:] }}</a> </p>
+                            <p  class="m-0">Majitel: <a href="https://github.com/{{ copy['owner'][1:] }}">{{ copy['owner'][1:] }}</a>
                         {% else %}
-                            <p  class="m-0">Majitel: { copy['owner'] }}</p>
+                            <p  class="m-0">Majitel: {{ copy['owner'] }}
                         {% endif %}
+
+                        {% if 'current' not in copy and 'keeper' not in copy %}
+                            <i class="fas fa-circle green" title="Kniha si můžeš půjčit."></i>
+                        {% endif %}
+                        </p>
 
                         {% if 'signed' in copy %}
                             <i class="fas fa-pen-fancy hd-c" title="Kniha je podepsaná autorem, dávej na ni pozor."></i>
@@ -33,25 +39,39 @@
 
                     </div>
 
+                    {% if copy.get('keeper') %}
+
+                        {% if copy['keeper'][0] == '@' %}
+                            <p class="m-0">O knihu se stará: <a href="https://github.com/{{ copy['keeper'][1:] }}">{{ copy['keeper'][1:] }}</a>
+                        {% else %}
+                            <p class="m-0">O knihu se stará: {{ copy.get('keeper')}}
+                        {% endif %}
+
+                        {% if 'current' not in copy %}
+                            <i class="fas fa-circle green" title="Kniha si můžeš půjčit."></i>
+                        {% endif %}</p>
+
+                    {% endif %}
                     {% if 'current' in copy %}
                         {% if copy['current'][0] == '@' %}
-                            <p class="m-0">Aktuálně u: <a href="https://github.com/{{ copy['current'][1:] }}">{{ copy['current'][1:] }}</a>
+                            <p class="m-0">Aktuálně u <a href="https://github.com/{{ copy['current'][1:] }}">{{ copy['current'][1:] }}</a>
                         {% else %}
-                            <p class="m-0">Aktuálně u: {{ copy['current'] }}
+                            <p class="m-0">Aktuálně u {{ copy['current'] }}
                         {% endif %}
                         {% if 'borrowed-at' in copy %}
                             od {{ copy['borrowed-at'].month }}. {{ copy['borrowed-at'].year }}
+                            {% if (today.year-copy['borrowed-at'].year)*365 + (today.month-copy['borrowed-at'].month)*30 + today.day-copy['borrowed-at'].day < 31 %}
+                            <i class="fas fa-circle red" title="Knihu právě někdo čte."></i>
+                            {% else %}
+                            <i class="fas fa-circle orange" title="Kniha už je půjčená dlouho, ale ještě nebyla vrácena. Můžeš si ji půjčit."></i>
+                            {% endif %}
                         {% endif %}
                         </p>
+                    {% else %}
+
                     {% endif %}
 
-                    {% if copy.get('keeper') %}
-                        {% if copy['keeper'][0] == '@' %}
-                            <p class="m-0">O knihu se stará: <a href="https://github.com/{{ copy['keeper'][1:] }}">{{ copy['keeper'][1:] }}</a></p>
-                        {% else %}
-                            <p class="m-0">O knihu se stará: {{ copy.get('keeper')}}</p>
-                        {% endif %}
-                    {% endif %}
+
 
                 </div>
             {% endfor %}

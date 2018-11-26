@@ -23,7 +23,8 @@
                 <div class='book-about d-flex flex-column'>
                     <div class='book-name m-0 p-O'>
                         <h2 class='h-c m-0'>{{ book.name }}</h2>
-                    </div>
+
+                           </div>
                     <div class='book-author m-0'>
                         <p class='a-c mt-2 mb-0 font-italic'>{{ book.author }}</p>
                     </div>
@@ -35,6 +36,14 @@
                 </a>
             </div>
         </div>
+        <div class="">
+        <!-- {% for copy in book.copies %}
+                {% if 'current' in copy %}
+        {% if 'borrowed-at' in copy %}
+            od {{ copy['borrowed-at'].month }}. {{ copy['borrowed-at'].year }}
+        {% endif %}{% endif %}
+        {% endfor %} -->
+    </div>
     {% endfor %}
 </div>
 

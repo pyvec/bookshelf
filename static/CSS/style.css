@@ -55,6 +55,16 @@ label {
 .hd-c {
 	color: #818182;
 }
+/* circle colors */
+.red {
+color: #bd2130
+}
+.orange{
+color: #ffa039;
+}
+.green{
+color: #28a745;
+}
 /* __Head__ */
 
 .navbar-logo a {

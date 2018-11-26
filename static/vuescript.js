@@ -117,7 +117,7 @@ Vue.component('book-list', {
         </li>
     </ul>
 `,
-    props:['books', 'selectedtags', 'selectedlanguage']
+    props:['books', 'selectedtags', 'selectedlanguage', 'today']
     })
 
 fetch("/data/")
@@ -132,6 +132,7 @@ fetch("/data/")
                 selectedtags: ["Vše"],
                 language: data.language,
                 selectedlanguage: "Vše",
+                today: data.today,
             },
             computed: {
                 books: function() {

@@ -4,7 +4,7 @@
 
 * Pokud si chceš půjčit knihu, pošli pull request, ve kterém zapíšeš že je kniha aktuálně u tebe.
   * V názvu pull requestu uveď jméno knihy.
-  * V pull requestu uveď, kde chceš knihu předat. Standardně se knihy předávají na Pyvu (v Praze, Brně nebo Ostravě – viz http://python.cz).
+  * V pull requestu uveď, kde chceš knihu předat. Standardně se knihy předávají na Pyvu (v Praze, Brně nebo Ostravě – viz http://pyvo.cz).
   * Standardní doba výpůjčky je jeden měsíc (do dalšího Pyva).
 * Pokud máš knihu, kterou chceš zařadit do knihovny, pošli pull request, který ji tam zařazuje.
   * Knihu můžeš buď nechat u sebe, nebo ji na některém Pyvu předat Petrovi (@encukou), který ji pak bude vozit na Pyva.
@@ -46,7 +46,7 @@ nazevknihy:
           borrowed-at: yyyy-mm-dd
         - owner: "@jmenonagithubu"
           keeper: "@jmenonagithubu"
-          signed: True
+          signed: True (jen když je podepsaná)
     url: http://odkaznaknihu.cz
     language:
         - en nebo cs
