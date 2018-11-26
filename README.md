@@ -37,7 +37,7 @@ Names such as "@encukou" represent Github usernames.
   * Aktuálně u: @hroncok
 * kopie 2
   * Majitel: @encukou
-  * Aktuálně u: Dita S. z PyLadies Brno, od října 2018
+  * Aktuálně u: Katka L z Pyladies Brno, od listopadu 2018
 
 [ponormese]: http://diveintopython3.py.cz/index.html
 
