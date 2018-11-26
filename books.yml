@@ -6,9 +6,9 @@ ponormese:
       - owner: "@encukou"
   url: http://diveintopython3.py.cz/index.html
   language:
-      - cs
+      - Česky
   tags:
-      - Python3
+      - Python
 
 two-scoops-1-5:
   name: Two Scoops of Django (1.5)
@@ -19,9 +19,10 @@ two-scoops-1-5:
         keeper: "@encukou"
   url: https://www.twoscoopspress.com/products/two-scoops-of-django-1-5
   language:
-      - en
+      - Anglicky
   tags:
       - Web
+      - Python
 
 two-scoops-1-6:
   name: Two Scoops of Django (1.6)
@@ -31,9 +32,10 @@ two-scoops-1-6:
       - owner: "@encukou"
   url: https://www.twoscoopspress.com/products/two-scoops-of-django-1-6
   language:
-      - en
+      - Anglicky
   tags:
       - Web
+      - Python
 
 python-cookbook:
   name: Python Cookbook
@@ -45,9 +47,9 @@ python-cookbook:
         borrowed-at: 2016-02-24
   url: http://shop.oreilly.com/product/0636920027072.do
   language:
-      - en
+      - Anglicky
   tags:
-      - Python3
+      - Python
 
 testing-goat:
   name: Test-Driven Development with Python
@@ -58,10 +60,11 @@ testing-goat:
         signed: True
   url: http://www.obeythetestinggoat.com/
   language:
-      - en
+      - Anglicky
   tags:
       - Web
-      - Testing
+      - Testování
+      - Python
 
 data-wrangling:
   name: Data Wrangling with Python
@@ -70,9 +73,11 @@ data-wrangling:
       - owner: "@encukou"
   url: http://shop.oreilly.com/product/0636920032861.do
   language:
-      - en
+      - Anglicky
   tags:
       - Data
+      - Python
+
 
 data-analysis:
   name: Python for Data Analysis
@@ -84,9 +89,10 @@ data-analysis:
         borrowed-at: 2015-11-15
   url: http://shop.oreilly.com/product/0636920023784.do
   language:
-      - en
+      - Anglicky
   tags:
       - Data
+      - Python
 
 hello-web-app:
   name: Hello Web App
@@ -101,10 +107,11 @@ hello-web-app:
         borrowed-at: 2018-07-01
   url: https://hellowebbooks.com/learn-django/
   language:
-      - en
+      - Anglicky
   tags:
       - Web
-      - Beginner
+      - Začátečník
+      - Python
 
 hello-web-app-intermediate:
   name: Hello Web App
@@ -116,10 +123,11 @@ hello-web-app-intermediate:
         borrowed-at: 2018-07-01
   url: https://hellowebbooks.com/django-intermediate-concepts/
   language:
-      - en
+      - Anglicky
   tags:
       - Web
-      - Beginner
+      - Začátečník
+      - Python
 
 flask-web-dev:
   name: Flask Web Development
@@ -127,25 +135,24 @@ flask-web-dev:
   description: Developing Web Applications with Python
   copies:
       - owner: "@encukou"
-
   url: http://flaskbook.com/
   language:
-      - en
+      - Anglicky
   tags:
       - Web
+      - Python
 
 raspi-cookbook:
   name: Raspberry Pi Cookbook
   author: Simon Monk
-  # description:
   copies:
       - owner: "@encukou"
 
   url: http://shop.oreilly.com/product/0636920029595.do
   language:
-      - en
+      - Anglicky
   tags:
-      - Raspberry
+      - Ostatní
 
 hackers_painters:
   name: "Hackers and Painters: Big Ideas from the Computer Age"
@@ -155,9 +162,9 @@ hackers_painters:
       - owner: "@encukou"
   url: http://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 kivy:
   name: Creating Apps in Kivy
@@ -169,9 +176,10 @@ kivy:
         borrowed-at: 2015-11-10
   url: http://shop.oreilly.com/product/0636920032595.do
   language:
-      - en
+      - Anglicky
   tags:
-      - Beginner
+      - Začátečník
+      - Python
 
 cython:
   name: Cython - A guide for Python programmers
@@ -181,9 +189,9 @@ cython:
       - owner: "@tjanovsky"
   url: http://shop.oreilly.com/product/0636920033431.do
   language:
-      - en
+      - Anglicky
   tags:
-      - Cython
+      - Python
 
 pro-git:
   name: Pro Git
@@ -192,9 +200,9 @@ pro-git:
       - owner: "@encukou"
   url: https://knihy.nic.cz/#ProGit
   language:
-      - cs
+      - Česky
   tags:
-      - Git
+      - Ostatní
 
 pruvodce-labyrintem-algoritmu:
   name: Průvodce labyrintem algoritmů
@@ -203,9 +211,9 @@ pruvodce-labyrintem-algoritmu:
       - owner: "@encukou"
   url: https://knihy.nic.cz/#pruvodce
   language:
-      - cs
+      - Česky
   tags:
-      - Other
+      - Ostatní
 
 team-geek:
   name: Team Geek
@@ -217,21 +225,20 @@ team-geek:
         borrowed-at: 2017-11-22
   url: http://shop.oreilly.com/product/0636920018025.do
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 open-organization:
   name: The Open Organization
   author: Jim Whitehurst
-  # description:
   copies:
       - owner: "@encukou"
   url: https://www.redhat.com/en/explore/the-open-organization-book?intcmp=70160000000x2U0AAI
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 py3:
   name: Python 3 - Výukový kurz
@@ -242,9 +249,9 @@ py3:
       - owner: "@KeNaCo"
   url: http://knihy.cpress.cz/python-3.html
   language:
-      - cs
+      - Česky
   tags:
-      - Python3
+      - Python
 
 py3porting:
   name: Porting to Python 3
@@ -260,9 +267,9 @@ py3porting:
         keeper: "@encukou"
   url: http://python3porting.com/
   language:
-      - en
+      - Anglicky
   tags:
-      - Python3
+      - Python
 
 data-wrangling:
   name: Data Wrangling with Python
@@ -273,9 +280,10 @@ data-wrangling:
         signed: True
   url: http://shop.oreilly.com/product/0636920032861.do
   language:
-      - en
+      - Anglicky
   tags:
       - Data
+      - Python
 
 data-science-handbook:
   name: Python Data Science Handbook
@@ -285,9 +293,10 @@ data-science-handbook:
       - owner: "@encukou"
   url: http://shop.oreilly.com/product/0636920034919.do
   language:
-      - en
+      - Anglicky
   tags:
       - Data
+      - Python
 
 risky-iot:
   name: The Internet of Risky Things
@@ -297,9 +306,9 @@ risky-iot:
       - owner: "@encukou"
   url: http://shop.oreilly.com/product/0636920052784.do
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 data-science-from-scratch:
   name: Data Science from Scratch
@@ -309,22 +318,21 @@ data-science-from-scratch:
       - owner: "@encukou"
   url: http://shop.oreilly.com/product/0636920033400.do
   language:
-      - en
+      - Anglicky
   tags:
       - Data
 
 pro-hackery:
   name: Python pro hackery a reverzní inženýrství
   author: Justin Seitz
-  # description:
   copies:
       - owner: "@yedpodtrzitko"
         keeper: "@encukou"
   url: https://www.zonerpress.cz/python-pro-hackery-a-reverzni-inzenyrstvi
   language:
-      - cs
+      - Česky
   tags:
-      - Hacker
+      - Python
 
 think-python:
   name: Think Python
@@ -334,9 +342,9 @@ think-python:
       - owner: "@encukou"
   url: http://www.greenteapress.com/thinkpython/
   language:
-      - en
+      - Anglicky
   tags:
-      - Python2
+      - Python
 
 computer-vision:
   name: Programming Computer Vision with Python
@@ -348,9 +356,9 @@ computer-vision:
         borrowed-at: 2017-08-26
   url:  http://programmingcomputervision.com/
   language:
-      - en
+      - Anglicky
   tags:
-      - Python2
+      - Python
 
 pro-django:
   name: Pro Django
@@ -361,9 +369,10 @@ pro-django:
         keeper: "@encukou"
   url:
   language:
-      - en
+      - Anglicky
   tags:
       - Web
+      - Python
 
 practical-django-projects:
   name: Practical Django Projects
@@ -374,9 +383,10 @@ practical-django-projects:
         keeper: "@encukou"
   url: http://www.amazon.com/Practical-Django-Projects-Experts-Development/dp/1590599969
   language:
-      - en
+      - Anglicky
   tags:
       - Web
+      - Python
 
 django-definitive-guide:
   name: The Definitive Guide to Django
@@ -387,9 +397,10 @@ django-definitive-guide:
         keeper: "@encukou"
   url: http://www.apress.com/9781430219361
   language:
-      - en
+      - Anglicky
   tags:
       - Web
+      - Python
 
 how-learning-works:
   name: "How Learning Works: Seven Research-Based Principles for Smart Teaching"
@@ -397,73 +408,67 @@ how-learning-works:
   description: O tom, jak učit.
   copies:
       - owner: "@encukou"
-
   url: http://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 erlang-learn:
   name: Learn You Some Erlang for Great Good! A Beginner's Guide
   author: Fred Hebert
-  # description:
   copies:
       - owner: "@starenka"
   url: http://www.bookdepository.com/Learn-You-Some-Erlang-for-Great-Good-Beginners-Guide-Fred-Hebert/9781593274351
   language:
-      - en
+      - Anglicky
   tags:
-      - Beginner
+      - Začátečník
 
 land-of-lisp:
   name: "Land of Lisp: Learn to Program in Lisp, One Game at a Time!"
   author: Conrad Barski
-  # description:
   copies:
       - owner: "@starenka"
   url: http://www.bookdepository.com/Land-Lisp-Learn-Program-Lisp-One-Game-at-Time-Conrad-Barski/978159327281
   language:
-      - en
+      - Anglicky
   tags:
-      - Lisp
+      - Ostatní
 
 nlpp:
   name: Natural Language Processing with Python
   author: Steven Bird, Ewan Klein, Edward Loper
-  # description:
   copies:
       - owner: "@starenka"
         keeper: "@encukou"
   url: http://shop.oreilly.com/product/9780596516499.do
   language:
-      - en
+      - Anglicky
   tags:
       - Python
 
 xp:
   name: Extrémní programování
   author: Kent Beck
-  # description:
   copies:
       - owner: "@whit"
   url: http://www.databazeknih.cz/knihy/extremni-programovani-163700
   language:
-      - cs
+      - Česky
   tags:
-      - Hacker
+      - Ostatní
 
 microia:
   name: Microinteractions
   author: Dan Saffer
-  # description:
   copies:
       - owner: "@whit"
   url: http://microinteractions.com
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 wah:
   name: The Web Application Hacker's Handbook (první vydání)
@@ -474,96 +479,89 @@ wah:
       - owner: "@JirkaV"
   url: http://books.google.cz/books/about/The_Web_Application_Hacker_s_Handbook.html?id=_EhvBGsWi6AC&redir_esc=y
   language:
-      - en
+      - Anglicky
   tags:
       - Web
 
 sqlperf:
   name: SQL Performance explained
   author: Markus Winand
-  # description:
   copies:
       - owner: "@honzakral"
         current: "@jsuchal"
         borrowed-at: 2015-06-22
   url: http://sql-performance-explained.com/
   language:
-      - en
+      - Anglicky
   tags:
       - SQL
 
 grayhat:
   name: Gray Hat Python
   author: Justin Seitz
-  # description:
   copies:
       - owner: "@JirkaV"
 
   url: https://www.nostarch.com/ghpython.htm
   language:
-      - en
+      - Anglicky
   tags:
       - Python
 
 violent:
   name: Violent Python
   author: TJ O'Connor
-  # description:
   copies:
       - owner: "@JirkaV"
   url: http://shop.oreilly.com/product/9781597499576.do
   language:
-      - en
+      - Anglicky
   tags:
       - Python
 
 cleancode:
   name: Clean Code
   author: Robert C. Martin
-  # description:
   copies:
       - owner: "@JirkaV"
   url:  http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 networkfoundations:
   name: Foundations of Python Network Programming
   author: John Goerzen, Tim Bower, Brandon Rhodes
-  # description:
   copies:
       - owner: "@JirkaV"
   url: http://www.amazon.com/Foundations-Python-Network-Programming-comprehensive/dp/1430230037
   language:
-      - en
+      - Anglicky
   tags:
       - Python
 
 dreaming:
   name: Dreaming in Code
   author: Scott Rosenberg
-  # description:
   copies:
       - owner: "@JirkaV"
   url: http://www.dreamingincode.com/
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 beautiful:
   name: Beautiful Code
   author: Andy Oram, Greg Wilson
-  # description:
   copies:
       - owner: "@JirkaV"
   url: http://shop.oreilly.com/product/9780596510046.do
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 fedora-guide-cz:
   name: Fedora - Příručka začínajícího uživatele.
@@ -573,9 +571,9 @@ fedora-guide-cz:
       - owner: "@encukou"
   url: http://blog.eischmann.cz/2015/10/09/vydali-jsme-prirucku-zacinajiciho-uzivatele-fedory/
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 sqliteguide:
   name: The Definitive Guide to SQLite
@@ -585,7 +583,7 @@ sqliteguide:
       - owner: "@JirkaV"
   url: http://www.apress.com/9781430232254
   language:
-      - en
+      - Anglicky
   tags:
       - SQL
 
@@ -597,19 +595,18 @@ mysqlguide:
       - owner: "@JirkaV"
   url: http://www.apress.com/9781590595350
   language:
-      - en
+      - Anglicky
   tags:
       - SQL
 
 promysql:
   name: Pro MySQL
   author: Jay Pipes, Michael Kruckenberg
-  # description:
   copies:
       - owner: "@JirkaV"
   url: http://www.apress.com/9781590595053
   language:
-      - en
+      - Anglicky
   tags:
       - SQL
 
@@ -621,21 +618,20 @@ ploneguide:
       - owner: "@JirkaV"
   url: http://www.apress.com/9781430218937
   language:
-      - en
+      - Anglicky
   tags:
-      - Other
+      - Ostatní
 
 beginningjavascript:
   name: Beginning JavaScript with DOM Scripting and Ajax
   author: Christian Heilmann
-  # description:
   copies:
       - owner: "@JirkaV"
   url: http://www.apress.com/9781590596807
   language:
-      - en
+      - Anglicky
   tags:
-      - JS
+      - Ostatní
 
 
 mysqlnutshell:
@@ -646,7 +642,7 @@ mysqlnutshell:
       - owner: "@JirkaV"
   url: http://shop.oreilly.com/product/9780596007898.do
   language:
-      - en
+      - Anglicky
   tags:
       - SQL
 
@@ -658,45 +654,43 @@ pragmaticerlang:
       - owner: "@JirkaV"
   url:  https://pragprog.com/book/jaerlang2/programming-erlang
   language:
-      - en
+      - Anglicky
   tags:
-        - Other
+        - Ostatní
 
 kentbecktdd:
   name: "Test Driven Development: By Example"
   author: Kent Beck
-  # description:
   copies:
       - owner: "@JirkaV"
         current: "@waikeri"
         borrowed-at: 2015-12-16
   url: http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530
   language:
-      - en
+      - Anglicky
   tags:
-      - Testing
+      - Testování
 
 hackingsecretciphers:
   name: Hacking Secret Ciphers with Python
   author: Al Sweigart
-  # description:
   copies:
       - owner: "@JirkaV"
   url: http://inventwithpython.com/hacking/
   language:
-      - en
+      - Anglicky
   tags:
-      - Hacker
+      - Python
+
 
 cssmistrovstvi:
   name: Mistrovství v CSS
   author: Dan Rubin, Ian Lloyd, Jeff Croft
-  # description:
   copies:
       - owner: "@JirkaV"
   url: http://knihy.cpress.cz/mistrovstvi-v-css.html
   language:
-      - en
+      - Anglicky
   tags:
       - Web
 
@@ -713,94 +707,69 @@ zaciname-programovat:
         keeper: "@encukou"
   url: http://knihy.cpress.cz/zaciname-programovat-v-jazyce-python-d2.html
   language:
-      - en
+      - Anglicky
   tags:
       - Python
 
 high-performance-django:
   name: High Performance Django
   author: Peter Baumgarten and Yann Malet
-  # description:
   copies:
       - owner: "@honzakral"
         keeper: "@encukou"
         signed: True
   url: https://highperformancedjango.com/
   language:
-      - en
+      - Anglicky
   tags:
       - Web
+      - Python
 
 lightweight-django:
   name: Lightweight Django
   author: Julia Elman, Mark Lavin
-  # description:
   copies:
       - owner: "@honzakral"
         keeper: "@encukou"
         signed: True
   url: http://shop.oreilly.com/product/0636920032502.do
   language:
-      - en
+      - Anglicky
   tags:
       - Web
+      - Python
 
 python-projects-for-kids:
   name: Python Projects for Kids
   author: Jessica Ingrassellino
-  # description:
   copies:
       - owner: "@Paffilda"
   url: https://books.google.cz/books/about/Python_Projects_for_Kids.html?id=KPnJDAAAQBAJ&source=kp_cover&redir_esc=y&hl=cs
   language:
-      - en
+      - Anglicky
   tags:
-      - Kids
+      - Python
+      - Začátečník
 
 python-for-kids:
   name: Python for Kids
   author: Jason R. Briggs
-  # description:
   copies:
       - owner: "@Paffilda"
   url: https://www.nostarch.com/pythonforkids
   language:
-      - en
+      - Anglicky
   tags:
-      - Kids
+      - Python
+      - Začátečník
 
 processing-py:
   name: "Make: Getting Started with Processing.py"
   author: Allison Parrish, Ben Fry, Casey Reas
-  # description:
   copies:
       - owner: "@encukou"
   url: https://www.amazon.com/Processing-py/dp/B01FIR0RY8/
   language:
-      - en
+      - Anglicky
   tags:
-      - Processing
-
-processing-py:
-  name: "Make: Getting Started with Processing.py"
-  author: Allison Parrish, Ben Fry, Casey Reas
-  # description:
-  copies:
-      - owner: "@encukou"
-  url: https://www.amazon.com/Processing-py/dp/B01FIR0RY8/
-  language:
-      - en
-  tags:
-      - Processing
-
-processing-py:
-  name: "Make: Getting Started with Processing.py"
-  author: Allison Parrish, Ben Fry, Casey Reas
-  # description:
-  copies:
-      - owner: "@encukou"
-  url: https://www.amazon.com/Processing-py/dp/B01FIR0RY8/
-  language:
-      - en
-  tags:
-      - Processing
+      - Python

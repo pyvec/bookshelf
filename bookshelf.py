@@ -12,14 +12,13 @@ from flask import Flask, render_template, url_for, abort, send_from_directory, j
 from flask_frozen import Freezer
 from elsa import cli
 
-# $ export FLASK_APP=knihovnicka.py
-# $ export FLASK_DEBUG=1
-# $ flask run
+
 
 app = Flask(__name__)
 MISSING = object()
 
 base = Path(app.root_path) / "covers"
+
 
 @app.route('/')
 def index():
@@ -27,6 +26,7 @@ def index():
     if book is None:
         abort(404)
     return render_template('index.html', books=books,)
+
 
 @app.route('/data/')
 def data():
@@ -40,6 +40,7 @@ def data():
         language.update(value['language'])
     return jsonify({'books':books, 'tags':sorted(tags), 'language':sorted(language),})
 
+
 @app.route('/<book_slug>/')
 def book(book_slug):
     books = read_yaml('books.yml')
@@ -51,14 +52,18 @@ def book(book_slug):
         book_slug=book_slug,
         book=book,
     )
+
+
 @app.route('/info/')
 def info():
     return render_template('info.html')
+
 
 @app.route('/img/<book_slug>')
 def image(book_slug):
     name = find_photo(book_slug)
     return send_from_directory(base, name)
+
 
 def find_photo(book_slug):
     for suffix in '.png', '.jpg':
@@ -68,6 +73,7 @@ def find_photo(book_slug):
             return name
     return "python.png"
 
+
 def pathto(name, static=False):
     if static:
         prefix = '_static/'
@@ -75,6 +81,7 @@ def pathto(name, static=False):
             return url_for('static', filename=name[len(prefix):])
         return name
     return url_for(name)
+
 
 def read_yaml(filename, default=MISSING):
     try:
@@ -87,9 +94,11 @@ def read_yaml(filename, default=MISSING):
         data = yaml.safe_load(file)
     return data
 
+
 @app.context_processor
 def inject_context():
     return {'pathto': pathto, 'today': datetime.date.today(),}
+
 
 if __name__ == '__main__':
     cli(app, base_url='')

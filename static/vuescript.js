@@ -1,9 +1,9 @@
 Vue.component('accordion', {
   props: ['theme'],
-  template: `<div class="accordion" v-bind:class="theme">
-    <div class="header" v-on:click="toggle">
-
-      <i class="fa fa-2x fa-angle-down header-icon" v-bind:class="{ rotate: show }"></i>
+  template: `<div class="accordion " v-bind:class="theme">
+    <div class="header " v-on:click="toggle">
+          <i class="fa fa-2x fa-angle-down header-icon" v-bind:class="{ rotate: show }"></i>
+          <span>Filtr</span>
     </div>
     <transition name="accordion"
       v-on:before-enter="beforeEnter" v-on:enter="enter"
@@ -43,10 +43,10 @@ Vue.component('accordion', {
 Vue.component('language-list', {
     template:`
 <ul v-on:input="$emit('input', $event.target.value)" >
-    <li class='col-3 col-md-2 col-xl-1 p-0'>
-        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' value='All'/> All </label>
+    <li class='col-6 col-md-4 col-lg-3 p-0'>
+        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' value='Vše'/> Vše </label>
     </li>
-    <li v-for='lang in language' class='col-3 col-md-2 col-xl-1 p-0'>
+    <li v-for='lang in language' class='col-6 col-md-4 col-lg-3 p-0'>
         <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' :value='lang' /> {{ lang }} </label>
     </li>
 </ul>
@@ -56,17 +56,17 @@ Vue.component('language-list', {
 Vue.component('tag-list', {
     template:`
 <ul>
-    <li class='col-6 col-md-4 col-lg-2 cl-xl-2 p-0'>
-        <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"handle_all($event);\" :checked='selectedtags.includes(\"All\")' name='All' value='All' :disabled='selectedtags.includes(\"All\")'/> All </label>
+    <li class='col-6 col-md-4 col-lg-3 p-0'>
+        <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"handle_all($event);\" :checked='selectedtags.includes(\"Vše\")' name='Vše' value='Vše' :disabled='selectedtags.includes(\"Vše\")'/> Vše </label>
     </li>
-    <li v-for='tag in tags' class='col-6 col-md-4 col-lg-2 p-0'>
+    <li v-for='tag in tags' class='col-6 col-md-4 col-lg-3 p-0'>
         <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"add_or_remove($event);\" :checked='selectedtags.includes(tag)' :name='tag' :value='tag' /> {{ tag }} </label>
     </li>
 </ul>
     `,
     methods: {
         handle_all: function (event) {
-            this.$emit('input', ["All"]);
+            this.$emit('input', ["Vše"]);
         },
         add_or_remove: function (event) {
             var array = this.selectedtags;
@@ -79,14 +79,14 @@ Vue.component('tag-list', {
                 if (!array.includes(name)) {
                     array.push(name);
                 }
-                if (array.includes("All")) {
-                    array.splice(array.indexOf("All"), 1);
+                if (array.includes("Vše")) {
+                    array.splice(array.indexOf("Vše"), 1);
                 }
             } else {
                 if (array.includes(name)) {
                     array.splice(array.indexOf(name), 1);
                     if (array.length == 0) {
-                        array = ["All"];
+                        array = ["Vše"];
                     }
                 }
             }
@@ -97,7 +97,7 @@ Vue.component('tag-list', {
 })
 Vue.component('book-list', {
     template:`
-    <ul>
+    <ul >
         <li v-for='book in books' class='col-6 col-md-4 col-lg-3 p-0'>
             <div class='book-box m-2'>
                 <a v-bind:href='book.book_url'>
@@ -129,22 +129,22 @@ fetch("/data/")
             data: {
                 active: true,
                 tags: data.tags,
-                selectedtags: ["All"],
+                selectedtags: ["Vše"],
                 language: data.language,
-                selectedlanguage: "All",
+                selectedlanguage: "Vše",
             },
             computed: {
                 books: function() {
                     var lang = this.selectedlanguage;
                     var tags = this.selectedtags;
                     var result = Object.values(data.books);
-                    if(lang !== "All") {
+                    if(lang !== "Vše") {
                         result = result.filter(function(book){
                             return book.language.includes(lang);
                         });
                     };
                     for (let tag of tags) {
-                        if(tag !== "All") {
+                        if(tag !== "Vše") {
                             result = result.filter(function(book){
                                 return book.tags.includes(tag);
                             });

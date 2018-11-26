@@ -23,8 +23,7 @@ li {
 	list-style-type: none;
 }
 ul {
-	padding: 0;
-	margin: 0;
+
 }
 a:hover {
 	text-decoration: none;
@@ -32,6 +31,9 @@ a:hover {
 }
 p a:hover {
 	text-decoration: underline;
+}
+label {
+	white-space: nowrap;
 }
 /* h text color */
 .h-c {
@@ -69,13 +71,15 @@ font-size: 40px;
 /* Filter */
 
 .data {
-	height: 40px;
+	height: 56px;
 }
+
 .accordion .header {
 	position: relative;
 	cursor: pointer;
 	top: -46px;
-	}
+
+}
 
 .accordion .header-icon {
 	position: absolute;
@@ -84,19 +88,33 @@ font-size: 40px;
 	transform: rotate(0deg);
 	transition-duration: 0.3s;
 	color: #808081;
-	}
+}
 
 .accordion .body-inner {
 	padding: 20px 0;
 	overflow-wrap: break-word;
 	/*   white-space: pre-wrap; */
-	}
+}
 
 .accordion .header-icon.rotate {
 	transform: rotate(180deg);
 	transition-duration: 0.3s;
+}
+.accordion span {
+	display: none;
+}
+@media all and (min-width: 576px) {
+	.accordion span {
+		display: block;
+		position: absolute;
+		top: 6px;
+		right: 40px;
+	}
+	.data {
+		height: 40px;
 	}
 
+}
 /* __Home Content__  */
 
 .book-box {
@@ -154,7 +172,20 @@ font-size: 40px;
 .fa-external-link-alt {
 	font-size: 20px;
 }
+
+.info-link-btn {
+	margin: 1rem;
+	display: block;
+	padding: 1rem;
 }
+.borrow {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 1rem;
+}
+￼
+
 /* __Footer__ */
 
 footer {
