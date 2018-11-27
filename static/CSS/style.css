@@ -69,7 +69,7 @@ color: #28a745;
 
 .navbar-logo a {
     color: #f8f9fa;
-font-size: 40px;
+font-size: 2em;
 
 }
 .info {
@@ -78,10 +78,19 @@ font-size: 40px;
     text-align: right;
     display: block;
 }
+@media all and (min-width: 576px) {
+	.navbar-logo a {
+	font-size: 40px;
+	}
+	.info {
+	color: #ffffff;
+    font-size: 1.2em;
+	}
+}
 /* Filter */
 
 .data {
-	height: 56px;
+	height: 76px;
 }
 
 .accordion .header {
@@ -128,17 +137,16 @@ font-size: 40px;
 /* __Home Content__  */
 
 .book-box {
-    height: 415px;
+    height: 346px;
     border: 1px solid #eee;
-
-    padding: 15px 20px 0;
+    padding: 10px 10px 0;
     background-color: white;
     border-radius: 5px;
 }
 .img-preview {
     max-width: 100%;
     height: auto;
-    max-height: 200px;
+    max-height: 160px;
     width: auto;
 }
 .book-name {
@@ -150,7 +158,7 @@ font-size: 40px;
 
 }
 .book-name h2 {
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 .book-author {
@@ -161,9 +169,24 @@ font-size: 40px;
     height: auto;
 }
 .book-about {
-    height: 180px;
+    height: 146px;
 }
+@media all and (min-width: 576px) {
+	.book-name h2 {
+	    font-size: 1.4em;
+	}
+	.book-about {
+	    height: 180px;
+	}
+	.img-preview {
+	    max-height: 200px;
 
+	}
+	.book-box {
+	    height: 415px;
+	    padding: 15px 20px 0;
+	}
+}
 /* __Book  Deatail__ */
 .content {
     width: 100%;

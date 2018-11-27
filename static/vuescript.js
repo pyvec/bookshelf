@@ -3,7 +3,7 @@ Vue.component('accordion', {
   template: `<div class="accordion " v-bind:class="theme">
     <div class="header " v-on:click="toggle">
           <i class="fa fa-2x fa-angle-down header-icon" v-bind:class="{ rotate: show }"></i>
-          <span>Filtr</span>
+          <span></span>
     </div>
     <transition name="accordion"
       v-on:before-enter="beforeEnter" v-on:enter="enter"
@@ -42,27 +42,27 @@ Vue.component('accordion', {
 
 Vue.component('language-list', {
     template:`
-<ul v-on:input="$emit('input', $event.target.value)" >
-    <li class='col-6 col-md-4 col-lg-3 p-0'>
+<div v-on:input="$emit('input', $event.target.value)">
+    <div class='col-6 col-md-4 col-lg-3 p-0'>
         <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' value='Vše'/> Vše </label>
-    </li>
-    <li v-for='lang in language' class='col-6 col-md-4 col-lg-3 p-0'>
+    </div>
+    <div v-for='lang in language' class='col-6 col-md-4 col-lg-3 p-0'>
         <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' :value='lang' /> {{ lang }} </label>
-    </li>
-</ul>
+    </div>
+</div>
     `,
     props:['language', 'selectedlanguage'],
 })
 Vue.component('tag-list', {
     template:`
-<ul>
-    <li class='col-6 col-md-4 col-lg-3 p-0'>
+<div class='p-0'>
+    <div class='col-6 col-md-4 col-lg-3 p-0'>
         <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"handle_all($event);\" :checked='selectedtags.includes(\"Vše\")' name='Vše' value='Vše' :disabled='selectedtags.includes(\"Vše\")'/> Vše </label>
-    </li>
-    <li v-for='tag in tags' class='col-6 col-md-4 col-lg-3 p-0'>
+    </div>
+    <div v-for='tag in tags' class='col-6 col-md-4 col-lg-3 p-0'>
         <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"add_or_remove($event);\" :checked='selectedtags.includes(tag)' :name='tag' :value='tag' /> {{ tag }} </label>
-    </li>
-</ul>
+    </div>
+</div>
     `,
     methods: {
         handle_all: function (event) {
@@ -97,9 +97,9 @@ Vue.component('tag-list', {
 })
 Vue.component('book-list', {
     template:`
-    <ul >
-        <li v-for='book in books' class='col-6 col-md-4 col-lg-3 p-0'>
-            <div class='book-box m-2'>
+    <div class='p-0'>
+        <div v-for='book in books' class='col-6 col-md-4 col-lg-3 p-0'>
+            <div class='book-box m-1 m-md-2'>
                 <a v-bind:href='book.book_url'>
                     <div class='book-about d-flex flex-column'>
                         <div class='book-name m-0 p-O'>\
@@ -114,8 +114,8 @@ Vue.component('book-list', {
                     </div>
                 </a>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 `,
     props:['books', 'selectedtags', 'selectedlanguage', 'today']
     })

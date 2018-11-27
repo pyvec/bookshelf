@@ -35,8 +35,9 @@ $ export FLASK_DEBUG=1
 $ flask run
 
 Přídání knihy:
-do books.yml vyplnit
-nazevknihy:
+do books.yml vyplnit:
+
+nazev-knihy:
     name: Název knihy
     author: Autor
     description: Krátký popis knihy
@@ -49,6 +50,8 @@ nazevknihy:
           signed: True (jen když je podepsaná)
     url: http://odkaznaknihu.cz
     language:
-        - en nebo cs
+        - Anglicky/Česky
     tags:
         - (doplň všechny vhodné tagy)
+
+do složky covers dát obrázek přebalu ve formátu "nazev-knihy.jpg/png" název musí být stejný  jako v ymlu.
