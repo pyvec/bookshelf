@@ -43,10 +43,10 @@ Vue.component('accordion', {
 Vue.component('language-list', {
     template:`
 <div v-on:input="$emit('input', $event.target.value)">
-    <div class='col-6 col-md-4 col-lg-3 p-0'>
+    <div class='col-6 col-sm-4 col-lg-3 p-0'>
         <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' value='Vše'/> Vše </label>
     </div>
-    <div v-for='lang in language' class='col-6 col-md-4 col-lg-3 p-0'>
+    <div v-for='lang in language' class='col-6 col-sm-4 col-lg-3 p-0'>
         <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' :value='lang' /> {{ lang }} </label>
     </div>
 </div>
@@ -56,10 +56,10 @@ Vue.component('language-list', {
 Vue.component('tag-list', {
     template:`
 <div class='p-0'>
-    <div class='col-6 col-md-4 col-lg-3 p-0'>
+    <div class='col-6 col-sm-4 col-lg-3 p-0'>
         <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"handle_all($event);\" :checked='selectedtags.includes(\"Vše\")' name='Vše' value='Vše' :disabled='selectedtags.includes(\"Vše\")'/> Vše </label>
     </div>
-    <div v-for='tag in tags' class='col-6 col-md-4 col-lg-3 p-0'>
+    <div v-for='tag in tags' class='col-6 col-sm-4 col-lg-3 p-0'>
         <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"add_or_remove($event);\" :checked='selectedtags.includes(tag)' :name='tag' :value='tag' /> {{ tag }} </label>
     </div>
 </div>
@@ -112,6 +112,8 @@ Vue.component('book-list', {
                     <div  class='book-img text-center'>
                         <img v-bind:src='book.img_url' class='img-thumbnail img-preview' alt='obal_knihy'/>
                     </div>
+                    <div >
+                    Tralala {{ today }}</div>
                 </a>
             </div>
         </div>
@@ -139,6 +141,7 @@ fetch("/data/")
                     var lang = this.selectedlanguage;
                     var tags = this.selectedtags;
                     var result = Object.values(data.books);
+                    var today = this.today;
                     if(lang !== "Vše") {
                         result = result.filter(function(book){
                             return book.language.includes(lang);
@@ -152,6 +155,7 @@ fetch("/data/")
                         };
                     };
                     return result;
+
                 },
 
             }

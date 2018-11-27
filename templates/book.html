@@ -22,11 +22,16 @@
                 <div class="owner-box b-bg p-2 m-0 mt-3">
                     <div class="d-flex justify-content-between">
 
-                        {% if copy['owner'][0] == '@' %}
-                            <p  class="m-0">Majitel: <a href="https://github.com/{{ copy['owner'][1:] }}">{{ copy['owner'][1:] }}</a>
-                        {% else %}
-                            <p  class="m-0">Majitel: {{ copy['owner'] }}
-                        {% endif %}
+                        {% macro person(name) %}
+                                {% if name[0] == '@' %}
+                                    <a href="https://github.com/{{ name[1:] }}">{{ name[1:] }}</a>
+                                {% else %}
+                                    {{ name }}
+                                {% endif %}
+                        {% endmacro %}
+
+                        <p  class="m-0">Majitel:
+                        {{ person(copy['owner']) }}
 
                         {% if 'current' not in copy and 'keeper' not in copy %}
                             <i class="fas fa-circle green" title="Kniha si můžeš půjčit."></i>
@@ -41,23 +46,20 @@
 
                     {% if copy.get('keeper') %}
 
-                        {% if copy['keeper'][0] == '@' %}
-                            <p class="m-0">O knihu se stará: <a href="https://github.com/{{ copy['keeper'][1:] }}">{{ copy['keeper'][1:] }}</a>
-                        {% else %}
-                            <p class="m-0">O knihu se stará: {{ copy.get('keeper')}}
-                        {% endif %}
 
-                        {% if 'current' not in copy %}
-                            <i class="fas fa-circle green" title="Kniha si můžeš půjčit."></i>
-                        {% endif %}</p>
+                    <p class="m-0">O knihu se stará:
+                    {{ person(copy['keeper']) }}
+
+                    {% if 'current' not in copy %}
+                        <i class="fas fa-circle green" title="Kniha si můžeš půjčit."></i>
+                    {% endif %}</p>
 
                     {% endif %}
                     {% if 'current' in copy %}
-                        {% if copy['current'][0] == '@' %}
-                            <p class="m-0">Aktuálně u <a href="https://github.com/{{ copy['current'][1:] }}">{{ copy['current'][1:] }}</a>
-                        {% else %}
-                            <p class="m-0">Aktuálně u {{ copy['current'] }}
-                        {% endif %}
+
+                        <p class="m-0">Aktuálně u
+                        {{ person(copy['current']) }}
+
                         {% if 'borrowed-at' in copy %}
                             od {{ copy['borrowed-at'].month }}. {{ copy['borrowed-at'].year }}
                             {% if (today.year-copy['borrowed-at'].year)*365 + (today.month-copy['borrowed-at'].month)*30 + today.day-copy['borrowed-at'].day < 31 %}
@@ -70,8 +72,6 @@
                     {% else %}
 
                     {% endif %}
-
-
 
                 </div>
             {% endfor %}

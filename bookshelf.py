@@ -33,15 +33,30 @@ def data():
     books = read_yaml('books.yml')
     tags = set()
     language = set()
-    date = inject_context()
-    today = date['today']
+
+    today = datetime.date.today()
+
 
     for key, value in books.items():
         value['img_url'] = '/img/' + str(key)
         value['book_url'] = '/' + str(key)
+        for book in value['copies']:
+            if 'borrowed-at' in book:
+                book['days'] = (today - book['borrowed-at']).days
         tags.update(value['tags'])
         language.update(value['language'])
-    return jsonify({'books':books, 'tags':sorted(tags), 'language':sorted(language), 'today':today})
+    return jsonify({'books':books, 'tags':sorted(tags), 'language':sorted(language)})
+# >>> a, b = yaml.load('[2018-06-15T08-45, 2012-04-12T13-00]')
+# >>> a, b
+# ('2018-06-15T08-45', '2012-04-12T13-00')
+# >>>
+# >>> a, b = yaml.load('[2018-06-15, 2012-04-12]')
+# >>> a
+# datetime.date(2018, 6, 15)
+# >>> delta = a - b
+# >>> delta.days
+# 2255
+# >>>
 
 
 @app.route('/<book_slug>/')

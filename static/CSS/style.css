@@ -90,20 +90,20 @@ font-size: 2em;
 /* Filter */
 
 .data {
-	height: 76px;
+	height: 90px;
 }
 
 .accordion .header {
 	position: relative;
 	cursor: pointer;
-	top: -46px;
+	top: -44px;
 
 }
 
 .accordion .header-icon {
 	position: absolute;
-	top: 5px;
-	right: 8px;
+	top: 16px;
+	left: 1px;
 	transform: rotate(0deg);
 	transition-duration: 0.3s;
 	color: #808081;
@@ -126,11 +126,11 @@ font-size: 2em;
 	.accordion span {
 		display: block;
 		position: absolute;
-		top: 6px;
-		right: 40px;
+		top: 10px;
+	    left: 1px;
 	}
 	.data {
-		height: 40px;
+		height: 70px;
 	}
 
 }
