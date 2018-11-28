@@ -47,7 +47,7 @@
                     <p class="m-0">O knihu se stará:
                     {{ person(copy['keeper']) }}
                         {% if 'current' not in copy %}
-                            <i class="fas fa-circle green" title="Kniha si můžeš půjčit.">{{ copy['days'] }}</i>
+                            <i class="fas fa-circle green" title="Knihu si můžeš půjčit.">{{ copy['days'] }}</i>
                         {% endif %}</p>
                     {% endif %}
 
@@ -58,9 +58,9 @@
                             od {{ copy['borrowed'].month }}/{{ copy['borrowed'].year }}
                         {% endif %}
                         {% if  (today - copy['borrowed']).days < 31 %}
-                        <i class="fas fa-circle red" title="Knihu právě někdo čte.">{{ days }}</i>
+                        <i class="fas fa-circle red" title="Ještě neuběhla výpůjční doba.">{{ days }}</i>
                         {% else %}
-                        <i class="fas fa-circle orange" title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">{{ copy['days'] }}</i>
+                        <i class="fas fa-circle orange" title="Knihu už má půjčenou dlouho. Můžeš si ji půjčit.">{{ copy['days'] }}</i>
                         {% endif %}
                         </p>
                 {% endif %}
