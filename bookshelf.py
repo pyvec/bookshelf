@@ -41,8 +41,8 @@ def data():
         value['img_url'] = '/img/' + str(key)
         value['book_url'] = '/' + str(key)
         for book in value['copies']:
-            if 'borrowed-at' in book:
-                book['days'] = (today - book['borrowed-at']).days
+            if 'borrowed' in book:
+                book['days'] = (today - book['borrowed']).days
         tags.update(value['tags'])
         language.update(value['language'])
     return jsonify({'books':books, 'tags':sorted(tags), 'language':sorted(language)})

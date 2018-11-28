@@ -44,7 +44,7 @@ nazev-knihy:
     copies:    
         - owner: "@jmenonagithubu"
           current: "@jmenonagithubu"
-          borrowed-at: yyyy-mm-dd
+          borrowed: yyyy-mm-dd
         - owner: "@jmenonagithubu"
           keeper: "@jmenonagithubu"
           signed: True (jen když je podepsaná)

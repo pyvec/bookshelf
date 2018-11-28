@@ -112,14 +112,17 @@ Vue.component('book-list', {
                     <div  class='book-img text-center'>
                         <img v-bind:src='book.img_url' class='img-thumbnail img-preview' alt='obal_knihy'/>
                     </div>
-                    <div >
-                    Tralala {{ today }}</div>
+                    <div v-for='copy in book.copies'>
+                    <i v-if="copy.days < 31" class="fas fa-circle orange" title="Kniha už je půjčená dlouho, ale ještě nebyla vrácena. Můžeš si ji půjčit."></i>
+                    <i v-if="copy.days >= 31" class="fas fa-circle orange" title="Kniha už je půjčená dlouho, ale ještě nebyla vrácena. Můžeš si ji půjčit."></i>
+                    <i v-else class="fas fa-circle green" title="Kniha si můžeš půjčit."></i>
+                    </div>
                 </a>
             </div>
         </div>
     </div>
 `,
-    props:['books', 'selectedtags', 'selectedlanguage', 'today']
+    props:['books', 'selectedtags', 'selectedlanguage']
     })
 
 fetch("/data/")
@@ -134,14 +137,12 @@ fetch("/data/")
                 selectedtags: ["Vše"],
                 language: data.language,
                 selectedlanguage: "Vše",
-                today: data.today,
             },
             computed: {
                 books: function() {
                     var lang = this.selectedlanguage;
                     var tags = this.selectedtags;
                     var result = Object.values(data.books);
-                    var today = this.today;
                     if(lang !== "Vše") {
                         result = result.filter(function(book){
                             return book.language.includes(lang);
@@ -155,7 +156,6 @@ fetch("/data/")
                         };
                     };
                     return result;
-
                 },
 
             }

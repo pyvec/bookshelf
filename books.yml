@@ -5,7 +5,7 @@ ponormese:
       - owner: "@hroncok"
       - owner: "@encukou"
         current: "Dita S PL Brno"
-        borrowed-at: 2018-10-08
+        borrowed: 2018-10-08
 
   url: http://diveintopython3.py.cz/index.html
   language:
@@ -47,7 +47,7 @@ python-cookbook:
   copies:
       - owner: "@encukou"
         current: "@stratakis"
-        borrowed-at: 2016-02-24
+        borrowed: 2016-02-24
   url: http://shop.oreilly.com/product/0636920027072.do
   language:
       - Anglicky
@@ -75,7 +75,7 @@ data-wrangling:
   copies:
       - owner: "@encukou"
         current: "Katka L. PL Brno"
-        borrowed-at: 2018-11-05
+        borrowed: 2018-11-05
   url: http://shop.oreilly.com/product/0636920032861.do
   language:
       - Anglicky
@@ -91,7 +91,7 @@ data-analysis:
   copies:
       - owner: "@encukou"
         current: "@rkuska"
-        borrowed-at: 2015-11-15
+        borrowed: 2015-11-15
   url: http://shop.oreilly.com/product/0636920023784.do
   language:
       - Anglicky
@@ -106,10 +106,10 @@ hello-web-app:
   copies:
       - owner: "@encukou"
         current: "@Ajuska"
-        borrowed-at: 2018-01-20
+        borrowed: 2018-01-20
       - owner: "@encukou"
         current: "@vahalova"
-        borrowed-at: 2018-07-01
+        borrowed: 2018-07-01
   url: https://hellowebbooks.com/learn-django/
   language:
       - Anglicky
@@ -125,7 +125,7 @@ hello-web-app-intermediate:
   copies:
       - owner: "@encukou"
         current: "@vahalova"
-        borrowed-at: 2018-07-01
+        borrowed: 2018-07-01
   url: https://hellowebbooks.com/django-intermediate-concepts/
   language:
       - Anglicky
@@ -178,7 +178,7 @@ kivy:
   copies:
       - owner: "@encukou"
         current: Laca
-        borrowed-at: 2015-11-10
+        borrowed: 2015-11-10
   url: http://shop.oreilly.com/product/0636920032595.do
   language:
       - Anglicky
@@ -227,7 +227,7 @@ team-geek:
   copies:
       - owner: "@yedpodtrzitko"
         current: "@hroncok"
-        borrowed-at: 2017-11-22
+        borrowed: 2017-11-22
   url: http://shop.oreilly.com/product/0636920018025.do
   language:
       - Anglicky
@@ -358,7 +358,7 @@ computer-vision:
   copies:
       - owner: "@encukou"
         current: "@gr4viton"
-        borrowed-at: 2017-08-26
+        borrowed: 2017-08-26
   url:  http://programmingcomputervision.com/
   language:
       - Anglicky
@@ -414,7 +414,7 @@ how-learning-works:
   copies:
       - owner: "@encukou"
         current: "Šárka PL Brno"
-        borrowed-at: 2018-10-08
+        borrowed: 2018-10-08
   url: http://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101
   language:
       - Anglicky
@@ -496,7 +496,7 @@ sqlperf:
   copies:
       - owner: "@honzakral"
         current: "@jsuchal"
-        borrowed-at: 2015-06-22
+        borrowed: 2015-06-22
   url: http://sql-performance-explained.com/
   language:
       - Anglicky
@@ -671,7 +671,7 @@ kentbecktdd:
   copies:
       - owner: "@JirkaV"
         current: "@waikeri"
-        borrowed-at: 2015-12-16
+        borrowed: 2015-12-16
   url: http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530
   language:
       - Anglicky
@@ -709,10 +709,10 @@ zaciname-programovat:
   copies:
       - owner: "@encukou"
         current: David R.
-        borrowed-at: 2015-09-20
+        borrowed: 2015-09-20
       - owner: "@yedpodtrzitko"
         current: "Zuzka K. PL Brno"
-        borrowed-at: 2018-10-08
+        borrowed: 2018-10-08
   url: http://knihy.cpress.cz/zaciname-programovat-v-jazyce-python-d2.html
   language:
       - Anglicky

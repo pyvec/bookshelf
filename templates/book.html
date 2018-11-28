@@ -60,9 +60,9 @@
                         <p class="m-0">Aktuálně u
                         {{ person(copy['current']) }}
 
-                        {% if 'borrowed-at' in copy %}
-                            od {{ copy['borrowed-at'].month }}. {{ copy['borrowed-at'].year }}
-                            {% if (today.year-copy['borrowed-at'].year)*365 + (today.month-copy['borrowed-at'].month)*30 + today.day-copy['borrowed-at'].day < 31 %}
+                        {% if 'borrowed' in copy %}
+                            od {{ copy['borrowed'].month }}/{{ copy['borrowed'].year }}
+                            {% if 'days' in copy < 31 %}
                             <i class="fas fa-circle red" title="Knihu právě někdo čte."></i>
                             {% else %}
                             <i class="fas fa-circle orange" title="Kniha už je půjčená dlouho, ale ještě nebyla vrácena. Můžeš si ji půjčit."></i>
