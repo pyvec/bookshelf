@@ -7,6 +7,7 @@ import json
 import jinja2
 import markdown
 
+
 from pathlib import Path
 from flask import Flask, render_template, url_for, abort, send_from_directory, jsonify
 from flask_frozen import Freezer
@@ -20,23 +21,12 @@ MISSING = object()
 base = Path(app.root_path) / "covers"
 
 
-@app.route('/')
-def index():
-    books = read_yaml('books.yml')
-    if book is None:
-        abort(404)
-    return render_template('index.html', books=books,)
-
-
 @app.route('/data/')
 def data():
     books = read_yaml('books.yml')
     tags = set()
     language = set()
-
     today = datetime.date.today()
-
-
     for key, value in books.items():
         value['img_url'] = '/img/' + str(key)
         value['book_url'] = '/' + str(key)
@@ -46,17 +36,14 @@ def data():
         tags.update(value['tags'])
         language.update(value['language'])
     return jsonify({'books':books, 'tags':sorted(tags), 'language':sorted(language)})
-# >>> a, b = yaml.load('[2018-06-15T08-45, 2012-04-12T13-00]')
-# >>> a, b
-# ('2018-06-15T08-45', '2012-04-12T13-00')
-# >>>
-# >>> a, b = yaml.load('[2018-06-15, 2012-04-12]')
-# >>> a
-# datetime.date(2018, 6, 15)
-# >>> delta = a - b
-# >>> delta.days
-# 2255
-# >>>
+
+
+@app.route('/')
+def index():
+    books = read_yaml('books.yml')
+    if books is None:
+        abort(404)
+    return render_template('index.html', books=books,)
 
 
 @app.route('/<book_slug>/')
@@ -65,10 +52,12 @@ def book(book_slug):
     book = books.get(book_slug)
     if book is None:
         abort(404)
+    today = datetime.date.today()
     return render_template(
         'book.html',
         book_slug=book_slug,
         book=book,
+        today=today,
     )
 
 

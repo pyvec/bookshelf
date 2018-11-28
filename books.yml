@@ -72,8 +72,10 @@ testing-goat:
 data-wrangling:
   name: Data Wrangling with Python
   author: Jacqueline Kazil & Katharine Jarmul
+  description: Tips and Tools to Make Your Life Easier
   copies:
       - owner: "@encukou"
+        signed: True
         current: "Katka L. PL Brno"
         borrowed: 2018-11-05
   url: http://shop.oreilly.com/product/0636920032861.do
@@ -274,20 +276,6 @@ py3porting:
   language:
       - Anglicky
   tags:
-      - Python
-
-data-wrangling:
-  name: Data Wrangling with Python
-  author: Jacqualine Kazil & Katharine Jarmul
-  description: Tips and Tools to Make Your Life Easier
-  copies:
-      - owner: "@encukou"
-        signed: True
-  url: http://shop.oreilly.com/product/0636920032861.do
-  language:
-      - Anglicky
-  tags:
-      - Data
       - Python
 
 data-science-handbook:

@@ -171,6 +171,10 @@ font-size: 2em;
 .book-about {
     height: 146px;
 }
+.dot {
+ 	margin-right: 5px;
+	}
+}
 @media all and (min-width: 576px) {
 	.book-name h2 {
 	    font-size: 1.4em;

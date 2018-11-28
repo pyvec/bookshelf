@@ -112,10 +112,12 @@ Vue.component('book-list', {
                     <div  class='book-img text-center'>
                         <img v-bind:src='book.img_url' class='img-thumbnail img-preview' alt='obal_knihy'/>
                     </div>
+                    <div class="d-flex">
                     <div v-for='copy in book.copies'>
-                    <i v-if="copy.days < 31" class="fas fa-circle orange" title="Kniha už je půjčená dlouho, ale ještě nebyla vrácena. Můžeš si ji půjčit."></i>
-                    <i v-if="copy.days >= 31" class="fas fa-circle orange" title="Kniha už je půjčená dlouho, ale ještě nebyla vrácena. Můžeš si ji půjčit."></i>
-                    <i v-else class="fas fa-circle green" title="Kniha si můžeš půjčit."></i>
+                    <i v-if="copy.days < 31" class="fas fa-circle red" title="Knihu právě někdo čte.">{{ copy.days }}</i>
+                    <i v-else-if="copy.days >= 31" class="fas fa-circle orange dot" title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">{{ copy.days }}</i>
+                    <i v-else class="fas fa-circle green dot" title="Kniha si můžeš půjčit.">{{ copy.days }}</i>
+                    </div>
                     </div>
                 </a>
             </div>
