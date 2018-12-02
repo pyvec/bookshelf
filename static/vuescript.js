@@ -44,10 +44,10 @@ Vue.component('language-list', {
     template:`
 <div v-on:input="$emit('input', $event.target.value)">
     <div class='col-6 col-sm-4 col-lg-3 p-0'>
-        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' value='Vše'/> Vše </label>
+        <label class='checkbox-inline mx-3 pointer' ><input class='pointer' type='radio' v-model='selectedlanguage' value='Vše'/> Vše </label>
     </div>
     <div v-for='lang in language' class='col-6 col-sm-4 col-lg-3 p-0'>
-        <label class='checkbox-inline mx-3' ><input type='radio' v-model='selectedlanguage' :value='lang' /> {{ lang }} </label>
+        <label class='checkbox-inline mx-3 pointer' ><input class='pointer' type='radio' v-model='selectedlanguage' :value='lang' /> {{ lang }} </label>
     </div>
 </div>
     `,
@@ -57,10 +57,10 @@ Vue.component('tag-list', {
     template:`
 <div class='p-0'>
     <div class='col-6 col-sm-4 col-lg-3 p-0'>
-        <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"handle_all($event);\" :checked='selectedtags.includes(\"Vše\")' name='Vše' value='Vše' :disabled='selectedtags.includes(\"Vše\")'/> Vše </label>
+        <label class='checkbox-inline mx-3 pointer' ><input class='pointer' type='checkbox' @input=\"handle_all($event);\" :checked='selectedtags.includes(\"Vše\")' name='Vše' value='Vše' :disabled='selectedtags.includes(\"Vše\")'/> Vše </label>
     </div>
     <div v-for='tag in tags' class='col-6 col-sm-4 col-lg-3 p-0'>
-        <label class='checkbox-inline mx-3' ><input type='checkbox' @input=\"add_or_remove($event);\" :checked='selectedtags.includes(tag)' :name='tag' :value='tag' /> {{ tag }} </label>
+        <label class='checkbox-inline mx-3 pointer' ><input class='pointer' type='checkbox' @input=\"add_or_remove($event);\" :checked='selectedtags.includes(tag)' :name='tag' :value='tag' /> {{ tag }} </label>
     </div>
 </div>
     `,
@@ -99,25 +99,25 @@ Vue.component('book-list', {
     template:`
     <div class='p-0'>
         <div v-for='book in books' class='col-6 col-md-4 col-lg-3 p-0'>
-            <div class='book-box m-1 m-md-2'>
+            <div class='book-box img-thumbnail rounded-0  m-1 m-md-2'>
                 <a v-bind:href='book.book_url'>
                     <div class='book-about d-flex flex-column'>
                         <div class='book-name m-0 p-O'>\
                             <h2 class='h-c m-0'>{{ book.name }}</h2>
                         </div>
                         <div class='book-author m-0'>
-                            <p class='a-c mt-2 mb-0 font-italic'>{{ book.author}}</p>
+                            <p class='a-c  m-0 '>{{ book.author}}</p>
                         </div>
                     </div>
                     <div  class='book-img text-center'>
-                        <img v-bind:src='book.img_url' class='img-thumbnail img-preview' alt='obal_knihy'/>
+                        <img v-bind:src='book.img_url' class='img-thumbnail rounded-0 img-preview' alt='obal_knihy'/>
                     </div>
                     <div class="d-flex">
-                    <div v-for='copy in book.copies'>
-                    <i v-if="copy.days < 31" class="fas fa-circle red" title="Knihu právě někdo čte."></i>
-                    <i v-else-if="copy.days >= 31" class="fas fa-circle orange dot" title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit."></i>
-                    <i v-else class="fas fa-circle green dot" title="Knihu si můžeš půjčit."></i>
-                    </div>
+                        <div v-for='copy in book.copies'>
+                            <i v-if="copy.days < 31" class="fas fa-book-reader red" title="Knihu právě někdo čte."></i>
+                            <i v-else-if="copy.days >= 31" class="fas fa-book-open orange dot" title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit."></i>
+                            <i v-else class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                        </div>
                     </div>
                 </a>
             </div>

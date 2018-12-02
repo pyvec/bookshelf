@@ -1,3 +1,4 @@
+
 # Knihovnička
 
 ## Jak to funguje?
@@ -29,29 +30,65 @@ Jména jako "@encukou" jsou účty na Githubu.
 Names such as "@encukou" represent Github usernames.
 "Majitel" means "Owner". "Aktuálně u" means "Currently at".
 
-Souštění:
-$ export FLASK_APP=bookshelf.py
-$ export FLASK_DEBUG=1
-$ flask run
 
-Přídání knihy:
-do books.yml vyplnit:
+### Spuštění webu lokálně v PC
 
-nazev-knihy:
-    name: Název knihy
-    author: Autor
-    description: Krátký popis knihy
-    copies:    
-        - owner: "@jmenonagithubu"
-          current: "@jmenonagithubu"
-          borrowed: yyyy-mm-dd
-        - owner: "@jmenonagithubu"
-          keeper: "@jmenonagithubu"
-          signed: True (jen když je podepsaná)
-    url: http://odkaznaknihu.cz
-    language:
-        - Anglicky/Česky
-    tags:
-        - (doplň všechny vhodné tagy)
+Ve virtuálním prostředí s Pythhonem 3.6 (nebo vyšším) spusť:
 
-do složky covers dát obrázek přebalu ve formátu "nazev-knihy.jpg/png" název musí být stejný  jako v ymlu.
+    $ python -m pip install -r requirements.txt
+
+Ve stejném virtuálním prostředí spusť na Linuxu/macOS:
+
+    $ export PYTHONPATH=.
+
+nebo na Windows:
+
+    > set PYTHONPATH=.
+
+a pak (na všech systémech):
+
+    $ python bookshelf.py serve
+
+Stránky se zpřístupní na adrese `http://127.0.0.1:8003/`.
+Změny v kódu se projeví po obnovení stránky v prohlížeči.
+
+### Přídání knihy:
+do `books.yml` vyplnit:
+
+**nazev-knihy**:
+ -  `name`: Název knihy
+ - `author`: Autor knihy
+ - `description`: Krátký popis knihy
+ - `copies`:
+   				  `owner`: "@jmenonagithubu"
+   				   `current`: "@jmenonagithubu"
+   				   `borrowed`: yyyy-mm-dd
+
+ - `owner`: "@jmenonagithubu"
+                   `keeper`: "@jmenonagithubu"
+                   `signed`: True (vyplnit, jen když je podepsaná)
+
+ - `url`: odkaz na další informace o knize
+
+ - `language`:      
+       - Anglicky/Česky
+ - `tags`:
+           - doplň všechny vhodné tagy (Python, Data, Ostatní, SQL, Testování, Web, Začátečník)
+
+```
+two-scoops-1-5:
+  name: Two Scoops of Django (1.5)
+  author: Daniel Greenfeld & Audrey Roy
+  description: Best Practices for Django
+  copies:
+      - owner: "@honzakral"
+        keeper: "@encukou"
+  url: https://www.twoscoopspress.com/products/two-scoops-of-django-1-5
+  language:
+      - Anglicky
+  tags:
+      - Web
+      - Python
+```
+
+do složky `covers` dát obrázek přebalu ve formátu `nazev-knihy.jpg/png` název musí být stejný  jako v ymlu.

@@ -27,15 +27,15 @@
         <!-- Custom CSS -->
         <link href="{{ pathto('_static/CSS/style.css', 1) }}" rel="stylesheet">
         <!-- Custom Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         {% endblock css %}
     </head>
 
     <body class="b-bg">
       <!-- Navigation -->
-    <nav class="main-navbar container-fluid d-flex justify-content-between align-items-center p-2 hd-bg" role="navigation">
-            <a class="navbar-logo text-white" href="{{ url_for("index")}}"><h1 class="">Knihovnička</h1></a>
+    <nav class="main-navbar container-fluid d-flex justify-content-between align-items-center p-3 hd-bg" role="navigation">
+            <a class="navbar-logo text-white" href="{{ url_for("index")}}"><h1 class="m-0">Knihovnička</h1></a>
         <div class="">
             <a href="{{ url_for("info")}}" class="info"> Jak to funguje?</a>
         </div>
@@ -48,20 +48,22 @@
     <footer class="bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3 p-2">
-                    <a href="http://pyvec.org/"> <img src="{{ pathto('_static/pyvec.svg', 1) }}" class="footer-logo" alt=""></a>
-                </div>
-
+            <div class="col-6 col-md-4 col-lg-3 p-3">
+                <a href="http://pyvec.org/"> <img src="{{ pathto('_static/pyvec.svg', 1) }}" class="footer-logo" alt=""></a>
             </div>
-            <div class="col-sm-12 ">
-                <a href="https://github.com/pyvec/bookshelf"><i class="fab fa-github"></i></a>
+            <div class="col-3 col-md-7 col-lg-8 p-3 h3 text-right w-25">
+                <a href="https://pyvo.cz"><img src="{{ pathto('_static/pyvo.png', 1) }}" class="footer-logo pyvo my-auto" alt=""></a>
+            </div>
+            <div class="col-3 col-md-1 col-lg-1 p-3 h1 text-right">
+                <a href="https://github.com/pyvec/bookshelf"><i class="fab fa-github footer-logo text-dark my-auto"></i></a>
+            </div>
             </div>
         </div>
     </footer>
 
     <!-- Vue script -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='vuescript.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='avuescript.js') }}"></script>
 
 {% block scripts %}
 {% endblock scripts %}

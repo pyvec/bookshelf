@@ -1,5 +1,5 @@
 ponormese:
-  name: Ponořme se do Python(u) 3
+  name: Ponořme se do Python(u) 3
   author: Mark Pilgrim
   copies:
       - owner: "@hroncok"
@@ -12,10 +12,11 @@ ponormese:
       - Česky
   tags:
       - Python
+      - Začátečník
 
 two-scoops-1-5:
-  name: Two Scoops of Django (1.5)
-  author: Daniel Greenfeld & Audrey Roy
+  name: Two Scoops of Django (1.5)
+  author: Daniel Greenfeld & Audrey Roy
   description: Best Practices for Django
   copies:
       - owner: "@honzakral"
@@ -28,8 +29,8 @@ two-scoops-1-5:
       - Python
 
 two-scoops-1-6:
-  name: Two Scoops of Django (1.6)
-  author: Daniel Greenfeld & Audrey Roy
+  name: Two Scoops of Django (1.6)
+  author: Daniel Greenfeld & Audrey Roy
   description: Best Practices for Django
   copies:
       - owner: "@encukou"
@@ -42,8 +43,8 @@ two-scoops-1-6:
 
 python-cookbook:
   name: Python Cookbook
-  author: D. Beazley & B. K. Jones
-  description: Recipes for mastering Python 3
+  author: D. Beazley & B. K. Jones
+  description: Recipes for mastering Python 3
   copies:
       - owner: "@encukou"
         current: "@stratakis"
@@ -71,7 +72,7 @@ testing-goat:
 
 data-wrangling:
   name: Data Wrangling with Python
-  author: Jacqueline Kazil & Katharine Jarmul
+  author: Jacqueline Kazil & Katharine Jarmul
   description: Tips and Tools to Make Your Life Easier
   copies:
       - owner: "@encukou"
@@ -103,8 +104,8 @@ data-analysis:
 
 hello-web-app:
   name: Hello Web App
-  author: Tracy Osborn
-  description: Learn How to Build a Web App
+  author: Tracy Osborn
+  description: Learn How to Build a Web App
   copies:
       - owner: "@encukou"
         current: "@Ajuska"
@@ -174,9 +175,9 @@ hackers_painters:
       - Ostatní
 
 kivy:
-  name: Creating Apps in Kivy
+  name: Creating Apps in Kivy
   author: Dusty Phillips
-  description: Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začátečníky.
+  description: Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začátečníky.
   copies:
       - owner: "@encukou"
         current: Laca
@@ -213,7 +214,7 @@ pro-git:
 
 pruvodce-labyrintem-algoritmu:
   name: Průvodce labyrintem algoritmů
-  author: Martin Mareš, Tomáš Valla
+  author: Martin Mareš, Tomáš Valla
   copies:
       - owner: "@encukou"
   url: https://knihy.nic.cz/#pruvodce
@@ -224,7 +225,7 @@ pruvodce-labyrintem-algoritmu:
 
 team-geek:
   name: Team Geek
-  author: Brian W. Fitzpatrick, Ben Collins-Sussman
+  author: Brian W. Fitzpatrick, Ben Collins-Sussman
   description: A Software Developer's Guide to Working Well with Others
   copies:
       - owner: "@yedpodtrzitko"
@@ -248,7 +249,7 @@ open-organization:
       - Ostatní
 
 py3:
-  name: Python 3 - Výukový kurz
+  name: Python 3 - Výukový kurz
   author: Mark Summerfield
   description: Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
   copies:
@@ -261,9 +262,9 @@ py3:
       - Python
 
 py3porting:
-  name: Porting to Python 3
+  name: Porting to Python 3
   author: Lennart Regebro
-  description: Praktický návod na portování na Python 3
+  description: Praktický návod na portování na Python 3
   copies:
       - owner: "@honzakral"
         keeper: "@encukou"
@@ -316,7 +317,7 @@ data-science-from-scratch:
       - Data
 
 pro-hackery:
-  name: Python pro hackery a reverzní inženýrství
+  name: Python pro hackery a reverzní inženýrství
   author: Justin Seitz
   copies:
       - owner: "@yedpodtrzitko"
@@ -340,7 +341,7 @@ think-python:
       - Python
 
 computer-vision:
-  name: Programming Computer Vision with Python
+  name: Programming Computer Vision with Python
   author: Jan Erik Solen
   description: (pozor, používá Python 2.x)
   copies:
@@ -382,8 +383,8 @@ practical-django-projects:
       - Python
 
 django-definitive-guide:
-  name: The Definitive Guide to Django
-  author: A. Holovaty & J. Kaplan-Moss
+  name: The Definitive Guide to Django
+  author: A. Holovaty & J. Kaplan-Moss
   description: nížka o Djangu. Je o verzi 0.96, takže trošku zastaralá.
   copies:
       - owner: "@starenka"
@@ -397,7 +398,7 @@ django-definitive-guide:
 
 how-learning-works:
   name: "How Learning Works: Seven Research-Based Principles for Smart Teaching"
-  author: S. A. Ambrose, M. W. Bridges, M. DiPietro, M. C. Lovett, M. K. Norman
+  author: S. A. Ambrose, M. W. Bridges, M. DiPietro, M. C. Lovett, M. K. Norman
   description: O tom, jak učit.
   copies:
       - owner: "@encukou"
@@ -410,7 +411,7 @@ how-learning-works:
       - Ostatní
 
 erlang-learn:
-  name: Learn You Some Erlang for Great Good! A Beginner's Guide
+  name: Learn You Some Erlang for Great Good! A Beginner's Guide
   author: Fred Hebert
   copies:
       - owner: "@starenka"
@@ -421,7 +422,7 @@ erlang-learn:
       - Začátečník
 
 land-of-lisp:
-  name: "Land of Lisp: Learn to Program in Lisp, One Game at a Time!"
+  name: "Land of Lisp: Learn to Program in Lisp, One Game at a Time!"
   author: Conrad Barski
   copies:
       - owner: "@starenka"
@@ -433,7 +434,7 @@ land-of-lisp:
 
 nlpp:
   name: Natural Language Processing with Python
-  author: Steven Bird, Ewan Klein, Edward Loper
+  author: Steven Bird, Ewan Klein, Edward Loper
   copies:
       - owner: "@starenka"
         keeper: "@encukou"
@@ -466,8 +467,8 @@ microia:
       - Ostatní
 
 wah:
-  name: The Web Application Hacker's Handbook (první vydání)
-  author: Dafydd Stuttard, Marcus Pinto
+  name: The Web Application Hacker's Handbook (první vydání)
+  author: Dafydd Stuttard, Marcus Pinto
   description: Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho najde
   copies:
       - owner: "@starenka"
@@ -516,7 +517,7 @@ violent:
 
 cleancode:
   name: Clean Code
-  author: Robert C. Martin
+  author: Robert C. Martin
   copies:
       - owner: "@JirkaV"
   url:  http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
@@ -526,8 +527,8 @@ cleancode:
       - Ostatní
 
 networkfoundations:
-  name: Foundations of Python Network Programming
-  author: John Goerzen, Tim Bower, Brandon Rhodes
+  name: Foundations of Python Network Programming
+  author: John Goerzen, Tim Bower, Brandon Rhodes
   copies:
       - owner: "@JirkaV"
   url: http://www.amazon.com/Foundations-Python-Network-Programming-comprehensive/dp/1430230037
@@ -537,7 +538,7 @@ networkfoundations:
       - Python
 
 dreaming:
-  name: Dreaming in Code
+  name: Dreaming in Code
   author: Scott Rosenberg
   copies:
       - owner: "@JirkaV"
@@ -549,7 +550,7 @@ dreaming:
 
 beautiful:
   name: Beautiful Code
-  author: Andy Oram, Greg Wilson
+  author: Andy Oram, Greg Wilson
   copies:
       - owner: "@JirkaV"
   url: http://shop.oreilly.com/product/9780596510046.do
@@ -560,7 +561,7 @@ beautiful:
 
 fedora-guide-cz:
   name: Fedora - Příručka začínajícího uživatele.
-  author: Lukáš Kotek a kol.
+  author: Lukáš Kotek a kol.
   description: Seznámení a první kroky v linuxovém operačním systému Fedora
   copies:
       - owner: "@encukou"
@@ -571,7 +572,7 @@ fedora-guide-cz:
       - Ostatní
 
 sqliteguide:
-  name: The Definitive Guide to SQLite
+  name: The Definitive Guide to SQLite
   author: Grant Allen, Mike Owens
   description: 1st ed.
   copies:
@@ -583,7 +584,7 @@ sqliteguide:
       - SQL
 
 mysqlguide:
-  name: The Definitive Guide to MySQL 5
+  name: The Definitive Guide to MySQL 5
   author: Michael Kofler
   description: 3rd ed.
   copies:
@@ -596,7 +597,7 @@ mysqlguide:
 
 promysql:
   name: Pro MySQL
-  author: Jay Pipes, Michael Kruckenberg
+  author: Jay Pipes, Michael Kruckenberg
   copies:
       - owner: "@JirkaV"
   url: http://www.apress.com/9781590595053
@@ -606,7 +607,7 @@ promysql:
       - SQL
 
 ploneguide:
-  name: The Definitive Guide to Plone
+  name: The Definitive Guide to Plone
   author: Andy McKay
   description:  1st ed.
   copies:
@@ -618,7 +619,7 @@ ploneguide:
       - Ostatní
 
 beginningjavascript:
-  name: Beginning JavaScript with DOM Scripting and Ajax
+  name: Beginning JavaScript with DOM Scripting and Ajax
   author: Christian Heilmann
   copies:
       - owner: "@JirkaV"
@@ -630,8 +631,8 @@ beginningjavascript:
 
 
 mysqlnutshell:
-  name: MySQL in a Nutshell
-  author: Russell J.T. Dyer
+  name: MySQL in a Nutshell
+  author: Russell J. T. Dyer
   description: 1st ed.
   copies:
       - owner: "@JirkaV"
@@ -642,7 +643,7 @@ mysqlnutshell:
       - SQL
 
 pragmaticerlang:
-  name: "Programming Erlang: Software for a Concurrent World"
+  name: "Programming Erlang: Software for a Concurrent World"
   author: Joe Armstrong
   description: 1st ed.
   copies:
@@ -654,7 +655,7 @@ pragmaticerlang:
         - Ostatní
 
 kentbecktdd:
-  name: "Test Driven Development: By Example"
+  name: "Test Driven Development: By Example"
   author: Kent Beck
   copies:
       - owner: "@JirkaV"
@@ -667,7 +668,7 @@ kentbecktdd:
       - Testování
 
 hackingsecretciphers:
-  name: Hacking Secret Ciphers with Python
+  name: Hacking Secret Ciphers with Python
   author: Al Sweigart
   copies:
       - owner: "@JirkaV"
@@ -679,8 +680,8 @@ hackingsecretciphers:
 
 
 cssmistrovstvi:
-  name: Mistrovství v CSS
-  author: Dan Rubin, Ian Lloyd, Jeff Croft
+  name: Mistrovství v CSS
+  author: Dan Rubin, Ian Lloyd, Jeff Croft
   copies:
       - owner: "@JirkaV"
   url: http://knihy.cpress.cz/mistrovstvi-v-css.html
@@ -691,8 +692,8 @@ cssmistrovstvi:
 
 
 zaciname-programovat:
-  name: Začínáme programovat v jazyce Python
-  author: Daryl Harms, Kenneth McDonald
+  name: Začínáme programovat v jazyce Python
+  author: Daryl Harms, Kenneth McDonald
   description:  2. opravené vydání. Zastaralá kniha o Pythonu 1.5.
   copies:
       - owner: "@encukou"
@@ -706,10 +707,11 @@ zaciname-programovat:
       - Anglicky
   tags:
       - Python
+      - Začátečník
 
 high-performance-django:
   name: High Performance Django
-  author: Peter Baumgarten and Yann Malet
+  author: Peter Baumgarten, Yann Malet
   copies:
       - owner: "@honzakral"
         keeper: "@encukou"
@@ -723,7 +725,7 @@ high-performance-django:
 
 lightweight-django:
   name: Lightweight Django
-  author: Julia Elman, Mark Lavin
+  author: Julia Elman, Mark Lavin
   copies:
       - owner: "@honzakral"
         keeper: "@encukou"
@@ -736,7 +738,7 @@ lightweight-django:
       - Python
 
 python-projects-for-kids:
-  name: Python Projects for Kids
+  name: Python Projects for Kids
   author: Jessica Ingrassellino
   copies:
       - owner: "@Paffilda"
@@ -748,8 +750,8 @@ python-projects-for-kids:
       - Začátečník
 
 python-for-kids:
-  name: Python for Kids
-  author: Jason R. Briggs
+  name: Python for Kids
+  author: Jason R. Briggs
   copies:
       - owner: "@Paffilda"
   url: https://www.nostarch.com/pythonforkids
@@ -761,7 +763,7 @@ python-for-kids:
 
 processing-py:
   name: "Make: Getting Started with Processing.py"
-  author: Allison Parrish, Ben Fry, Casey Reas
+  author: Allison Parrish, Ben Fry, Casey Reas
   copies:
       - owner: "@encukou"
   url: https://www.amazon.com/Processing-py/dp/B01FIR0RY8/

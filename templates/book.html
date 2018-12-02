@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
-    <div class="row bg-white mx-0 my-2 ">
+    <div class="row bg-white mx-0 my-2 img-thumbnail rounded-0">
         <div class="col-12 col-md-4 p-0 p-3">
-            <img src="{{ url_for('image', book_slug=book_slug) }}" class="img-thumbnail book-detail-img" alt="">
+            <img src="{{ url_for('image', book_slug=book_slug) }}" class="img-thumbnail rounded-0 book-detail-img" alt="">
         </div>
         <div class="col p-3">
             <div class="book-detail-name d-flex justify-content-between">
@@ -13,7 +13,7 @@
                 </a>
             </div>
             <div class="book-author">
-                <p class="a-c font-italic">{{ book.author }}</p>
+                <p class="a-c">{{ book.author }}</p>
             </div>
 
             <p>{{ book.description }}</p>
@@ -33,7 +33,7 @@
                         <p  class="m-0">Majitel:
                         {{ person(copy['owner']) }}
                         {% if 'current' not in copy and 'keeper' not in copy %}
-                            <i class="fas fa-circle green" title="Kniha si můžeš půjčit."></i>
+                            <i class="fas fa-book green" title="Knihu si můžeš půjčit."></i>
                         {% endif %}
                         </p>
 
@@ -47,20 +47,20 @@
                     <p class="m-0">O knihu se stará:
                     {{ person(copy['keeper']) }}
                         {% if 'current' not in copy %}
-                            <i class="fas fa-circle green" title="Knihu si můžeš půjčit.">{{ copy['days'] }}</i>
+                            <i class="fas fa-book green" title="Knihu si můžeš půjčit.">{{ copy['days'] }}</i>
                         {% endif %}</p>
                     {% endif %}
 
                     {% if 'current' in copy %}
-                        <p class="m-0">Aktuálně u
+                        <p class="m-0">Aktuálně u:
                         {{ person(copy['current']) }}
                         {% if 'borrowed' in copy %}
                             od {{ copy['borrowed'].month }}/{{ copy['borrowed'].year }}
                         {% endif %}
                         {% if  (today - copy['borrowed']).days < 31 %}
-                        <i class="fas fa-circle red" title="Ještě neuběhla výpůjční doba.">{{ days }}</i>
+                        <i class="fas fa-book-reader red" title="Ještě neuběhla výpůjční doba.">{{ days }}</i>
                         {% else %}
-                        <i class="fas fa-circle orange" title="Knihu už má půjčenou dlouho. Můžeš si ji půjčit.">{{ copy['days'] }}</i>
+                        <i class="fas fa-book-open orange" title="Knihu už má půjčenou dlouho. Můžeš si ji půjčit.">{{ copy['days'] }}</i>
                         {% endif %}
                         </p>
                 {% endif %}
@@ -69,8 +69,6 @@
             {% endfor %}
             <a href="/info/" class="info-link-btn"><button type="button" class="btn btn-success btn-lg borrow">Půjčit si knihu</button></a>
         </div>
-
-
     </div>
 </div>
 {% endblock content %}

@@ -2,18 +2,15 @@ import os
 import fnmatch
 import datetime
 import collections
-import yaml
 import json
-import jinja2
-import markdown
-
-
 from pathlib import Path
+
 from flask import Flask, render_template, url_for, abort, send_from_directory, jsonify
 from flask_frozen import Freezer
 from elsa import cli
-
-
+import yaml
+import jinja2
+import markdown
 
 app = Flask(__name__)
 MISSING = object()
@@ -28,7 +25,7 @@ def data():
     language = set()
     today = datetime.date.today()
     for key, value in books.items():
-        value['img_url'] = '/img/' + str(key)
+        value['img_url'] = '/img/' + str(key) + ".jpg"
         value['book_url'] = '/' + str(key)
         for book in value['copies']:
             if 'borrowed' in book:
@@ -43,7 +40,8 @@ def index():
     books = read_yaml('books.yml')
     if books is None:
         abort(404)
-    return render_template('index.html', books=books,)
+    today = datetime.date.today()
+    return render_template('index.html', books=books,today=today,)
 
 
 @app.route('/<book_slug>/')
@@ -66,18 +64,17 @@ def info():
     return render_template('info.html')
 
 
-@app.route('/img/<book_slug>')
+@app.route('/img/<book_slug>.jpg')
 def image(book_slug):
     name = find_photo(book_slug)
     return send_from_directory(base, name)
 
 
 def find_photo(book_slug):
-    for suffix in '.png', '.jpg':
-        name = book_slug+suffix
-        path = base/name
-        if path.exists():
-            return name
+    name = book_slug + '.jpg'
+    path = base/name
+    if path.exists():
+        return name
     return "python.png"
 
 
