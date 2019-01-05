@@ -1,5 +1,6 @@
 *, :after, :before {
-	-webkit-box-sizing: border-box; box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	 box-sizing: border-box;
 }
 
 html {
@@ -40,7 +41,8 @@ label {
 	white-space: nowrap;
 }
 .pointer {
-	cursor: pointer;}
+	cursor: pointer;
+}
 
 /* h text color */
 .h-c {
@@ -67,17 +69,18 @@ label {
 color: #bd2130
 }
 .orange{
-color: #ffa039;
+color: #cf6c00;
 }
 .green{
-color: #28a745;
+color: #1d7231;
 }
 /* __Head__ */
-
+.main-navbar {
+	font-family: 'Ubuntu', sans-serif;
+}
 .navbar-logo h1 {
     color: #f8f9fa;
 	font-size: 2em;
-
 }
 .info {
 	color: #ffffff;
@@ -104,26 +107,25 @@ color: #28a745;
 	position: relative;
 	cursor: pointer;
 	top: -44px;
-
 }
-
 .accordion .header-icon {
 	position: absolute;
 	top: 16px;
 	left: 1px;
+	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
+	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
 	color: #808081;
 }
-
 .accordion .body-inner {
 	padding: 20px 0;
 	overflow-wrap: break-word;
-	/*   white-space: pre-wrap; */
 }
-
 .accordion .header-icon.rotate {
+	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
+	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
 }
 .accordion span {
@@ -139,16 +141,12 @@ color: #28a745;
 	.data {
 		height: 70px;
 	}
-
 }
-/* __Home Content__  */
 
+/* __Home Content__  */
 .book-box {
     height: 346px;
-
     padding: 10px 10px 0;
-
-
 }
 .img-preview {
     max-width: 100%;
@@ -162,7 +160,6 @@ color: #28a745;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     height: auto;
-
 }
 .book-name h2 {
     font-size: 1.2em;
@@ -180,30 +177,42 @@ color: #28a745;
     height: 146px;
 }
 .dot {
- 	margin-right: 5px;
-	}
+ 	margin-right: 10px;
+}
+.book-img {
+	height: 160px;
 }
 @media all and (min-width: 576px) {
 	.book-name h2 {
 	    font-size: 1.4em;
 	}
 	.book-about {
-	    height: 180px;
+	    height: 160px;
 	}
 	.img-preview {
 	    max-height: 200px;
-
+	}
+	.book-img {
+		height: 200px;
 	}
 	.book-box {
 	    height: 415px;
-	    padding: 15px 20px 0;
+	    padding: 15px 20px 0; 
+	}
+	.dot {
+		margin-top: 10px;
+	}
+}
+@media all and (min-width: 768px) {
+	.book-img {
+		height: 200px;
 	}
 }
 /* __Book  Deatail__ */
 .content {
     width: 100%;
     padding: 20px 0;
-	min-height: calc(100% - 68px - 110px);
+	min-height: calc(100% - 78px - 136px);
 }
 .book-detail-img {
     max-height: 400px;
@@ -216,7 +225,6 @@ color: #28a745;
 .fa-external-link-alt {
 	font-size: 20px;
 }
-
 .info-link-btn {
 	margin: 1rem;
 	display: block;
@@ -229,16 +237,15 @@ color: #28a745;
 	margin: 1rem;
 }
 ￼
-
 /* __Footer__ */
 
 footer {
 	height: 200px;
 	margin-top: 100px;
 }
-.footer-logo {
-    ;
-}
 .pyvo {
-	max-width: 50px;
+	max-width: 3em;
+}
+.fa-github {
+	font-size: 3em;
 }

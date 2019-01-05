@@ -1,3 +1,5 @@
+// Adapted from accordion demo
+// Copyright (c) 2017 - codepen user ktsn - https://codepen.io/ktsn/pen/dzNRjx
 Vue.component('accordion', {
   props: ['theme'],
   template: `<div class="accordion " v-bind:class="theme">
@@ -114,7 +116,7 @@ Vue.component('book-list', {
                     </div>
                     <div class="d-flex">
                         <div v-for='copy in book.copies'>
-                            <i v-if="copy.days < 31" class="fas fa-book-reader red" title="Knihu právě někdo čte."></i>
+                            <i v-if="copy.days < 31" class="fas fa-book-reader red dot" title="Knihu právě někdo čte."></i>
                             <i v-else-if="copy.days >= 31" class="fas fa-book-open orange dot" title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit."></i>
                             <i v-else class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
                         </div>
