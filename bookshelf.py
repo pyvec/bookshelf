@@ -18,7 +18,7 @@ MISSING = object()
 base = Path(app.root_path) / "covers"
 
 
-@app.route('/data/')
+@app.route('/data.json')
 def data():
     books = read_yaml('books.yml')
     tags = set()
