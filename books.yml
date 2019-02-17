@@ -77,8 +77,6 @@ data-wrangling:
   copies:
       - owner: "@encukou"
         signed: True
-        current: "Katka L. PL Brno"
-        borrowed: 2018-11-05
   url: http://shop.oreilly.com/product/0636920032861.do
   language:
       - Anglicky
@@ -109,8 +107,6 @@ hello-web-app:
   copies:
       - owner: "@encukou"
       - owner: "@encukou"
-        current: "@vahalova"
-        borrowed: 2018-07-01
   url: https://hellowebbooks.com/learn-django/
   language:
       - Anglicky
@@ -400,8 +396,6 @@ how-learning-works:
   description: O tom, jak učit.
   copies:
       - owner: "@encukou"
-        current: "Šárka PL Brno"
-        borrowed: 2018-10-08
   url: http://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101
   language:
       - Anglicky
@@ -592,6 +586,30 @@ mysqlguide:
       - Anglicky
   tags:
       - SQL
+
+mysql-okamzite:
+    name: MySQL okamžitě
+    author: Timothy Botonczyk
+    copies:
+        - owner: "@encukou"
+        - owner: "@encukou"
+    url: https://www.albatrosmedia.cz/tituly/34904988/my-sql-okamzite/
+    language:
+        - Česky
+    tags:
+        - SQL
+
+sql-28-dni:
+    name: Naučte se SQL za 28 dní
+    author: Ryan Stephens, Ron Plew, Arie D. Jones
+    copies:
+        - owner: "@encukou"
+        - owner: "@encukou"
+    url: https://www.albatrosmedia.cz/tituly/8486921/naucte-se-sql-za-28-dni/
+    language:
+        - Česky
+    tags:
+        - SQL
 
 promysql:
   name: Pro MySQL
