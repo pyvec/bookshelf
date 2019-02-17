@@ -81,15 +81,6 @@ def find_photo(book_slug):
     return "python.png"
 
 
-def pathto(name, static=False):
-    if static:
-        prefix = '_static/'
-        if name.startswith(prefix):
-            return url_for('static', filename=name[len(prefix):])
-        return name
-    return url_for(name)
-
-
 def read_yaml(filename, default=MISSING):
     try:
         file = open(filename, encoding='utf-8')
@@ -104,7 +95,7 @@ def read_yaml(filename, default=MISSING):
 
 @app.context_processor
 def inject_context():
-    return {'pathto': pathto, 'today': datetime.date.today(),}
+    return {'today': datetime.date.today(),}
 
 
 if __name__ == '__main__':
