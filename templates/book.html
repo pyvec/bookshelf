@@ -67,7 +67,23 @@
 
                 </div>
             {% endfor %}
-            <a href="/info/" class="info-link-btn"><button type="button" class="btn btn-success btn-lg borrow">Půjčit si knihu</button></a>
+            <div class="borrow">
+                <a href="{{ url_for('info') }}" class="info-link-btn">
+                    <button type="button" class="btn btn-info btn-lg">
+                        <i class="fas fa-info-circle"></i>
+                        Jak si půjčovat?
+                    </button>
+                </a>
+                <a href="https://github.com/pyvec/bookshelf/issues/new?{{ {
+                    'title': 'Chci si půjčit knížku ' + book.name,
+                    'body': 'Chci si ji převezít na Pyvu v ___',
+                } | urlencode }}" class="info-link-btn">
+                    <button type="button" class="btn btn-success btn-lg">
+                        <i class="fab fa-github"></i>
+                        Požádat o půjčení
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
 </div>

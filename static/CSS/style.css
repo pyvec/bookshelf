@@ -208,6 +208,9 @@ label {
     padding: 20px 0;
 	min-height: calc(100% - 100px - 40px);
 }
+.book-info {
+    position: relative;
+}
 .book-detail-img {
     max-height: 400px;
 }
@@ -220,15 +223,17 @@ label {
 	font-size: 20px;
 }
 .info-link-btn {
-	margin: 1rem;
-	display: block;
 	padding: 1rem;
+    margin: 0;
+    display: inline-block;
+}
+.info-link-btn .btn i {
+    padding-right: 0.5rem;
 }
 .borrow {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin: 1rem;
+	text-align: right;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 ￼/* __Footer__ */
 .footer {

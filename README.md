@@ -12,7 +12,8 @@
   * Hledáme knihy, které se týkají Pythonu a přidružených neutrálních technologií (např. databází), nebo programování či open-source obecně
   * Půjčování je dobrovolná činnost založená na důvěře. Pokud se knížka ztratí, bude nám to líto a budeme se snažit ji získat zpátky, ale zaručit nemůžeme nic.
 
-Začátečníci jsou vítáni! Pokud ještě neumíš udělat pull request, ozvi se na encukou@gmail.com.
+Pokud nemáš účet na GitHubu, nebo není něco jasné, ozvi se na encukou@gmail.com.
+Začátečníci jsou vítáni!
 
 ## How does this work?
 
