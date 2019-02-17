@@ -18,8 +18,8 @@
     v-bind:selectedtags="selectedtags" v-bind:selectedlanguage="selectedlanguage">
     {% for slug, book in books.items() | sort %}
         <div class='col-6 col-md-4 col-lg-3 p-0'>
-            <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
-                <a href='{{ url_for('book', book_slug=slug) }}'>
+            <a href='{{ url_for('book', book_slug=slug) }}'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
                     <div class='book-img text-center'>
                         <img src='{{ url_for('image', book_slug=slug) }}'
                         class='img-thumbnail rounded-0 img-preview' alt=''>
@@ -47,8 +47,8 @@
                             <p class='a-c mb-0'>{{ book.author }}</p>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     {% endfor %}
     </div>
