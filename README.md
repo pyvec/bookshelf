@@ -27,6 +27,8 @@ Začátečníci jsou vítáni! Pokud ještě neumíš udělat pull request, ozvi
 
 [Issue]: https://github.com/pyvec/bookshelf/issues
 
+<!-- END of user instructions. The website will not show the text below. -->
+
 
 ### Spuštění webu lokálně v PC
 

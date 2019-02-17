@@ -61,7 +61,10 @@ def book(book_slug):
 
 @app.route('/info/')
 def info():
-    return render_template('info.html')
+    readme_contents = Path(__file__).parent.joinpath('README.md').read_text()
+    instructions, sep, rest = readme_contents.partition('<!-- END')
+    html_instructions = jinja2.Markup(markdown.markdown(instructions))
+    return render_template('info.html', instructions=html_instructions)
 
 
 @app.route('/img/<book_slug>.jpg')
