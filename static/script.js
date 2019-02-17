@@ -129,7 +129,7 @@ Vue.component('book-list', {
     props:['books', 'selectedtags', 'selectedlanguage']
     })
 
-fetch("/data/")
+fetch(document.getElementById('data-url').getAttribute('href'))
     .then(r => r.json())
     .then(data => {
         console.log(data)
