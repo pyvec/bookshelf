@@ -53,28 +53,26 @@ Stránky se zpřístupní na adrese `http://127.0.0.1:8003/`.
 Změny v kódu se projeví po obnovení stránky v prohlížeči.
 
 ### Přídání knihy:
-do `books.yml` vyplnit:
+do `books.yml` přidej:
+```
+nazev-knihy:
+  name: Název knihy
+  author: Autor knihy
+  description: Krátký popis knihy
+  copies:
+      - owner: "@jmenonagithubu" - kdo je majitel knihy
+        keeper: "@jmenonagithubu" - kdo se o knihu stará
+        current: "@jmenonagithubu" - kdo má knihu půjčenou    
+        borrowed: yyyy-mm-dd - od kdy ji má půjčenou
+        signed: True - vyplnit, jen když je podepsaná
+  url: odkaz na další informace o knize
+  language:      
+      - Anglicky/Česky
+  tags:
+    - doplň všechny vhodné tagy (Python, Data, Ostatní, SQL, Testování, Web, Začátečník)
+```
 
-**nazev-knihy**:
- -  `name`: Název knihy
- - `author`: Autor knihy
- - `description`: Krátký popis knihy
- - `copies`:
-   				  `owner`: "@jmenonagithubu"
-   				   `current`: "@jmenonagithubu"
-   				   `borrowed`: yyyy-mm-dd
-
- - `owner`: "@jmenonagithubu"
-                   `keeper`: "@jmenonagithubu"
-                   `signed`: True (vyplnit, jen když je podepsaná)
-
- - `url`: odkaz na další informace o knize
-
- - `language`:      
-       - Anglicky/Česky
- - `tags`:
-           - doplň všechny vhodné tagy (Python, Data, Ostatní, SQL, Testování, Web, Začátečník)
-
+## Příklad knihy:
 ```
 two-scoops-1-5:
   name: Two Scoops of Django (1.5)
@@ -91,4 +89,4 @@ two-scoops-1-5:
       - Python
 ```
 
-do složky `covers` dát obrázek přebalu ve formátu `nazev-knihy.jpg/png` název musí být stejný  jako v ymlu.
+do složky `covers` dej obrázek přebalu ve formátu `nazev-knihy.jpg/png` název musí být stejný jako v ymlu.

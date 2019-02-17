@@ -6,22 +6,23 @@
             <img src="{{ url_for('image', book_slug=book_slug) }}" class="img-thumbnail rounded-0 book-detail-img" alt="">
         </div>
         <div class="col p-3">
-            <div class="book-detail-name d-flex justify-content-between">
+            <div class="book-detail-name">
                 <h2 class="h-c" >{{ book.name }}</h2>
-                <a href="{{ book.url }}">
-                    <i class="fas fa-external-link-alt hd-c"></i>
-                </a>
             </div>
             <div class="book-author">
                 <p class="a-c">{{ book.author }}</p>
             </div>
 
-            <p>{{ book.description }}</p>
+            <div class="book-detail-name d-flex justify-content-left">
+                <p class="mr-2">{{ book.description }}</p>
+                <a href="{{ book.url }}">
+                    <i class="fas fa-external-link-alt hd-c" title="info"></i>
+                </a>
+            </div>
             <p class="mt-2">{{ book.language[0][0:-1] }}á verze</p>
             {% for copy in book.copies %}
                 <div class="owner-box b-bg p-2 m-0 mt-3">
                     <div class="d-flex justify-content-between">
-
                         {% macro person(name) %}
                                 {% if name[0] == '@' %}
                                     <a href="https://github.com/{{ name[1:] }}">{{ name[1:] }}</a>
@@ -40,7 +41,6 @@
                         {% if 'signed' in copy  %}
                             <i class="fas fa-pen-fancy hd-c" title="Kniha je podepsaná autorem, dávej na ni pozor."></i>
                         {% endif %}
-
                     </div>
 
                     {% if copy.get('keeper') %}

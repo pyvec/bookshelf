@@ -2,19 +2,16 @@
 	-webkit-box-sizing: border-box;
 	 box-sizing: border-box;
 }
-
 html {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
 }
-
 body {
     width: 100%;
     height: 100%;
     font-size: 16px;
     color: #333;
-
     font-family: 'Open Sans', sans-serif;
 }
 a {
@@ -26,9 +23,6 @@ h3 {
 }
 li {
  	list-style-type: none;
-}
-ul {
-
 }
 a:hover {
 	text-decoration: none;
@@ -66,14 +60,15 @@ label {
 }
 /* circle colors */
 .red {
-color: #bd2130
+	color: #bd2130
 }
 .orange{
-color: #cf6c00;
+	color: #cf6c00;
 }
 .green{
-color: #1d7231;
+	color: #1d7231;
 }
+
 /* __Head__ */
 .main-navbar {
 	font-family: 'Ubuntu', sans-serif;
@@ -145,8 +140,8 @@ color: #1d7231;
 
 /* __Home Content__  */
 .book-box {
-    height: 346px;
-    padding: 10px 10px 0;
+    height: 354px;
+    padding: 15px;
 }
 .img-preview {
     max-width: 100%;
@@ -156,15 +151,17 @@ color: #1d7231;
 }
 .book-name {
     overflow: hidden;
+	text-overflow: ellipsis;
     display: -webkit-inline-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    height: auto;
+	word-wrap:break-word;
+    line-height:1.2;
+	max-height: 4.4em;
 }
 .book-name h2 {
     font-size: 1.2em;
 }
-
 .book-author {
     overflow: hidden;
     display: -webkit-inline-box;
@@ -177,14 +174,14 @@ color: #1d7231;
     height: 146px;
 }
 .dot {
- 	margin-right: 10px;
+ 	margin: 20px 10px 10px 0;
 }
 .book-img {
 	height: 160px;
 }
 @media all and (min-width: 576px) {
 	.book-name h2 {
-	    font-size: 1.4em;
+	    font-size: 1.2em;
 	}
 	.book-about {
 	    height: 160px;
@@ -196,11 +193,8 @@ color: #1d7231;
 		height: 200px;
 	}
 	.book-box {
-	    height: 415px;
-	    padding: 15px 20px 0; 
-	}
-	.dot {
-		margin-top: 10px;
+	    height: 406px;
+	    padding: 20px;
 	}
 }
 @media all and (min-width: 768px) {
@@ -212,7 +206,7 @@ color: #1d7231;
 .content {
     width: 100%;
     padding: 20px 0;
-	min-height: calc(100% - 78px - 136px);
+	min-height: calc(100% - 100px - 40px);
 }
 .book-detail-img {
     max-height: 400px;
@@ -236,16 +230,7 @@ color: #1d7231;
 	right: 0;
 	margin: 1rem;
 }
-￼
-/* __Footer__ */
-
-footer {
-	height: 200px;
-	margin-top: 100px;
-}
-.pyvo {
-	max-width: 3em;
-}
-.fa-github {
-	font-size: 3em;
+￼/* __Footer__ */
+.footer {
+	height: 80px;
 }

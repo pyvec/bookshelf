@@ -103,14 +103,6 @@ Vue.component('book-list', {
         <div v-for='book in books' class='col-6 col-md-4 col-lg-3 p-0'>
             <div class='book-box img-thumbnail rounded-0  m-1 m-md-2'>
                 <a v-bind:href='book.book_url'>
-                    <div class='book-about d-flex flex-column'>
-                        <div class='book-name m-0 p-O'>\
-                            <h2 class='h-c m-0'>{{ book.name }}</h2>
-                        </div>
-                        <div class='book-author m-0'>
-                            <p class='a-c  m-0 '>{{ book.author}}</p>
-                        </div>
-                    </div>
                     <div  class='book-img text-center'>
                         <img v-bind:src='book.img_url' class='img-thumbnail rounded-0 img-preview' alt='obal_knihy'/>
                     </div>
@@ -121,6 +113,16 @@ Vue.component('book-list', {
                             <i v-else class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
                         </div>
                     </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>\
+                            <h2 class='h-c m-0'>{{ book.name }}</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c  m-0 '>{{ book.author}}</p>
+                        </div>
+                    </div>
+
+
                 </a>
             </div>
         </div>
