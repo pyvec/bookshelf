@@ -155,7 +155,7 @@ Vydání Leden 2015
 ### Brian W. Fitzpatrick, Ben Collins-Sussman: [Team Geek][team-geek]: A Software Developer's Guide to Working Well with Others
 
 * Majitel: @yedpodtrzitko
-* Aktuálně u @hroncok
+* Aktuálně u @vahalova
 
 [team-geek]: http://shop.oreilly.com/product/0636920018025.do
 
