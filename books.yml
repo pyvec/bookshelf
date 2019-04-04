@@ -223,8 +223,8 @@ team-geek:
   description: A Software Developer's Guide to Working Well with Others
   copies:
       - owner: "@yedpodtrzitko"
-        current: "@hroncok"
-        borrowed: 2017-11-22
+        current: "@vahalova"
+        borrowed: 2019-03-20
   url: http://shop.oreilly.com/product/0636920018025.do
   language:
       - Anglicky
@@ -770,6 +770,7 @@ python-for-kids:
   author: Jason R. Briggs
   copies:
       - owner: "@Paffilda"
+      - owner: "@encukou"
   url: https://www.nostarch.com/pythonforkids
   language:
       - Anglicky
@@ -787,3 +788,17 @@ processing-py:
       - Anglicky
   tags:
       - Python
+
+zelvi-grafika:
+    name: "Želví grafika"
+    author: "Radek Pelánek"
+    url: http://www.radekpelanek.cz/?zelva
+    copies:
+        - owner: "@encukou"
+          current: Adam K. z Brna
+          borrowed: 2019-04-22
+    language:
+        - Česky
+    tags:
+        - Python
+        - Začátečník
