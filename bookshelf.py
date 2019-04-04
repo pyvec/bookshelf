@@ -99,4 +99,4 @@ def inject_context():
 
 
 if __name__ == '__main__':
-    cli(app, base_url='')
+    cli(app, base_url='https://bookshelf.pyvec.org')
