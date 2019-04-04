@@ -51,11 +51,30 @@ def book(book_slug):
     if book is None:
         abort(404)
     today = datetime.date.today()
+
+    # Get the CC list (people who should be notified in the "borrow"
+    # issue on GitHub).
+    # This is the current reader, plus keeper or owner, of each copy.
+    ccs = []
+    for copy in book['copies']:
+        print(copy)
+        if 'keeper' in copy:
+            ccs.append(copy['keeper'])
+        elif 'owner' in copy:
+            ccs.append(copy['owner'])
+        if 'current' in copy:
+            ccs.append(copy['current'])
+    borrow_issue_body = render_template(
+        'borrow_issue.md', book_slug=book_slug, book=book,
+        ccs=sorted(set(ccs)),
+    )
+
     return render_template(
         'book.html',
         book_slug=book_slug,
         book=book,
         today=today,
+        borrow_issue_body=borrow_issue_body,
     )
 
 
