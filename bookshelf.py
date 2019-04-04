@@ -54,20 +54,20 @@ def book(book_slug):
 
     # Get the CC list (people who should be notified in the "borrow"
     # issue on GitHub).
-    ccs = []
+    ccs = set()
     for copy in book['copies']:
         if 'keeper' in copy:
             # For some books the owner wants a `keeper` to handle the lending;
             # we don't bother the owner in that case.
-            ccs.append(copy['keeper'])
+            ccs.add(copy['keeper'])
         elif 'owner' in copy:
-            ccs.append(copy['owner'])
+            ccs.add(copy['owner'])
         if 'current' in copy:
             # Always put in the current reader
-            ccs.append(copy['current'])
+            ccs.add(copy['current'])
     borrow_issue_body = render_template(
         'borrow_issue.md', book_slug=book_slug, book=book,
-        ccs=sorted(set(ccs)),
+        ccs=sorted(ccs),
     )
 
     return render_template(
