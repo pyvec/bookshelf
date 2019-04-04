@@ -1,0 +1,16 @@
+language: python
+dist: xenial
+python:
+    - '3.7'
+script:
+    - 'python bookshelf.py freeze'
+env:
+  global:
+    - secure: "blahblah"  # gem install travis; travis encrypt GITHUB_TOKEN=xyz --add
+deploy:
+    provider: script
+    skip_cleanup: true
+    script: 'python bookshelf.py deploy --no-freeze --push --base-url bookshelf.pyvec.org'
+    on:
+        branch: master
+        repo: pyvec/bookshelf
