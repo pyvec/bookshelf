@@ -3,7 +3,7 @@ dist: xenial
 python:
     - '3.7'
 script:
-    - 'python bookshelf.py freeze'
+    - 'python bookshelf.py freeze --base-url bookshelf.pyvec.org'
 env:
   global:
     - secure: "S170pteeF5Nzh0VAikBh16Anwstztgx33KV44KA1PwT2oMLtfuuiDYvlBihuho+LFlMyRQsy/1PP0l6EJeUmxwLxhAjlPXFZtrYLHS30wlC165Xc88oz2bSDQ3IA04vI+cktWpodjLDHMltVgyRFRZf/iA33VoLhHPb9/2UDDPA="  # gem install travis; travis encrypt GITHUB_TOKEN=xyz --add
