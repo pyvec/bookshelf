@@ -56,7 +56,6 @@ def book(book_slug):
     # issue on GitHub).
     ccs = []
     for copy in book['copies']:
-        print(copy)
         if 'keeper' in copy:
             # For some books the owner wants a `keeper` to handle the lending;
             # we don't bother the owner in that case.
