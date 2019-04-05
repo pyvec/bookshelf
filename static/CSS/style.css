@@ -102,8 +102,8 @@ label {
 }
 .accordion .header-icon {
 	position: absolute;
-	top: 16px;
-	left: 1px;
+	top: 10px;
+    left: 1px;
 	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
 	-webkit-transition-duration: 0.3s;
@@ -121,15 +121,12 @@ label {
 	transition-duration: 0.3s;
 }
 .accordion span {
-	display: none;
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 30px;
 }
 @media all and (min-width: 576px) {
-	.accordion span {
-		display: block;
-		position: absolute;
-		top: 10px;
-	    left: 1px;
-	}
 	.data {
 		height: 70px;
 	}

@@ -5,7 +5,7 @@ Vue.component('accordion', {
   template: `<div class="accordion " v-bind:class="theme">
     <div class="header " v-on:click="toggle">
           <i class="fa fa-2x fa-angle-down header-icon" v-bind:class="{ rotate: show }"></i>
-          <span></span>
+          <span>Filtrovat dle témat</span>
     </div>
     <transition name="accordion"
       v-on:before-enter="beforeEnter" v-on:enter="enter"
