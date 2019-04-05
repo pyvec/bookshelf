@@ -21,9 +21,6 @@ a {
 h3 {
 	font-size: 1.4em;
 }
-li {
- 	list-style-type: none;
-}
 a:hover {
 	text-decoration: none;
     color: #dddddd;
