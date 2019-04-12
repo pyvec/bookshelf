@@ -4,8 +4,6 @@ ponormese:
   copies:
       - owner: "@hroncok"
       - owner: "@encukou"
-        current: "Katka L, PL Brno"
-        borrowed: 2018-11-08
 
   url: http://diveintopython3.py.cz/index.html
   language:
