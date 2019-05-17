@@ -394,6 +394,8 @@ how-learning-works:
   description: O tom, jak učit.
   copies:
       - owner: "@encukou"
+        current: Elena Bondarenko (RH Brno)
+        borrowed: 2019-05-14
   url: http://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101
   language:
       - Anglicky
