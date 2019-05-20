@@ -75,6 +75,8 @@ data-wrangling:
   copies:
       - owner: "@encukou"
         signed: True
+        current: Ivča Jelínková (PyLadies Brno)
+        borrowed: 2019-05-20
   url: http://shop.oreilly.com/product/0636920032861.do
   language:
       - Anglicky
@@ -104,7 +106,11 @@ hello-web-app:
   description: Learn How to Build a Web App
   copies:
       - owner: "@encukou"
+        current: Petra Macháčková (PyLadies Brno)
+        borrowed: 2019-05-20
       - owner: "@encukou"
+        current: Sylva Prokešová (PyLadies Brno)
+        borrowed: 2019-05-20
   url: https://hellowebbooks.com/learn-django/
   language:
       - Anglicky
@@ -198,6 +204,8 @@ pro-git:
   author: Scott Chacon
   copies:
       - owner: "@encukou"
+        current: Eva Milovská (PyLadies Brno)
+        borrowed: 2019-05-20
   url: https://knihy.nic.cz/#ProGit
   language:
       - Česky
@@ -302,7 +310,9 @@ data-science-from-scratch:
   description: First Principles with Python
   copies:
       - owner: "@encukou"
-  url: http://shop.oreilly.com/product/0636920033400.do
+        current: Ivana Žoldaková (PyLadies Brno)
+        borrowed: 2019-05-20
+url: http://shop.oreilly.com/product/0636920033400.do
   language:
       - Anglicky
   tags:
