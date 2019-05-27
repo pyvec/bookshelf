@@ -812,3 +812,25 @@ zelvi-grafika:
     tags:
         - Python
         - Začátečník
+
+learning-python:
+  name: Learning Python, 4th Edition
+  author: Mark Lutz
+  copies:
+      - owner: "@PetraVidnerova"
+  url: https://learning-python.com/about-lp4e.html
+  language:
+      - Anglicky
+  tags:
+      - Python
+
+javascript-the-good-parts:
+  name: "JavaScript: The Good Parts"
+  author: Douglas Crockford
+  copies:
+      - owner: "@PetraVidnerova"
+  url: https://blog.root.cz/met/d-crockford-javascript-the-good-parts-extremni-recenze/
+  language:
+      - Anglicky
+  tags:
+      - Ostatní
