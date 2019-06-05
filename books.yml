@@ -106,11 +106,7 @@ hello-web-app:
   description: Learn How to Build a Web App
   copies:
       - owner: "@encukou"
-        current: Petra Macháčková (PyLadies Brno)
-        borrowed: 2019-05-20
       - owner: "@encukou"
-        current: Sylva Prokešová (PyLadies Brno)
-        borrowed: 2019-05-20
   url: https://hellowebbooks.com/learn-django/
   language:
       - Anglicky
