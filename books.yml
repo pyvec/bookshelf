@@ -306,8 +306,6 @@ data-science-from-scratch:
   description: First Principles with Python
   copies:
       - owner: "@encukou"
-        current: Ivana Žoldaková (PyLadies Brno)
-        borrowed: 2019-05-20
   url: http://shop.oreilly.com/product/0636920033400.do
   language:
       - Anglicky
