@@ -131,18 +131,18 @@ hello-web-app-intermediate:
       - Začátečník
       - Python
 
-flask-web-dev:
-  name: Flask Web Development
-  author: Miguel Grinberg
-  description: Developing Web Applications with Python
-  copies:
-      - owner: "@encukou"
-  url: http://flaskbook.com/
-  language:
-      - Anglicky
-  tags:
-      - Web
-      - Python
+#flask-web-dev:
+#  name: Flask Web Development
+#  author: Miguel Grinberg
+#  description: Developing Web Applications with Python
+#  copies:
+#      - owner: "@encukou"
+#  url: http://flaskbook.com/
+#  language:
+#      - Anglicky
+#  tags:
+#      - Web
+#      - Python
 
 raspi-cookbook:
   name: Raspberry Pi Cookbook
@@ -174,8 +174,6 @@ kivy:
   description: Praktický návod, jak vytvořit mobilní aplikaci v Pythonu. Vhodné pro začátečníky.
   copies:
       - owner: "@encukou"
-        current: Laca
-        borrowed: 2015-11-10
   url: http://shop.oreilly.com/product/0636920032595.do
   language:
       - Anglicky
@@ -275,18 +273,18 @@ py3porting:
   tags:
       - Python
 
-data-science-handbook:
-  name: Python Data Science Handbook
-  author: Jake VanderPlas
-  description: Essential Tools for Working with Data
-  copies:
-      - owner: "@encukou"
-  url: http://shop.oreilly.com/product/0636920034919.do
-  language:
-      - Anglicky
-  tags:
-      - Data
-      - Python
+#data-science-handbook:
+#  name: Python Data Science Handbook
+#  author: Jake VanderPlas
+#  description: Essential Tools for Working with Data
+#  copies:
+#      - owner: "@encukou"
+#  url: http://shop.oreilly.com/product/0636920034919.do
+#  language:
+#      - Anglicky
+#  tags:
+#      - Data
+#      - Python
 
 risky-iot:
   name: The Internet of Risky Things
