@@ -60,6 +60,8 @@ testing-goat:
   copies:
       - owner: "@encukou"
         signed: True
+        current: "@experimentalhypothesis"
+        borrowed: 2019-06-19
   url: http://www.obeythetestinggoat.com/
   language:
       - Anglicky
