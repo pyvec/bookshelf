@@ -828,3 +828,15 @@ javascript-the-good-parts:
       - Anglicky
   tags:
       - Ostatní
+
+python-tricks:
+  name: "Python Tricks: The Book"
+  author: Dan Bader
+  description: A Buffet of Awesome Python Features
+  copies:
+      - owner: "@myrmica-habilis"
+  url: https://dbader.org/products/python-tricks-book/
+  language:
+      - Anglicky
+  tags:
+      - Python
