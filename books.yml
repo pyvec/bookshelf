@@ -306,6 +306,8 @@ data-science-from-scratch:
   description: First Principles with Python
   copies:
       - owner: "@encukou"
+        current: Lazebnicek  # robjan@seznam.cz
+        borrowed: 2018-06-19  # till August
   url: http://shop.oreilly.com/product/0636920033400.do
   language:
       - Anglicky
