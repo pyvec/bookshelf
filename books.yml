@@ -123,8 +123,7 @@ hello-web-app-intermediate:
   description: Intermediate Concepts
   copies:
       - owner: "@encukou"
-        current: "@vahalova"
-        borrowed: 2018-07-01
+      - owner: "@encukou"
   url: https://hellowebbooks.com/django-intermediate-concepts/
   language:
       - Anglicky
@@ -132,6 +131,19 @@ hello-web-app-intermediate:
       - Web
       - Začátečník
       - Python
+
+hello-web-design:
+  name: Hello Web Design
+  author: Tracy Osborn
+  description: Design fundamentals and shortcuts for non-designers
+  copies:
+      - owner: "@encukou"
+  url: https://hellowebbooks.com/learn-design/
+  language:
+      - Anglicky
+  tags:
+      - Web
+      - Ostatní
 
 #flask-web-dev:
 #  name: Flask Web Development
@@ -838,6 +850,18 @@ python-tricks:
   copies:
       - owner: "@myrmica-habilis"
   url: https://dbader.org/products/python-tricks-book/
+  language:
+      - Anglicky
+  tags:
+      - Python
+
+thoughtful-machine-learning:
+  name: "Thoughtful Machine Learning with Python"
+  author: Matthew Kirk
+  description: A Test-Driven Approach
+  copies:
+      - owner: "@encukou"
+  url: http://shop.oreilly.com/product/0636920039082.do
   language:
       - Anglicky
   tags:
