@@ -849,6 +849,7 @@ python-tricks:
   description: A Buffet of Awesome Python Features
   copies:
       - owner: "@myrmica-habilis"
+        keeper: "@encukou"
   url: https://dbader.org/products/python-tricks-book/
   language:
       - Anglicky
