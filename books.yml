@@ -306,6 +306,8 @@ risky-iot:
   description: Trusting the Devices that Surround Us
   copies:
       - owner: "@encukou"
+        current: "@befeleme"
+        borrowed: 2019-09-17
   url: http://shop.oreilly.com/product/0636920052784.do
   language:
       - Anglicky
@@ -850,6 +852,8 @@ python-tricks:
   copies:
       - owner: "@myrmica-habilis"
         keeper: "@encukou"
+        current: "@befeleme"
+        borrowed: 2019-09-17
   url: https://dbader.org/products/python-tricks-book/
   language:
       - Anglicky
