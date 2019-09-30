@@ -261,7 +261,6 @@ py3:
   author: Mark Summerfield
   description: Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
   copies:
-      - owner: "@tjanovsky"
       - owner: "@KeNaCo"
   url: http://knihy.cpress.cz/python-3.html
   language:
