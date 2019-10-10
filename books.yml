@@ -870,3 +870,16 @@ thoughtful-machine-learning:
       - Anglicky
   tags:
       - Python
+
+effective-pycharm:
+  name: "Effective PyCharm"
+  author: Michael Kennedy, Matt Harrison
+  description: Learn the PyCharm IDE with a hands-on approach
+  copies:
+      - owner: "@myrmica-habilis"
+        keeper: "@myrmica-habilis"
+  url: https://effectivepycharm.com/
+  language:
+      - Anglicky
+  tags:
+      - Python
