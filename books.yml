@@ -60,8 +60,6 @@ testing-goat:
   copies:
       - owner: "@encukou"
         signed: True
-        current: "@myrmica-habilis"
-        borrowed: 2019-07-17
   url: http://www.obeythetestinggoat.com/
   language:
       - Anglicky
@@ -878,6 +876,8 @@ effective-pycharm:
   copies:
       - owner: "@myrmica-habilis"
         keeper: "@myrmica-habilis"
+        current: "@encukou"
+        borrowed: 2019-10-16
   url: https://effectivepycharm.com/
   language:
       - Anglicky
