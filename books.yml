@@ -883,3 +883,31 @@ effective-pycharm:
       - Anglicky
   tags:
       - Python
+
+
+latex-pro-zacatecniky:
+  name: "LaTeX pro začátečníky"
+  author: Jiří Rybička
+  description: Jedná se o 2. vydání.
+  copies:
+      - owner: "@PetraVidnerova"
+  url: https://www.databazeknih.cz/knihy/latex-pro-zacatecniky-249759
+  language:
+      - Česky
+  tags:
+      - Ostatní
+      - Začátečník
+
+
+tex-book-naruby:
+  name: "TeX book naruby"
+  author: Petr Olšák
+  copies:
+      - owner: "@PetraVidnerova"
+  url: http://petr.olsak.net/tbn.html
+  language:
+      - Česky
+  tags:
+      - Ostatní
+
+
