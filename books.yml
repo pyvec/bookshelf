@@ -891,6 +891,8 @@ latex-pro-zacatecniky:
   description: Jedná se o 2. vydání.
   copies:
       - owner: "@PetraVidnerova"
+        current: "@encukou"
+        borrowed: 2019-11-20
   url: https://www.databazeknih.cz/knihy/latex-pro-zacatecniky-249759
   language:
       - Česky
@@ -904,7 +906,9 @@ tex-book-naruby:
   author: Petr Olšák
   copies:
       - owner: "@PetraVidnerova"
-  url: http://petr.olsak.net/tbn.html
+        current: "@encukou"
+        borrowed: 2019-11-20
+url: http://petr.olsak.net/tbn.html
   language:
       - Česky
   tags:
