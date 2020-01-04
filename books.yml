@@ -915,3 +915,15 @@ tex-book-naruby:
       - Ostatní
 
 
+text-adventure:
+  name: "Make Your Own Python Text Adventure"
+  author: Phillip Johnson
+  copies:
+      - owner: "@myrmica-habilis"
+        keeper: "@myrmica-habilis"
+  url: https://www.apress.com/gp/book/9781484232309
+  language:
+      - Anglicky
+  tags:
+      - Python
+      - Začátečník
