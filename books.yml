@@ -481,7 +481,6 @@ wah:
   description: Obstarožní, ale určitě si v ní někdo (stejně jako já) něco zajímavýho najde
   copies:
       - owner: "@starenka"
-      - owner: "@JirkaV"
   url: http://books.google.cz/books/about/The_Web_Application_Hacker_s_Handbook.html?id=_EhvBGsWi6AC&redir_esc=y
   language:
       - Anglicky
@@ -500,29 +499,6 @@ sqlperf:
       - Anglicky
   tags:
       - SQL
-
-grayhat:
-  name: Gray Hat Python
-  author: Justin Seitz
-  copies:
-      - owner: "@JirkaV"
-
-  url: https://www.nostarch.com/ghpython.htm
-  language:
-      - Anglicky
-  tags:
-      - Python
-
-violent:
-  name: Violent Python
-  author: TJ O'Connor
-  copies:
-      - owner: "@JirkaV"
-  url: http://shop.oreilly.com/product/9781597499576.do
-  language:
-      - Anglicky
-  tags:
-      - Python
 
 cleancode:
   name: Clean Code
@@ -546,28 +522,6 @@ networkfoundations:
   tags:
       - Python
 
-dreaming:
-  name: Dreaming in Code
-  author: Scott Rosenberg
-  copies:
-      - owner: "@JirkaV"
-  url: http://www.dreamingincode.com/
-  language:
-      - Anglicky
-  tags:
-      - Ostatní
-
-beautiful:
-  name: Beautiful Code
-  author: Andy Oram, Greg Wilson
-  copies:
-      - owner: "@JirkaV"
-  url: http://shop.oreilly.com/product/9780596510046.do
-  language:
-      - Anglicky
-  tags:
-      - Ostatní
-
 fedora-guide-cz:
   name: Fedora - Příručka začínajícího uživatele.
   author: Lukáš Kotek a kol.
@@ -579,30 +533,6 @@ fedora-guide-cz:
       - Anglicky
   tags:
       - Ostatní
-
-sqliteguide:
-  name: The Definitive Guide to SQLite
-  author: Grant Allen, Mike Owens
-  description: 1st ed.
-  copies:
-      - owner: "@JirkaV"
-  url: http://www.apress.com/9781430232254
-  language:
-      - Anglicky
-  tags:
-      - SQL
-
-mysqlguide:
-  name: The Definitive Guide to MySQL 5
-  author: Michael Kofler
-  description: 3rd ed.
-  copies:
-      - owner: "@JirkaV"
-  url: http://www.apress.com/9781590595350
-  language:
-      - Anglicky
-  tags:
-      - SQL
 
 mysql-okamzite:
     name: MySQL okamžitě
@@ -627,102 +557,6 @@ sql-28-dni:
         - Česky
     tags:
         - SQL
-
-promysql:
-  name: Pro MySQL
-  author: Jay Pipes, Michael Kruckenberg
-  copies:
-      - owner: "@JirkaV"
-  url: http://www.apress.com/9781590595053
-  language:
-      - Anglicky
-  tags:
-      - SQL
-
-ploneguide:
-  name: The Definitive Guide to Plone
-  author: Andy McKay
-  description:  1st ed.
-  copies:
-      - owner: "@JirkaV"
-  url: http://www.apress.com/9781430218937
-  language:
-      - Anglicky
-  tags:
-      - Ostatní
-
-beginningjavascript:
-  name: Beginning JavaScript with DOM Scripting and Ajax
-  author: Christian Heilmann
-  copies:
-      - owner: "@JirkaV"
-  url: http://www.apress.com/9781590596807
-  language:
-      - Anglicky
-  tags:
-      - Ostatní
-
-
-mysqlnutshell:
-  name: MySQL in a Nutshell
-  author: Russell J. T. Dyer
-  description: 1st ed.
-  copies:
-      - owner: "@JirkaV"
-  url: http://shop.oreilly.com/product/9780596007898.do
-  language:
-      - Anglicky
-  tags:
-      - SQL
-
-pragmaticerlang:
-  name: "Programming Erlang: Software for a Concurrent World"
-  author: Joe Armstrong
-  description: 1st ed.
-  copies:
-      - owner: "@JirkaV"
-  url:  https://pragprog.com/book/jaerlang2/programming-erlang
-  language:
-      - Anglicky
-  tags:
-        - Ostatní
-
-kentbecktdd:
-  name: "Test Driven Development: By Example"
-  author: Kent Beck
-  copies:
-      - owner: "@JirkaV"
-        current: "@waikeri"
-        borrowed: 2015-12-16
-  url: http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530
-  language:
-      - Anglicky
-  tags:
-      - Testování
-
-hackingsecretciphers:
-  name: Hacking Secret Ciphers with Python
-  author: Al Sweigart
-  copies:
-      - owner: "@JirkaV"
-  url: http://inventwithpython.com/hacking/
-  language:
-      - Anglicky
-  tags:
-      - Python
-
-
-cssmistrovstvi:
-  name: Mistrovství v CSS
-  author: Dan Rubin, Ian Lloyd, Jeff Croft
-  copies:
-      - owner: "@JirkaV"
-  url: http://knihy.cpress.cz/mistrovstvi-v-css.html
-  language:
-      - Anglicky
-  tags:
-      - Web
-
 
 zaciname-programovat:
   name: Začínáme programovat v jazyce Python
