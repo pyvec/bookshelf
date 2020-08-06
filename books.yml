@@ -681,7 +681,6 @@ python-tricks:
   copies:
       - owner: "@myrmica-habilis"
         keeper: "@myrmica-habilis"
-        current: "@encukou"
   url: https://dbader.org/products/python-tricks-book/
   language:
       - Anglicky
