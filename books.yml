@@ -254,17 +254,17 @@ open-organization:
   tags:
       - Ostatní
 
-py3:
-  name: Python 3 - Výukový kurz
-  author: Mark Summerfield
-  description: Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
-  copies:
-      - owner: "@KeNaCo"
-  url: http://knihy.cpress.cz/python-3.html
-  language:
-      - Česky
-  tags:
-      - Python
+#py3:
+#  name: Python 3 - Výukový kurz
+#  author: Mark Summerfield
+#  description: Bohužel jediná trochu aktuální kniha která se u nás dala koupit.
+#  copies:
+#      - owner: ""
+#  url: http://knihy.cpress.cz/python-3.html
+#  language:
+#      - Česky
+#  tags:
+#      - Python
 
 py3porting:
   name: Porting to Python 3
