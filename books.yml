@@ -45,8 +45,6 @@ python-cookbook:
   description: Recipes for mastering Python 3
   copies:
       - owner: "@encukou"
-        current: "@stratakis"
-        borrowed: 2016-02-24
   url: http://shop.oreilly.com/product/0636920027072.do
   language:
       - Anglicky
