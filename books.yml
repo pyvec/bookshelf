@@ -755,3 +755,15 @@ text-adventure:
   tags:
       - Python
       - Začátečník
+
+
+designing-data-intensive-applications:
+  name: "Designing Data Intensive Applications"
+  author: Martin Kleppman
+  copies:
+      - owner: "@messa"
+  url: https://dataintensive.net/
+  language:
+      - Anglicky
+  tags:
+      - Ostatní
