@@ -1,0 +1,235 @@
+*, :after, :before {
+	-webkit-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+h3 {
+	font-size: 1.4em;
+}
+a:hover {
+	text-decoration: none;
+    color: #dddddd;
+}
+p a:hover {
+	text-decoration: underline;
+}
+label {
+	white-space: nowrap;
+}
+.pointer {
+	cursor: pointer;
+}
+
+/* h text color */
+.h-c {
+    color: #343a40;
+}
+/* author and secondary text */
+.a-c {
+    color: #818182;
+}
+/* main and header background color */
+.hd-bg {
+	background-color: #343a40;
+}
+/* body and secondary background color */
+.b-bg {
+    background-color: #f8f9fa;
+}
+/* main color for icon atc */
+.hd-c {
+	color: #343a40;
+}
+/* circle colors */
+.red {
+	color: #bd2130
+}
+.orange{
+	color: #cf6c00;
+}
+.green{
+	color: #1d7231;
+}
+
+/* __Head__ */
+.main-navbar {
+	font-family: 'Ubuntu', sans-serif;
+}
+.navbar-logo h1 {
+    color: #f8f9fa;
+	font-size: 2em;
+}
+.info {
+	color: #ffffff;
+    font-size: 1.2em;
+    text-align: right;
+    display: block;
+}
+@media all and (min-width: 576px) {
+	.navbar-logo a {
+	font-size: 40px;
+	}
+	.info {
+	color: #ffffff;
+    font-size: 1.2em;
+	}
+}
+/* Filter */
+
+.data {
+	height: 90px;
+}
+
+.accordion .header {
+	position: relative;
+	cursor: pointer;
+	top: -44px;
+}
+.accordion .header-icon {
+	position: absolute;
+	top: 10px;
+    left: 1px;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	color: #808081;
+}
+.accordion .body-inner {
+	padding: 20px 0;
+	overflow-wrap: break-word;
+}
+.accordion .header-icon.rotate {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.accordion span {
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 30px;
+}
+@media all and (min-width: 576px) {
+	.data {
+		height: 70px;
+	}
+}
+
+/* __Home Content__  */
+.book-box {
+    height: 354px;
+    padding: 15px;
+}
+.img-preview {
+    max-width: 100%;
+    height: auto;
+    max-height: 160px;
+    width: auto;
+}
+.book-name {
+    overflow: hidden;
+	text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+	word-wrap:break-word;
+    line-height:1.2;
+	max-height: 4.4em;
+}
+.book-name h2 {
+    font-size: 1.2em;
+}
+.book-author {
+    overflow: hidden;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: auto;
+	max-height: 54px;
+}
+.book-about {
+    height: 146px;
+}
+.dot {
+ 	margin: 20px 10px 10px 0;
+}
+.book-img {
+	height: 160px;
+}
+@media all and (min-width: 576px) {
+	.book-name h2 {
+	    font-size: 1.2em;
+	}
+	.book-about {
+	    height: 160px;
+	}
+	.img-preview {
+	    max-height: 200px;
+	}
+	.book-img {
+		height: 200px;
+	}
+	.book-box {
+	    height: 406px;
+	    padding: 20px;
+	}
+}
+@media all and (min-width: 768px) {
+	.book-img {
+		height: 200px;
+	}
+}
+/* __Book  Deatail__ */
+.content {
+    width: 100%;
+    padding: 20px 0;
+	min-height: calc(100% - 100px - 40px);
+}
+.book-info {
+    position: relative;
+}
+.book-detail-img {
+    max-height: 400px;
+}
+.owner-box {
+	border-top: 3px solid #cad4da;
+    padding: 10px;
+    margin: 10px 0;
+}
+.fa-external-link-alt {
+	font-size: 20px;
+}
+.info-link-btn {
+	padding: 1rem;
+    margin: 0;
+    display: inline-block;
+}
+.info-link-btn .btn i {
+    padding-right: 0.5rem;
+}
+.borrow {
+	text-align: right;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+￼/* __Footer__ */
+.footer {
+	height: 80px;
+}
