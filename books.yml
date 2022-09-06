@@ -767,3 +767,47 @@ designing-data-intensive-applications:
       - Anglicky
   tags:
       - Ostatní
+
+
+cracking-codes:
+  name: Cracking Codes with Python
+  author: Al Sweigart
+  description: An Introduction to Building and Breaking Ciphers
+  copies:
+      - owner: "@mportesdev"
+        keeper: "@mportesdev"
+  url: https://nostarch.com/crackingcodes
+  language:
+      - Anglicky
+  tags:
+      - Python
+      - Začátečník
+
+python-prirucka:
+  name: Python
+  author: Rudolf Pecinovský
+  description: Kompletní příručka jazyka pro verzi 3.8
+  copies:
+      - owner: "@mportesdev"
+        keeper: "@mportesdev"
+  url: https://www.grada.cz/python-11421
+  language:
+      - Česky
+  tags:
+      - Python
+      - Začátečník
+
+python-101:
+  name: Python 101
+  author: Michael Driscoll
+  description: 2nd Edition
+  copies:
+      - owner: "@mportesdev"
+        keeper: "@mportesdev"
+        signed: True
+  url: https://leanpub.com/py101
+  language:
+      - Anglicky
+  tags:
+      - Python
+      - Začátečník
