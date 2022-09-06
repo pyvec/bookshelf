@@ -9,8 +9,8 @@ from flask import Flask, render_template, url_for, abort, send_from_directory, j
 from flask_frozen import Freezer
 from elsa import cli
 import yaml
-import jinja2
 import markdown
+import markupsafe
 
 app = Flask(__name__)
 MISSING = object()
@@ -83,7 +83,7 @@ def book(book_slug):
 def info():
     readme_contents = Path(__file__).parent.joinpath('README.md').read_text()
     instructions, sep, rest = readme_contents.partition('<!-- END')
-    html_instructions = jinja2.Markup(markdown.markdown(instructions))
+    html_instructions = markupsafe.Markup(markdown.markdown(instructions))
     return render_template('info.html', instructions=html_instructions)
 
 
