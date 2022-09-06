@@ -677,8 +677,8 @@ python-tricks:
   author: Dan Bader
   description: A Buffet of Awesome Python Features
   copies:
-      - owner: "@myrmica-habilis"
-        keeper: "@myrmica-habilis"
+      - owner: "@mportesdev"
+        keeper: "@mportesdev"
   url: https://dbader.org/products/python-tricks-book/
   language:
       - Anglicky
@@ -702,8 +702,8 @@ effective-pycharm:
   author: Michael Kennedy, Matt Harrison
   description: Learn the PyCharm IDE with a hands-on approach
   copies:
-      - owner: "@myrmica-habilis"
-        keeper: "@myrmica-habilis"
+      - owner: "@mportesdev"
+        keeper: "@mportesdev"
         current: "@encukou"
         borrowed: 2019-10-16
   url: https://effectivepycharm.com/
@@ -747,8 +747,8 @@ text-adventure:
   name: "Make Your Own Python Text Adventure"
   author: Phillip Johnson
   copies:
-      - owner: "@myrmica-habilis"
-        keeper: "@myrmica-habilis"
+      - owner: "@mportesdev"
+        keeper: "@mportesdev"
   url: https://www.apress.com/gp/book/9781484232309
   language:
       - Anglicky
