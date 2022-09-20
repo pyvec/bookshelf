@@ -4,6 +4,7 @@ import datetime
 import collections
 import json
 from pathlib import Path
+import functools
 
 from flask import Flask, render_template, url_for, abort, send_from_directory, jsonify
 from flask_frozen import Freezer
@@ -102,15 +103,25 @@ def find_photo(book_slug):
 
 
 def read_yaml(filename, default=MISSING):
+
+    # Reading YAML is slow. To avoid loading all the time, we cache the result.
+    # To make the site react to changes in the files, we use the file size
+    # and last-modified time as part of the cache key. If either changes,
+    # the cache will be invalidated and the file will be read from disk again.
+
     try:
-        file = open(filename, encoding='utf-8')
+        info = os.stat(filename)
     except FileNotFoundError:
         if default is MISSING:
             raise
         return default
-    with file:
-        data = yaml.safe_load(file)
-    return data
+    return _read_yaml_cached(filename, info.st_size, info.st_mtime)
+
+
+@functools.lru_cache()
+def _read_yaml_cached(filename, size, mtime):
+    with open(filename, encoding='utf-8') as file:
+        return yaml.safe_load(file)
 
 
 @app.context_processor
