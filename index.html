@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- ADD META TAGS -->
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+        <meta name="keywords" content="Python, Pyvec, IT, Django, Flask, books"></meta>
+        <meta name="description" content="Knihovnička české komunity kolem programovacího jazyka Python"></meta>
+        <meta property="title" content="Knihovnička"></meta>
+        <title>Knihovnička</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link href="/static/CSS/style.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link id="data-url" rel="alternate" type="application/json" href="/data.json">
+    </head>
+
+    <body class="b-bg">
+          <!-- Navigation -->
+        <nav class="main-navbar container-fluid d-flex justify-content-between align-items-center p-3 hd-bg" role="navigation">
+                <a class="navbar-logo text-white" href="/"><h1 class="m-0 py-3">Knihovnička</h1></a>
+            <div class="">
+                <a href="/info/" class="info"> Jak to funguje?</a>
+            </div>
+        </nav>
+
+        <article class="content">
+        
+
+<div class='container' id='root'>
+
+    <div class='data show'>
+        <div class='row filter' v-bind:is='"language-list"' v-bind:language="language"
+        v-model="selectedlanguage"  v-bind:selectedlanguage="selectedlanguage">
+        </div>
+    </div>
+    <div v-bind:is='"accordion"' class=''>
+        <div class='row filter' v-bind:is='"tag-list"' v-bind:tags="tags"
+        v-model="selectedtags"  v-bind:selectedtags="selectedtags">
+        </div>
+    </div>
+   <div class='row' v-bind:is='"book-list"' v-bind:books="books"
+    v-bind:selectedtags="selectedtags" v-bind:selectedlanguage="selectedlanguage">
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/cleancode/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/cleancode.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Clean Code</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Robert C. Martin</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/computer-vision/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/computer-vision.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Programming Computer Vision with Python</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Jan Erik Solen</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/cracking-codes/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/cracking-codes.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Cracking Codes with Python</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Al Sweigart</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/cython/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/cython.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Cython - A guide for Python programmers</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Kurt W. Smith</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/data-analysis/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/data-analysis.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Python for Data Analysis</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Wes McKinney</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/data-science-from-scratch/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/data-science-from-scratch.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Data Science from Scratch</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Joel Grus</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/data-wrangling/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/data-wrangling.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Data Wrangling with Python</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Jacqueline Kazil &amp; Katharine Jarmul</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/designing-data-intensive-applications/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/designing-data-intensive-applications.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Designing Data Intensive Applications</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Martin Kleppman</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/django-definitive-guide/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/django-definitive-guide.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>The Definitive Guide to Django</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>A. Holovaty &amp; J. Kaplan-Moss</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/effective-pycharm/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/effective-pycharm.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Effective PyCharm</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Michael Kennedy, Matt Harrison</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/erlang-learn/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/erlang-learn.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Learn You Some Erlang for Great Good! A Beginner&#39;s Guide</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Fred Hebert</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/fedora-guide-cz/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/fedora-guide-cz.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Fedora - Příručka začínajícího uživatele.</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Lukáš Kotek a kol.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/hackers_painters/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/hackers_painters.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Hackers and Painters: Big Ideas from the Computer Age</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Paul Graham</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/hello-web-app/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/hello-web-app.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Hello Web App</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Tracy Osborn</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/hello-web-app-intermediate/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/hello-web-app-intermediate.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Hello Web App</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Tracy Osborn</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/hello-web-design/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/hello-web-design.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Hello Web Design</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Tracy Osborn</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/high-performance-django/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/high-performance-django.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>High Performance Django</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Peter Baumgarten, Yann Malet</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/how-learning-works/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/how-learning-works.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>How Learning Works: Seven Research-Based Principles for Smart Teaching</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>S. A. Ambrose, M. W. Bridges, M. DiPietro, M. C. Lovett, M. K. Norman</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/javascript-the-good-parts/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/javascript-the-good-parts.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>JavaScript: The Good Parts</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Douglas Crockford</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/kivy/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/kivy.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Creating Apps in Kivy</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Dusty Phillips</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/land-of-lisp/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/land-of-lisp.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Land of Lisp: Learn to Program in Lisp, One Game at a Time!</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Conrad Barski</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/latex-pro-zacatecniky/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/latex-pro-zacatecniky.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>LaTeX pro začátečníky</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Jiří Rybička</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/learning-python/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/learning-python.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Learning Python, 4th Edition</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Mark Lutz</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/lightweight-django/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/lightweight-django.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Lightweight Django</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Julia Elman, Mark Lavin</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/microia/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/microia.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Microinteractions</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Dan Saffer</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/mysql-okamzite/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/mysql-okamzite.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>MySQL okamžitě</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Timothy Botonczyk</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/networkfoundations/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/networkfoundations.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Foundations of Python Network Programming</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>John Goerzen, Tim Bower, Brandon Rhodes</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/nlpp/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/nlpp.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Natural Language Processing with Python</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Steven Bird, Ewan Klein, Edward Loper</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/open-organization/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/open-organization.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>The Open Organization</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Jim Whitehurst</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/ponormese/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/ponormese.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Ponořme se do Python(u) 3</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Mark Pilgrim</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/practical-django-projects/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/practical-django-projects.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Practical Django Projects</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>James Bennett</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/pro-django/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/pro-django.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Pro Django</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Marty Alchin</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/pro-git/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/pro-git.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Pro Git</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Scott Chacon</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/pro-hackery/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/pro-hackery.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Python pro hackery a reverzní inženýrství</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Justin Seitz</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/processing-py/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/processing-py.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Make: Getting Started with Processing.py</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Allison Parrish, Ben Fry, Casey Reas</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/pruvodce-labyrintem-algoritmu/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/pruvodce-labyrintem-algoritmu.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Průvodce labyrintem algoritmů</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Martin Mareš, Tomáš Valla</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/py3porting/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/py3porting.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Porting to Python 3</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Lennart Regebro</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/python-101/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/python-101.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Python 101</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Michael Driscoll</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/python-cookbook/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/python-cookbook.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Python Cookbook</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>D. Beazley &amp; B. K. Jones</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/python-for-kids/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/python-for-kids.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Python for Kids</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Jason R. Briggs</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/python-prirucka/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/python-prirucka.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Python</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Rudolf Pecinovský</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/python-projects-for-kids/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/python-projects-for-kids.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Python Projects for Kids</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Jessica Ingrassellino</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/python-tricks/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/python-tricks.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Python Tricks: The Book</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Dan Bader</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/raspi-cookbook/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/raspi-cookbook.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Raspberry Pi Cookbook</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Simon Monk</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/risky-iot/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/risky-iot.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>The Internet of Risky Things</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Sean Smith</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/sql-28-dni/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/sql-28-dni.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Naučte se SQL za 28 dní</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Ryan Stephens, Ron Plew, Arie D. Jones</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/sqlperf/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/sqlperf.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>SQL Performance explained</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Markus Winand</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/team-geek/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/team-geek.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Team Geek</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Brian W. Fitzpatrick, Ben Collins-Sussman</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/testing-goat/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/testing-goat.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Test-Driven Development with Python</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Harry J. W. Percival</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/tex-book-naruby/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/tex-book-naruby.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>TeX book naruby</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Petr Olšák</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/text-adventure/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/text-adventure.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Make Your Own Python Text Adventure</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Phillip Johnson</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/think-python/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/think-python.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Think Python</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Allen B. Downey</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/thoughtful-machine-learning/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/thoughtful-machine-learning.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Thoughtful Machine Learning with Python</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Matthew Kirk</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/two-scoops-1-5/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/two-scoops-1-5.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Two Scoops of Django (1.5)</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Daniel Greenfeld &amp; Audrey Roy</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/two-scoops-1-6/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/two-scoops-1-6.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Two Scoops of Django (1.6)</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Daniel Greenfeld &amp; Audrey Roy</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/wah/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/wah.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>The Web Application Hacker&#39;s Handbook (první vydání)</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Dafydd Stuttard, Marcus Pinto</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/xp/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/xp.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book green dot" title="Knihu si můžeš půjčit."></i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Extrémní programování</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Kent Beck</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/zaciname-programovat/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/zaciname-programovat.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Začínáme programovat v jazyce Python</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Daryl Harms, Kenneth McDonald</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class='col-6 col-md-4 col-lg-3 p-0'>
+            <a href='/zelvi-grafika/'>
+                <div class='book-box img-thumbnail rounded-0 m-1 m-md-2'>
+                    <div class='book-img text-center'>
+                        <img src='/img/zelvi-grafika.jpg'
+                        class='img-thumbnail rounded-0 img-preview' alt=''>
+                    </div>
+                    <div class="d-flex">
+                        
+                        <div>
+                            
+                                <i  class="fas fa-book-open orange dot"
+                                title="Kniha už je dlouho půjčena a ještě nebyla vrácena. Můžeš si ji půjčit.">
+                                </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class='book-about d-flex flex-column'>
+                        <div class='book-name m-0 p-O'>
+                            <h2 class='h-c m-0'>Želví grafika</h2>
+                        </div>
+                        <div class='book-author m-0'>
+                            <p class='a-c mb-0'>Radek Pelánek</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+    </div>
+</div>
+
+
+        </article>
+
+        <footer class="bg-white container-fluid d-blog">
+            <div class="d-flex justify-content-center align-items-center ">
+                <p class="  ">Uprav tuto stránku na <a href="https://github.com/pyvec/bookshelf"> GitHubu <i class="fab fa-github"></i></a></p>
+            </div>
+        </footer>
+
+        <!-- Vue script -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script type=text/javascript src="/static/script.js"></script>
+
+        
+
+
+
+    </body>
+</html>
