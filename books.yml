@@ -776,6 +776,8 @@ cracking-codes:
   copies:
       - owner: "@mportesdev"
         keeper: "@mportesdev"
+        current: "@bhrozen"
+        borrowed: 2023-08-11
   url: https://nostarch.com/crackingcodes
   language:
       - Anglicky
